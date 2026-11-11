@@ -3,310 +3,197 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2027届校招面试吐槽热帖TOP15 | 2026-11-11</title>
+<title>企业舆情监测报告（2026-11-11）</title>
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif; background:#f3f4fb; color:#2d2b55; line-height:1.7; }
-.wrap { max-width:1080px; margin:0 auto; padding:20px 16px 48px; }
-
-/* 页头 */
-.header { position:relative; background:linear-gradient(135deg,#4f46e5 0%,#7c3aed 45%,#a855f7 100%); border-radius:20px; padding:44px 36px 36px; color:#fff; box-shadow:0 12px 32px rgba(99,60,220,.28); overflow:hidden; }
-.header::after { content:""; position:absolute; right:-70px; top:-70px; width:260px; height:260px; border-radius:50%; background:rgba(255,255,255,.10); }
-.header::before { content:""; position:absolute; right:60px; bottom:-90px; width:190px; height:190px; border-radius:50%; background:rgba(255,255,255,.08); }
-.header h1 { font-size:30px; letter-spacing:1px; margin-bottom:10px; position:relative; z-index:2; }
-.header .sub { font-size:15px; opacity:.92; position:relative; z-index:2; }
-.header .actions { position:absolute; top:18px; right:20px; z-index:5; display:flex; align-items:center; gap:14px; }
-.btn-download { background:rgba(255,255,255,.95); color:#4f46e5; font-weight:700; font-size:14px; padding:9px 16px; border-radius:24px; text-decoration:none; box-shadow:0 4px 12px rgba(0,0,0,.18); transition:transform .15s; }
-.btn-download:hover { transform:translateY(-2px); }
-.link-archive { color:#fff; font-size:13.5px; font-weight:600; text-decoration:none; border-bottom:1px dashed rgba(255,255,255,.75); padding-bottom:2px; }
-.link-archive:hover { opacity:.85; }
-.tags { margin-top:20px; display:flex; flex-wrap:wrap; gap:8px; position:relative; z-index:2; }
-.tag { background:rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.4); padding:4px 12px; border-radius:16px; font-size:12.5px; }
-
-/* 数据卡片 */
-.cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin-top:22px; }
-.card { background:#fff; border-radius:14px; padding:20px 18px; box-shadow:0 4px 14px rgba(80,63,205,.10); border-top:4px solid #7c3aed; }
-.card .num { font-size:26px; font-weight:800; background:linear-gradient(90deg,#4f46e5,#a855f7); -webkit-background-clip:text; background-clip:text; color:transparent; }
-.card .label { font-size:13px; color:#6b7280; margin-top:4px; }
-
-/* 分类 */
-.section-title { margin:34px 0 14px; font-size:20px; font-weight:800; display:flex; align-items:center; gap:8px; }
-.section-title::before { content:""; width:5px; height:22px; border-radius:3px; background:linear-gradient(180deg,#4f46e5,#a855f7); }
-.cats { display:grid; grid-template-columns:repeat(auto-fit,minmax(330px,1fr)); gap:14px; }
-.cat { background:#fff; border-radius:14px; padding:18px 20px; box-shadow:0 4px 14px rgba(80,63,205,.10); }
-.cat h3 { font-size:16px; display:flex; justify-content:space-between; align-items:center; }
-.stars { color:#f59e0b; font-size:14px; letter-spacing:2px; white-space:nowrap; }
-.heatbar { height:8px; border-radius:4px; background:#ede9fe; margin:10px 0 8px; overflow:hidden; }
-.heatbar i { display:block; height:100%; border-radius:4px; background:linear-gradient(90deg,#4f46e5,#a855f7); }
-.heatval { font-size:12px; color:#7c3aed; font-weight:700; }
-.cat p { font-size:13px; color:#4b5563; margin-top:4px; }
-
-/* TOP15 榜单 */
-.list { display:flex; flex-direction:column; gap:12px; }
-.item { display:flex; gap:14px; background:#fff; border-radius:14px; padding:16px 18px; box-shadow:0 4px 14px rgba(80,63,205,.10); align-items:flex-start; }
-.rank { flex-shrink:0; width:42px; height:42px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:17px; color:#fff; }
-.r1 { background:linear-gradient(135deg,#ef4444,#f97316); }
-.r2 { background:linear-gradient(135deg,#f97316,#f59e0b); }
-.r3 { background:linear-gradient(135deg,#eab308,#84cc16); }
-.rn { background:linear-gradient(135deg,#4f46e5,#a855f7); }
-.item .body { flex:1; min-width:0; }
-.item h4 { font-size:15.5px; margin-bottom:6px; }
-.item h4 a { color:#2d2b55; text-decoration:none; }
-.item h4 a:hover { color:#7c3aed; text-decoration:underline; }
-.meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:6px; }
-.plat { font-size:11.5px; font-weight:700; padding:2px 10px; border-radius:12px; color:#fff; }
-.p-weixin { background:#07c160; }
-.p-weibo { background:#e6162d; }
-.p-xhs { background:#ff2442; }
-.p-douyin { background:#111827; }
-.p-nowcoder { background:#2563eb; }
-.p-media { background:#7c3aed; }
-.summary { font-size:13.5px; color:#4b5563; }
-.item .score { flex-shrink:0; text-align:right; }
-.item .score b { font-size:20px; color:#7c3aed; }
-.item .score span { display:block; font-size:12px; color:#f59e0b; margin-top:2px; }
-
-/* 底部备注 */
-.footnote { margin-top:34px; background:#fff; border-radius:14px; padding:20px 22px; box-shadow:0 4px 14px rgba(80,63,205,.10); font-size:13px; color:#6b7280; }
-.footnote h3 { font-size:15px; color:#4f46e5; margin-bottom:8px; }
-.footnote li { margin-left:18px; margin-top:4px; }
-@media (max-width:640px){ .header h1{font-size:22px;} .item{flex-wrap:wrap;} .item .score{width:100%;text-align:left;} }
+  :root{
+    --grad-a:#1e3a8a;--grad-b:#4c1d95;--accent:#4f46e5;--bg:#f5f6fa;
+    --ink:#1e293b;--muted:#64748b;--card:#fff;
+    --l1:#dc2626;--l2:#f59e0b;--l3:#94a3b8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;background:var(--bg);color:var(--ink);padding:30px 16px;}
+  .wrap{max-width:1000px;margin:0 auto;}
+  .hero{background:linear-gradient(135deg,var(--grad-a),var(--grad-b));color:#fff;border-radius:22px;padding:42px 34px;text-align:center;box-shadow:0 14px 40px rgba(30,58,138,.3);}
+  .hero h1{font-size:27px;letter-spacing:1px;}
+  .hero p{margin-top:10px;font-size:13.5px;opacity:.92;}
+  .hero-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px;}
+  .hero-tags span{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.38);border-radius:999px;padding:5px 14px;font-size:12.5px;}
+  .hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px;}
+  .hero-actions a{display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;transition:.2s;}
+  .btn-download{background:rgba(255,255,255,.95);color:#312e81;box-shadow:0 6px 18px rgba(0,0,0,.18);}
+  .btn-download:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.26);}
+  .btn-ghost{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.45);}
+  .btn-ghost:hover{background:rgba(255,255,255,.3);}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px;}
+  .stat{background:var(--card);border-radius:16px;padding:20px 14px;text-align:center;box-shadow:0 4px 16px rgba(30,41,59,.06);border-top:4px solid var(--accent);}
+  .stat b{display:block;font-size:25px;color:var(--accent);}
+  .stat span{font-size:12.5px;color:var(--muted);}
+  h2.sec{font-size:17px;margin:30px 0 4px;padding-left:12px;border-left:4px solid var(--accent);}
+  .panel{background:var(--card);border-radius:16px;padding:24px 26px;margin-top:12px;box-shadow:0 4px 16px rgba(30,41,59,.06);}
+  .chart-row{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+  .chart-label{flex:0 0 130px;font-size:13.5px;color:var(--ink);}
+  .chart-track{flex:1;height:26px;background:#eef0f7;border-radius:8px;overflow:hidden;position:relative;}
+  .chart-fill{height:100%;border-radius:8px;background:linear-gradient(90deg,var(--grad-a),var(--grad-b));}
+  .chart-val{flex:0 0 76px;text-align:right;font-size:13px;color:var(--muted);}
+  .level-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .level-box{border-radius:14px;padding:18px;text-align:center;color:#fff;}
+  .level-box.lv1{background:linear-gradient(135deg,#ef4444,#b91c1c);}
+  .level-box.lv2{background:linear-gradient(135deg,#fbbf24,#d97706);}
+  .level-box.lv3{background:linear-gradient(135deg,#cbd5e1,#64748b);}
+  .level-box b{display:block;font-size:30px;}
+  .level-box em{font-style:normal;font-size:12.5px;opacity:.94;}
+  .item{background:var(--card);border-radius:16px;padding:20px 22px;margin-top:12px;box-shadow:0 4px 16px rgba(30,41,59,.06);border-left:5px solid #cbd5e1;}
+  .item.lv1{border-left-color:var(--l1);}
+  .item.lv2{border-left-color:var(--l2);}
+  .item.lv3{border-left-color:var(--l3);}
+  .item-head{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+  .item-head h4{font-size:15.5px;flex:1;min-width:200px;}
+  .item-head a{color:var(--accent);text-decoration:none;}
+  .item-head a:hover{text-decoration:underline;}
+  .tag{font-size:11.5px;font-weight:700;border-radius:999px;padding:3px 11px;color:#fff;white-space:nowrap;}
+  .tag.lv1{background:var(--l1);}.tag.lv2{background:var(--l2);}.tag.lv3{background:#94a3b8;}
+  .tag.cat{background:#eef2ff;color:#4338ca;}
+  .meta{font-size:12.5px;color:var(--muted);margin-top:9px;line-height:1.85;}
+  .meta b{color:#334155;font-weight:600;}
+  .desc{font-size:13.5px;color:#475569;margin-top:8px;line-height:1.8;}
+  .note{background:#fffbe8;border:1px solid #f5d90a;border-radius:14px;padding:16px 20px;font-size:13px;color:#6b5b00;margin-top:26px;line-height:1.85;}
+  .warn{background:#fef2f2;border:1px solid #fca5a5;border-radius:14px;padding:16px 20px;font-size:13px;color:#991b1b;margin-top:14px;line-height:1.85;}
+  footer{text-align:center;color:var(--muted);font-size:12.5px;margin-top:28px;line-height:1.8;}
+  @media(max-width:640px){.stats,.level-grid{grid-template-columns:repeat(2,1fr);}.chart-label{flex-basis:88px;font-size:12.5px;}}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <!-- 页头 -->
-  <div class="header">
-    <div class="actions">
-      <a class="btn-download" href="2027-top15-20261111.html" download="2027-top15-20261111.html">⬇ 下载本页 HTML</a>
-      <a class="link-archive" href="https://github.com/caruso72/fenxi" target="_blank">📚 历史归档</a>
+  <header class="hero">
+    <h1>企业舆情监测报告</h1>
+    <p>统计窗口：2026-11-10 09:35 — 2026-11-11 09:35（严格24小时）</p>
+    <div class="hero-tags">
+      <span>收录 6 条</span><span>一级 2 条</span><span>二级 2 条</span><span>三级 2 条</span><span>例外 2 条</span>
     </div>
-    <h1>🔥 2027届校招面试吐槽热帖 TOP15</h1>
-    <div class="sub">全网检索：小红书 · 微博 · 微信公众号 · 抖音/头条 · 牛客 &nbsp;|&nbsp; 检索日期：2026年11月11日</div>
-    <div class="tags">
-      <span class="tag">#AI面试恐怖谷</span>
-      <span class="tag">#去你大坝的秋招</span>
-      <span class="tag">#泡池子</span>
-      <span class="tag">#米哈游七面挂</span>
-      <span class="tag">#KPI面</span>
-      <span class="tag">#73.8%还没offer</span>
-      <span class="tag">#简历被当面扔</span>
-      <span class="tag">#银行AI面试5分钟</span>
+    <div class="hero-actions">
+      <a class="btn-download" href="qingyu-20261111.html" download="qingyu-20261111.html">⬇ 下载本页 HTML</a>
+      <a class="btn-ghost" href="https://github.com/caruso72/fenxi" target="_blank" rel="noopener">📚 历史归档</a>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><b>6</b><span>窗口内收录条数</span></div>
+    <div class="stat"><b>2</b><span>一级舆情</span></div>
+    <div class="stat"><b>5</b><span>涉及行业</span></div>
+    <div class="stat"><b>6</b><span>覆盖来源平台</span></div>
+  </div>
+
+  <h2 class="sec">行业分布</h2>
+  <div class="panel">
+    <div class="chart-row"><div class="chart-label">食品加工/肉制品</div><div class="chart-track"><div class="chart-fill" style="width:100%"></div></div><div class="chart-val">2 条 · 33%</div></div>
+    <div class="chart-row"><div class="chart-label">建筑/基建央企</div><div class="chart-track"><div class="chart-fill" style="width:50%"></div></div><div class="chart-val">1 条 · 17%</div></div>
+    <div class="chart-row"><div class="chart-label">城投/房地产</div><div class="chart-track"><div class="chart-fill" style="width:50%"></div></div><div class="chart-val">1 条 · 17%</div></div>
+    <div class="chart-row"><div class="chart-label">消费电子/3C 制造</div><div class="chart-track"><div class="chart-fill" style="width:50%"></div></div><div class="chart-val">1 条 · 17%</div></div>
+    <div class="chart-row"><div class="chart-label">餐饮/食品经营</div><div class="chart-track"><div class="chart-fill" style="width:50%"></div></div><div class="chart-val">1 条 · 17%</div></div>
+    <div class="chart-row"><div class="chart-label">日化（洗涤/化妆品）</div><div class="chart-track"><div class="chart-fill" style="width:3%"></div></div><div class="chart-val">0 条</div></div>
+  </div>
+
+  <h2 class="sec">舆情类型分布</h2>
+  <div class="panel">
+    <div class="chart-row"><div class="chart-label">贪腐违法</div><div class="chart-track"><div class="chart-fill" style="width:100%"></div></div><div class="chart-val">4 条 · 67%</div></div>
+    <div class="chart-row"><div class="chart-label">生产安全</div><div class="chart-track"><div class="chart-fill" style="width:25%"></div></div><div class="chart-val">1 条 · 17%</div></div>
+    <div class="chart-row"><div class="chart-label">质量投诉/监管查处</div><div class="chart-track"><div class="chart-fill" style="width:25%"></div></div><div class="chart-val">1 条 · 17%</div></div>
+    <div class="chart-row"><div class="chart-label">广告争议</div><div class="chart-track"><div class="chart-fill" style="width:2%"></div></div><div class="chart-val">0 条</div></div>
+    <div class="chart-row"><div class="chart-label">社会公共安全</div><div class="chart-track"><div class="chart-fill" style="width:2%"></div></div><div class="chart-val">0 条</div></div>
+  </div>
+
+  <h2 class="sec">舆情等级分布</h2>
+  <div class="panel">
+    <div class="level-grid">
+      <div class="level-box lv1"><b>2</b><em>一级（重大）· 33%</em></div>
+      <div class="level-box lv2"><b>2</b><em>二级（较大）· 33%</em></div>
+      <div class="level-box lv3"><b>2</b><em>三级（一般）· 33%</em></div>
     </div>
   </div>
 
-  <!-- 关键数据卡片 -->
-  <div class="cards">
-    <div class="card"><div class="num">73.8%</div><div class="label">牛客"秋招吐槽大会"416人投票中选择"暂时还没有offer"的比例</div></div>
-    <div class="card"><div class="num">71万+</div><div class="label">牛客热帖《去你大坝的秋招》累计浏览量</div></div>
-    <div class="card"><div class="num">186,858</div><div class="label">#AI面试恐怖谷# 微博热搜热度值（10月3日热搜第25位）</div></div>
-    <div class="card"><div class="num">7+家</div><div class="label">2027届校招启用AI面试的银行（招行/农行/工行/浦发/平安等）</div></div>
+  <h2 class="sec">舆情明细（按重要性降序）</h2>
+
+  <div class="item lv1">
+    <div class="item-head">
+      <h4><a href="https://news.qq.com/rain/a/20261111A045TX00" target="_blank" rel="noopener">中国交建原党委书记、董事长刘起涛被开除党籍</a></h4>
+      <span class="tag lv1">一级</span><span class="tag cat">贪腐违法</span>
+    </div>
+    <p class="desc">中央纪委国家监委驻国务院国资委纪检监察组通报，中国交通建设集团有限公司原党委书记、董事长刘起涛因严重违纪违法被开除党籍，涉嫌受贿、国有公司人员滥用职权犯罪，已移送检察机关审查起诉。通报认定其主导违规并购、开展融资性贸易，造成巨额国有资产损失。</p>
+    <div class="meta"><b>涉事企业</b>：中国交通建设集团有限公司（建筑/基建央企）&nbsp;·&nbsp;<b>来源</b>：腾讯新闻（转中央纪委国家监委网站）&nbsp;·&nbsp;<b>事件时间</b>：2026-11-11（通报发布）</div>
   </div>
 
-  <!-- 话题分类 -->
-  <div class="section-title">📂 六大话题分类归纳</div>
-  <div class="cats">
-    <div class="cat">
-      <h3>🤖 AI面试恐怖谷 <span class="stars">★★★★★</span></h3>
-      <div class="heatbar"><i style="width:97%"></i></div><div class="heatval">热度 97</div>
-      <p>代表吐槽："对着会眨眼的数字人说了十分钟话，像在跟尸体对话"——非语言表现约占一半分值，作答内容仅占两成，近四成求职者宁可弃考。</p>
+  <div class="item lv1">
+    <div class="item-head">
+      <h4><a href="https://news.qq.com/rain/a/20261111A04HXZ00" target="_blank" rel="noopener">云南巨图食品爆燃事故调查报告公布：2死4伤，起因系私改“消毒水”配方</a></h4>
+      <span class="tag lv1">一级</span><span class="tag cat">生产安全</span>
     </div>
-    <div class="cat">
-      <h3>🌊 海投石沉大海 / 泡池子 <span class="stars">★★★★★</span></h3>
-      <div class="heatbar"><i style="width:94%"></i></div><div class="heatval">热度 94</div>
-      <p>代表吐槽："我以为秋招是九投三笔两面，结果是五十投零笔零面"——一面聊得火热后HR已读不回，一个月后收到自动感谢信。</p>
-    </div>
-    <div class="cat">
-      <h3>🎭 离谱面试现场（KPI面/当面筛简历） <span class="stars">★★★★☆</span></h3>
-      <div class="heatbar"><i style="width:88%"></i></div><div class="heatval">热度 88</div>
-      <p>代表吐槽：985博士亲眼看见自己的简历被技术主管当面扔进"无需面试"堆；双非硕被安排"节前下午KPI面"，问完业务无关问题还遭轻蔑一笑。</p>
-    </div>
-    <div class="cat">
-      <h3>💔 被鸽毁约 / offer失信 <span class="stars">★★★★☆</span></h3>
-      <div class="heatbar"><i style="width:86%"></i></div><div class="heatval">热度 86</div>
-      <p>代表吐槽：星宇股份440名应届生入职月余被批量清退；有同学退掉大厂offer后入职前5天被告知"担心你适应不了"——口头承诺，一文不值。</p>
-    </div>
-    <div class="cat">
-      <h3>🎓 学历歧视 / 双非困境 <span class="stars">★★★★☆</span></h3>
-      <div class="heatbar"><i style="width:84%"></i></div><div class="heatval">热度 84</div>
-      <p>代表吐槽："双非本硕还没到上桌时间，只能偷尝点桌边小食"——"双非本科+985硕士"投递记录里"有无进面"一栏基本全是"未通过"。</p>
-    </div>
-    <div class="cat">
-      <h3>🏦 银行央国企：AI面+测评车轮战 <span class="stars">★★★★☆</span></h3>
-      <div class="heatbar"><i style="width:83%"></i></div><div class="heatval">热度 83</div>
-      <p>代表吐槽：浦发AI面试5分钟定去留、招行每人仅一次机会记录全行通用；国网58万份简历招不到2.1万人，面试69分（线70）笔试领先也出局。</p>
-    </div>
+    <p class="desc">昆明经开区管委会公布事故调查报告：企业负责人拍脑门私改“消毒水”配方，主管仅以口头方式交底、未告知物料风险，工人按新配方操作后不到20秒即爆燃，造成 2 死 4 伤。调查组建议对涉事企业人员立案调查，并对仓库出租方、物业公司一并立案查处。</p>
+    <div class="meta"><b>涉事企业</b>：云南巨图食品有限公司（食品加工，涉及消毒剂使用）；关联方昆明信德物流、昆明新嘉源物业&nbsp;·&nbsp;<b>来源</b>：腾讯新闻（综合昆明经开区管委会）&nbsp;·&nbsp;<b>事件时间</b>：事故 2026-08-14；<b>调查报告公布 2026-11-11（落在窗口内）</b></div>
   </div>
 
-  <!-- TOP15 榜单 -->
-  <div class="section-title">🏆 热帖/文章 TOP15 排行榜</div>
-  <div class="list">
-
-    <div class="item">
-      <div class="rank r1">1</div>
-      <div class="body">
-        <div class="meta"><span class="plat p-weixin">微信公众号</span><span class="stars">★★★★★</span></div>
-        <h4><a href="http://mp.weixin.qq.com/s?__biz=Mzk0MTY0MjIxNg==&mid=2247488786&idx=1&sn=5b699c6c638e8a3b8d857d50bcd5374c&chksm=c3439c015ca5e7e9f9dd4c9bbe653efeb1ec27b0dbd2fda8dd3e4da3b7979fa88d60a45a2d9f#rd" target="_blank">《新鲜热乎的2027届校招吐槽大合集》</a></h4>
-        <div class="summary">汇总牛客/小红书/脉脉/微博真实吐槽并逐条标注出处：73.8%无offer、AI面试官、星宇毁约三大"全民级"槽点+六大行业骂法，本季最全吐槽总纲。</div>
-      </div>
-      <div class="score"><b>98</b><span>★★★★★</span></div>
+  <div class="item lv2">
+    <div class="item-head">
+      <h4><a href="https://epaper.cs.com.cn/zgzqb/html/2026-11/11/nw.D110000zgzqb_20261111_4-B003.htm" target="_blank" rel="noopener">ST龙大（山东龙大美食）因涉嫌信息披露违法违规被证监会立案</a></h4>
+      <span class="tag lv2">二级</span><span class="tag cat">贪腐违法</span>
     </div>
-
-    <div class="item">
-      <div class="rank r2">2</div>
-      <div class="body">
-        <div class="meta"><span class="plat p-weibo">微博热搜</span><span class="stars">★★★★★</span></div>
-        <h4><a href="https://aiproducthub.cn/?p=64061" target="_blank">#AI面试恐怖谷# 冲上微博热搜（热度18.7万）</a></h4>
-        <div class="summary">10月3日热搜第25位：AI数字人面试官盯瞳孔、面部肌肉打分，非语言表现占约一半分值，近四成受访者表示遇到AI面试直接弃考。</div>
-      </div>
-      <div class="score"><b>97</b><span>★★★★★</span></div>
-    </div>
-
-    <div class="item">
-      <div class="rank r3">3</div>
-      <div class="body">
-        <div class="meta"><span class="plat p-xhs">小红书热帖</span><span class="stars">★★★★★</span></div>
-        <h4><a href="https://post.smzdm.com/p/al38xn4e" target="_blank">《米哈游秋招七面挂，已投降》+ 被疑AI代答复盘</a></h4>
-        <div class="summary">小红书两帖点赞2543/1675、评论超900条：七场面试横跨49天；HRBP面被质疑"是否用AI辅助"，被要求闭眼答题、屏幕共享自证。</div>
-      </div>
-      <div class="score"><b>95</b><span>★★★★★</span></div>
-    </div>
-
-    <div class="item">
-      <div class="rank rn">4</div>
-      <div class="body">
-        <div class="meta"><span class="plat p-weixin">微信公众号</span><span class="stars">★★★★★</span></div>
-        <h4><a href="http://mp.weixin.qq.com/s?__biz=MzY4MjQyODYxNQ==&mid=2247484331&idx=1&sn=0119345a4b45b0c39edf874db6842b00&chksm=f28a78e7ee4ffe8a8e0cae34c158f613502ab637b6ea5647ffd414f36cb19e511ee7f2695084#rd" target="_blank">《秋招离谱大赏(第8期)：73.8%的人还没offer》</a></h4>
-        <div class="summary">盘点牛客/小红书近月真实案例：牛客投票416人中73.8%没offer、《秋招避雷大厂名单》点名秒挂与泡池子、星宇毁约余震持续发酵。</div>
-      </div>
-      <div class="score"><b>94</b><span>★★★★★</span></div>
-    </div>
-
-    <div class="item">
-      <div class="rank rn">5</div>
-      <div class="body">
-        <div class="meta"><span class="plat p-weibo">微博</span><span class="stars">★★★★☆</span></div>
-        <h4><a href="https://www.sina.cn/news/detail/5359094502265859.html" target="_blank">985博士秋招：投100家仅2次面试，简历被当面扔进"无需面试"堆</a></h4>
-        <div class="summary">武汉半导体企业一面空等1.5小时被放鸽子；杭州招聘会亲眼看到自己简历被扔进淘汰堆，抢红包全场最低1.5元——"博士都这么难"。</div>
-      </div>
-      <div class="score"><b>92</b><span>★★★★☆</span></div>
-    </div>
-
-    <div class="item">
-      <div class="rank rn">6</div>
-      <div class="body">
-        <div class="meta"><span class="plat p-media">行业媒体</span><span class="stars">★★★★☆</span></div>
-        <h4><a href="https://post.smzdm.com/p/a4qx7m6k/" target="_blank">浦发27届秋招：AI面试5分钟定去留，网申夜"系统事故现场"</a></h4>
-        <div class="summary">截止前夜小红书集中吐槽"填着简历突然会话过期"；北森双机位笔试+AI面试成隐形门槛，北京3-5题、杭州9题，题量差异跨源统计引热议。</div>
-      </div>
-      <div class="score"><b>88</b><span>★★★★☆</span></div>
-    </div>
-
-    <div class="item">
-      <div class="rank rn">7</div>
-      <div class="body">
-        <div class="meta"><span class="plat p-media">广州日报</span><span class="stars">★★★★☆</span></div>
-        <h4><a href="https://huacheng.gz-cmc.com/pages/2026/10/22/f5b27d3bb8754003b0025399fe77b129.html" target="_blank">当AI面试遭遇"AI代答"，怎么破？</a></h4>
-        <div class="summary">AI面试成2027届秋招标配，二手平台"AI面试辅助工具"卖十几元到上百元、部分销量破60万份，企业随即加码双机位与眼动监控。</div>
-      </div>
-      <div class="score"><b>86</b><span>★★★★☆</span></div>
-    </div>
-
-    <div class="item">
-      <div class="rank rn">8</div>
-      <div class="body">
-        <div class="meta"><span class="plat p-douyin">今日头条</span><span class="stars">★★★★☆</span></div>
-        <h4><a href="https://web.toutiao.com/w/1877904209310723" target="_blank">27秋招妖魔鬼怪快离开：双非本硕亲历"KPI面"</a></h4>
-        <div class="summary">"面试官摄像头一开面色就不耐烦，问一堆和业务毫不相关的问题，问完别人怎么看我，说完轻蔑一笑"——KPI面吐槽获大量共情。</div>
-      </div>
-      <div class="score"><b>85</b><span>★★★★☆</span></div>
-    </div>
-
-    <div class="item">
-      <div class="rank rn">9</div>
-      <div class="body">
-        <div class="meta"><span class="plat p-douyin">今日头条</span><span class="stars">★★★★☆</span></div>
-        <h4><a href="https://web.toutiao.com/w/1878635109235786/" target="_blank">欢迎来到27届秋招：简历挂叫"惊天一条区"，池子泡死叫"最大输家"</a></h4>
-        <div class="summary">27秋招黑话体刷屏："测评挂叫答满败，二面挂叫见光死，即使OC了你也要证明自己不是白菜打包价"——自嘲式吐槽成为年度名场面。</div>
-      </div>
-      <div class="score"><b>84</b><span>★★★★☆</span></div>
-    </div>
-
-    <div class="item">
-      <div class="rank rn">10</div>
-      <div class="body">
-        <div class="meta"><span class="plat p-nowcoder">牛客网</span><span class="stars">★★★★☆</span></div>
-        <h4><a href="https://hsiaonews.com/blog/backend-autumn-recruitment-winter-mental-health" target="_blank">"27后端寒冬"长文刷屏：连环被拒的那段日子</a></h4>
-        <div class="summary">腾讯实习未转正后，字节/阿里/滴滴/百度等全线碰壁，"最近真的很崩溃"引同届集体共鸣，留言区刷屏"确实太难了"。</div>
-      </div>
-      <div class="score"><b>82</b><span>★★★★☆</span></div>
-    </div>
-
-    <div class="item">
-      <div class="rank rn">11</div>
-      <div class="body">
-        <div class="meta"><span class="plat p-nowcoder">牛客网</span><span class="stars">★★★★☆</span></div>
-        <h4><a href="https://hsiaonews.com/blog/autumn-recruitment-peer-survey-stress-body-care" target="_blank">27届秋招身边人真实现况清单被大量转发</a></h4>
-        <div class="summary">985本硕三段大厂算法实习零offer、五段产品实习面10家仅1个低薪offer；"条件很好也没offer"冲击求职者对努力的信念。</div>
-      </div>
-      <div class="score"><b>78</b><span>★★★★☆</span></div>
-    </div>
-
-    <div class="item">
-      <div class="rank rn">12</div>
-      <div class="body">
-        <div class="meta"><span class="plat p-weibo">微博</span><span class="stars">★★★☆☆</span></div>
-        <h4><a href="https://weibo.com/7628452011/5349918291527557" target="_blank">27届应届生秋招遭遇"AI脸"：做不完的AI面试消耗能量</a></h4>
-        <div class="summary">"对AI脸感到不适是正常生理现象，只是正在秋招的27届应届生，你们还好吗？"转发热议直指AI面试的恐怖谷体验。</div>
-      </div>
-      <div class="score"><b>75</b><span>★★★☆☆</span></div>
-    </div>
-
-    <div class="item">
-      <div class="rank rn">13</div>
-      <div class="body">
-        <div class="meta"><span class="plat p-weixin">微信公众号</span><span class="stars">★★★☆☆</span></div>
-        <h4><a href="http://mp.weixin.qq.com/s?__biz=Mzk0MjQ1MzY3OA==&mid=2247490081&idx=1&sn=5aae0ceb64b0cec9e08010ec50837fba&chksm=c3fcb82afd56068bd0ce16c2e3b2afe50efde593fcf98dc24b8d25664059f19a22a275f99a10#rd" target="_blank">近一半公司在用AI招人：银行AI面试单价35元 vs 线下240元</a></h4>
-        <div class="summary">北大光华课题组数据：47.9%企业已部署AI但仅2.7%用明白；"我连输在哪儿都不知道"——黑箱评分与无申诉通道成最大槽点。</div>
-      </div>
-      <div class="score"><b>72</b><span>★★★☆☆</span></div>
-    </div>
-
-    <div class="item">
-      <div class="rank rn">14</div>
-      <div class="body">
-        <div class="meta"><span class="plat p-weixin">微信公众号</span><span class="stars">★★★☆☆</span></div>
-        <h4><a href="http://mp.weixin.qq.com/s?__biz=MzY4NTQzNDIyMw==&mid=2247484513&idx=1&sn=a7a2f4598b1136e6934833f1d2352fe6&chksm=f2a19402b2a0a3386e738e07225826b39f9dbfe0c4859944b749bd8793a3041089c32cdc8d8f#rd" target="_blank">AI面试官「恐怖谷」：38%求职者宁可不投，也不愿对着算法微笑</a></h4>
-        <div class="summary">网友长帖"如果职场第一课是面对听不懂你的算法，那将来收到软件发来的裁员通知也不奇怪"单日转发超750次。</div>
-      </div>
-      <div class="score"><b>68</b><span>★★★☆☆</span></div>
-    </div>
-
-    <div class="item">
-      <div class="rank rn">15</div>
-      <div class="body">
-        <div class="meta"><span class="plat p-douyin">今日头条</span><span class="stars">★★★☆☆</span></div>
-        <h4><a href="https://web.toutiao.com/w/1875276432094216" target="_blank">27文科生秋招：字节终面挂，"应该是被横向PK掉了"</a></h4>
-        <div class="summary">"面了1个月走到最后被挂掉，和业务老师聊得都挺好"——终面挂与横向PK机制引发秋招进度对比热议。</div>
-      </div>
-      <div class="score"><b>65</b><span>★★★☆☆</span></div>
-    </div>
-
+    <p class="desc">公司于 2026-11-10 收到证监会《立案告知书》（证监立案字0042026018号），因涉嫌信息披露违法违规被立案。公司公告称生产经营正常，将配合调查。龙大美食为肉制品与预制菜领域上市公司，本次立案对其资本市场信用构成直接影响。</p>
+    <div class="meta"><b>涉事企业</b>：山东龙大美食股份有限公司（食品加工/肉制品，A股 002726）&nbsp;·&nbsp;<b>来源</b>：中国证券报&nbsp;·&nbsp;<b>事件时间</b>：2026-11-10（收到立案告知书）</div>
   </div>
 
-  <!-- 底部备注 -->
-  <div class="footnote">
-    <h3>📌 备注说明</h3>
-    <ul>
-      <li>本期共收录 <b>15 条</b> 热帖/文章，满足TOP15榜单要求；热度星级与热度分为基于平台互动量（点赞/评论/转发/浏览）、热搜位次及话题扩散度的综合评估，仅供参考。</li>
-      <li>小红书、抖音站内原帖无公开直链，部分条目以授权转载页（什么值得买/今日头条）或媒体报道链接形式呈现，已尽量回溯源帖。</li>
-      <li>个别话题（如牛客投票帖《去你大坝的秋招》）站内链接不稳定，其内容经由微信公众号盘点文引用收录。</li>
-      <li>引用吐槽内容均来自网络公开讨论，仅作信息归纳与求职参考，不代表本报告立场；请理性看待避雷类名单。</li>
-      <li>检索时间：2026年11月11日 07:56（GMT+8）；数据为检索时点快照。</li>
-    </ul>
+  <div class="item lv2">
+    <div class="item-head">
+      <h4><a href="https://news.qq.com/rain/a/20261111A04DEF00" target="_blank" rel="noopener">柳州北城投资开发集团原党委书记、董事长唐建华被开除党籍</a></h4>
+      <span class="tag lv2">二级</span><span class="tag cat">贪腐违法</span>
+    </div>
+    <p class="desc">柳州市纪委监委通报，唐建华严重违纪违法被开除党籍，构成严重职务违法并涉嫌受贿犯罪。通报指其大搞权钱交易，利用职务便利在工程项目承接等方面为他人谋利并非法收受巨额财物，已移送检察机关审查起诉。</p>
+    <div class="meta"><b>涉事企业</b>：广西柳州市北城投资开发集团有限公司（城投/房地产开发）&nbsp;·&nbsp;<b>来源</b>：腾讯新闻（转广西纪检监察网）&nbsp;·&nbsp;<b>事件时间</b>：2026-11-11（通报发布）</div>
   </div>
 
+  <div class="item lv3">
+    <div class="item-head">
+      <h4><a href="https://epaper.cs.com.cn/zgzqb/html/2026-11/11/nw.D110000zgzqb_20261111_3-B041.htm" target="_blank" rel="noopener">东莞捷荣技术收到《行政处罚事先告知书》，公司及责任人合计拟罚</a></h4>
+      <span class="tag lv3">三级</span><span class="tag cat">贪腐违法</span>
+    </div>
+    <p class="desc">公司公告收到证监会广东监管局《行政处罚事先告知书》，因信息披露违法违规拟对公司及个人作出处罚，其中对赵晓群给予警告并处 200 万元罚款。公司称不触及重大违法强制退市情形，将行使听证与申辩权利。</p>
+    <div class="meta"><b>涉事企业</b>：东莞捷荣技术股份有限公司（消费电子/3C 精密结构件）&nbsp;·&nbsp;<b>来源</b>：中国证券报&nbsp;·&nbsp;<b>事件时间</b>：2026-11-11（公告发布）</div>
+  </div>
+
+  <div class="item lv3">
+    <div class="item-head">
+      <h4><a href="http://www.czsjzq.gov.cn/xxfb/shgyjs/spypaq/spzlcjxx/t28321869.shtml" target="_blank" rel="noopener">崇左市江州区通报 9 批次食品不合格，多家餐饮店餐具检出洗涤剂残留与大肠菌群</a></h4>
+      <span class="tag lv3">三级</span><span class="tag cat">质量投诉/监管查处</span>
+    </div>
+    <p class="desc">江州区市场监督管理局 11 月 10 日发布 2026 年第 2 期食品不合格通告，9 批次不合格，其中阿威粉店、津仔鸡肉粉店使用的大碗检出阴离子合成洗涤剂（以十二烷基苯磺酸钠计）不符合国家标准，巡面面馆使用的小碗检出大肠杆菌。</p>
+    <div class="meta"><b>涉事主体</b>：江州区阿威粉店、津仔鸡肉粉店、巡面面馆（餐饮/食品经营）&nbsp;·&nbsp;<b>来源</b>：崇左市江州区人民政府官网&nbsp;·&nbsp;<b>事件时间</b>：2026-11-10（通告发布）</div>
+  </div>
+
+  <h2 class="sec">例外说明（超窗口但持续发酵）</h2>
+
+  <div class="note">
+    <b>1. 彪马（PUMA）授权店客服“露点”言论争议</b><br>
+    事件首发：2026-11-07（消费者发帖曝光）；窗口内最新进展：11-10 涉事旗舰店回应称客服为刚入职年轻女孩、培训不到位，已离职；11-11 腾讯新闻报道扩散。<br>
+    收录理由：属重点关注方向中的“冒犯女性/骚扰消费者”类企业客服言论事件，窗口内出现首次官方回应，故单列说明。<br>
+    来源：<a href="https://news.qq.com/rain/a/20261111A03CEJ00" target="_blank" rel="noopener">腾讯新闻</a>
+
+    <br><br>
+    <b>2. 低俗擦边广告整治：滴露、罗技、舒客、德芙被点名</b><br>
+    事件首发：2026-06（滴露广告）至 10-31（罗技二次翻车）；窗口内进展：11-08 央视《焦点访谈》集中点名批评低俗广告屡禁不止，上海市场监管部门对滴露广告罚款 80 万元、制作方罚没 26.5 万元。<br>
+    收录理由：为日化行业重点监测对象（滴露为消毒清洁品牌），虽事件首发远超窗口，但监管处罚与央媒点名构成新的处置节点，单独说明备查。<br>
+    来源：<a href="http://m.qdxin.com.cn/detail/395819.html" target="_blank" rel="noopener">信网</a>
+  </div>
+
+  <div class="warn">
+    <b>⚠️ 本期收录量说明</b><br>
+    严格 24 小时窗口（2026-11-10 09:35 — 2026-11-11 09:35）内，可核实「事件发生或首次官方通报」的企业主体舆情共 <b>6 条</b>，未达 10 条。按任务规则<b>不凑数、不收录超窗口事件充数</b>，故如实呈现 6 条。<br>
+    其中<b>日化行业（洗涤、化妆品、口腔清洁、香氛、驱虫灭害）窗口内为 0 条新增事件</b>，当日可见的滴露、舒客等日化相关舆情均为既往事件的监管节点，已列入上方例外说明。
+  </div>
+
+  <div class="note" style="background:#eef2ff;border-color:#c7d2fe;color:#3730a3;">
+    📌 检索说明：覆盖腾讯新闻、网易新闻、新浪新闻、搜狐新闻、凤凰新闻、澎湃新闻、今日头条、微博、百度、抖音、微信公众号、快手、B站、国家网信办官网及地方政府与监管部门官网。判定基准为事件发生时间或官方通报发布时间，媒体报道与转载时间不作为收录依据。涉及个人违法事件仅基于官方通报中性陈述，不含受害者可识别信息。
+  </div>
+
+  <footer>企业舆情监测报告 · 统计窗口 2026-11-10 09:35 — 2026-11-11 09:35 · 收录 6 条 + 例外 2 条<br>报告生成时间：2026-11-11 09:40 ｜ 自动生成，仅供参考</footer>
 </div>
 </body>
 </html>
