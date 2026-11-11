@@ -2,242 +2,334 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>企业舆情监测报告（2026-11-11 · 48小时窗口）</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>企业舆情监测报告 · 2026-11-11（主榜11 / 辅榜1）</title>
 <style>
-  :root{
-    --grad-a:#1e3a8a;--grad-b:#4c1d95;--accent:#4f46e5;--bg:#f5f6fa;
-    --ink:#1e293b;--muted:#64748b;--card:#fff;
-    --l1:#dc2626;--l2:#f59e0b;--l3:#94a3b8;
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;background:var(--bg);color:var(--ink);padding:30px 16px;}
-  .wrap{max-width:1000px;margin:0 auto;}
-  .hero{background:linear-gradient(135deg,var(--grad-a),var(--grad-b));color:#fff;border-radius:22px;padding:42px 34px;text-align:center;box-shadow:0 14px 40px rgba(30,58,138,.3);}
-  .hero h1{font-size:27px;letter-spacing:1px;}
-  .hero p{margin-top:10px;font-size:13.5px;opacity:.92;}
-  .hero-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px;}
-  .hero-tags span{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.38);border-radius:999px;padding:5px 14px;font-size:12.5px;}
-  .hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px;}
-  .hero-actions a{display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;transition:.2s;}
-  .btn-download{background:rgba(255,255,255,.95);color:#312e81;box-shadow:0 6px 18px rgba(0,0,0,.18);}
-  .btn-download:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.26);}
-  .btn-ghost{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.45);}
-  .btn-ghost:hover{background:rgba(255,255,255,.3);}
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px;}
-  .stat{background:var(--card);border-radius:16px;padding:20px 14px;text-align:center;box-shadow:0 4px 16px rgba(30,41,59,.06);border-top:4px solid var(--accent);}
-  .stat b{display:block;font-size:25px;color:var(--accent);}
-  .stat span{font-size:12.5px;color:var(--muted);}
-  h2.sec{font-size:17px;margin:30px 0 4px;padding-left:12px;border-left:4px solid var(--accent);}
-  h2.sec.ex{border-left-color:#d97706;}
-  .panel{background:var(--card);border-radius:16px;padding:24px 26px;margin-top:12px;box-shadow:0 4px 16px rgba(30,41,59,.06);}
-  .chart-row{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
-  .chart-label{flex:0 0 150px;font-size:13.5px;color:var(--ink);}
-  .chart-track{flex:1;height:26px;background:#eef0f7;border-radius:8px;overflow:hidden;}
-  .chart-fill{height:100%;border-radius:8px;background:linear-gradient(90deg,var(--grad-a),var(--grad-b));}
-  .chart-fill.amber{background:linear-gradient(90deg,#f59e0b,#b45309);}
-  .chart-val{flex:0 0 80px;text-align:right;font-size:13px;color:var(--muted);}
-  .level-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
-  .level-box{border-radius:14px;padding:18px;text-align:center;color:#fff;}
-  .level-box.lv1{background:linear-gradient(135deg,#ef4444,#b91c1c);}
-  .level-box.lv2{background:linear-gradient(135deg,#fbbf24,#d97706);}
-  .level-box.lv3{background:linear-gradient(135deg,#cbd5e1,#64748b);}
-  .level-box b{display:block;font-size:30px;}
-  .level-box em{font-style:normal;font-size:12.5px;opacity:.94;}
-  .item{background:var(--card);border-radius:16px;padding:20px 22px;margin-top:12px;box-shadow:0 4px 16px rgba(30,41,59,.06);border-left:5px solid #cbd5e1;}
-  .item.lv1{border-left-color:var(--l1);}
-  .item.lv2{border-left-color:var(--l2);}
-  .item.lv3{border-left-color:var(--l3);}
-  .item.ex{border-left-color:#d97706;background:#fffdf7;}
-  .item-head{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
-  .item-head h4{font-size:15.5px;flex:1;min-width:200px;}
-  .item-head a{color:var(--accent);text-decoration:none;}
-  .item-head a:hover{text-decoration:underline;}
-  .tag{font-size:11.5px;font-weight:700;border-radius:999px;padding:3px 11px;color:#fff;white-space:nowrap;}
-  .tag.lv1{background:var(--l1);}.tag.lv2{background:var(--l2);}.tag.lv3{background:#94a3b8;}
-  .tag.cat{background:#eef2ff;color:#4338ca;}
-  .tag.new{background:#059669;}
-  .meta{font-size:12.5px;color:var(--muted);margin-top:9px;line-height:1.85;}
-  .meta b{color:#334155;font-weight:600;}
-  .desc{font-size:13.5px;color:#475569;margin-top:8px;line-height:1.8;}
-  .note{background:#fffbe8;border:1px solid #f5d90a;border-radius:14px;padding:16px 20px;font-size:13px;color:#6b5b00;margin-top:26px;line-height:1.85;}
-  .warn{background:#fef2f2;border:1px solid #fca5a5;border-radius:14px;padding:16px 20px;font-size:13px;color:#991b1b;margin-top:14px;line-height:1.85;}
-  footer{text-align:center;color:var(--muted);font-size:12.5px;margin-top:28px;line-height:1.8;}
-  @media(max-width:640px){.stats,.level-grid{grid-template-columns:repeat(2,1fr);}.chart-label{flex-basis:96px;font-size:12.5px;}}
+:root{
+  --ink:#1a1633; --ink2:#4a4560; --line:#e6e2f2;
+  --p1:#4c1d95; --p2:#6d28d9; --p3:#a78bfa;
+  --red:#dc2626; --orange:#f59e0b; --gray:#94a3b8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#f6f7fb;color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px 60px}
+
+header{background:linear-gradient(135deg,#3b0764 0%,#5b21b6 45%,#7c3aed 100%);color:#fff;padding:46px 20px 40px;position:relative;overflow:hidden}
+header::after{content:"";position:absolute;right:-90px;top:-90px;width:340px;height:340px;border-radius:50%;background:rgba(255,255,255,.07)}
+header::before{content:"";position:absolute;left:-60px;bottom:-120px;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.05)}
+.hd{max-width:1040px;margin:0 auto;position:relative;z-index:2}
+.badge{display:inline-block;font-size:12px;letter-spacing:.14em;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:5px 13px;border-radius:999px;margin-bottom:16px}
+h1{font-size:30px;font-weight:800;letter-spacing:-.5px;line-height:1.25}
+.sub{margin-top:12px;font-size:14px;color:rgba(255,255,255,.82)}
+.win{display:inline-flex;align-items:center;gap:7px;margin-top:16px;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.22);padding:9px 16px;border-radius:10px;font-size:13px;font-variant-numeric:tabular-nums}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.hero-actions a{display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;transition:.2s}
+.btn-download{background:rgba(255,255,255,.96);color:#4c1d95;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.btn-download:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.26)}
+.btn-ghost{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.42)}
+.btn-ghost:hover{background:rgba(255,255,255,.3)}
+
+section{margin-top:34px}
+h2{font-size:19px;font-weight:700;display:flex;align-items:center;gap:9px;margin-bottom:16px}
+h2::before{content:"";width:4px;height:19px;border-radius:2px;background:linear-gradient(180deg,var(--p2),var(--p3))}
+.note{font-size:12.5px;color:var(--ink2);margin-bottom:14px}
+
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 16px;box-shadow:0 1px 2px rgba(30,20,60,.04)}
+.card .k{font-size:12.5px;color:var(--ink2);margin-bottom:8px}
+.card .v{font-size:29px;font-weight:800;letter-spacing:-1px;font-variant-numeric:tabular-nums;background:linear-gradient(135deg,#5b21b6,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.card .u{font-size:12px;color:#8b86a3;margin-left:3px;font-weight:500}
+
+.charts{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.chart{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px 20px}
+.chart h3{font-size:14px;font-weight:700;margin-bottom:16px;color:var(--ink)}
+.bar-row{display:grid;grid-template-columns:118px 1fr 62px;align-items:center;gap:10px;margin-bottom:9px;font-size:12.5px}
+.bar-lab{color:var(--ink2);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-track{background:#f1eefb;border-radius:5px;height:17px;overflow:hidden}
+.bar-fill{height:100%;border-radius:5px;background:linear-gradient(90deg,#7c3aed,#a78bfa);transition:width .8s ease}
+.bar-fill.r{background:linear-gradient(90deg,#dc2626,#f87171)}
+.bar-fill.o{background:linear-gradient(90deg,#f59e0b,#fbbf24)}
+.bar-fill.g{background:linear-gradient(90deg,#94a3b8,#cbd5e1)}
+.bar-num{font-variant-numeric:tabular-nums;font-weight:700;color:var(--ink)}
+.bar-num span{font-weight:500;color:#a09ab8;font-size:11px;margin-left:2px}
+
+.sect-head{display:flex;align-items:baseline;gap:11px;margin:30px 0 14px;padding-bottom:10px;border-bottom:2px solid var(--line)}
+.sect-head h2{margin:0}
+.sect-head .cnt{font-size:12.5px;color:var(--ink2);background:#f1eefb;border-radius:999px;padding:3px 11px;font-weight:600}
+.sect-desc{font-size:12.5px;color:var(--ink2);margin:-6px 0 16px}
+
+.item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:13px;box-shadow:0 1px 2px rgba(30,20,60,.04);position:relative;transition:.2s}
+.item:hover{box-shadow:0 6px 20px rgba(76,29,149,.09);border-color:#d8d0f0}
+.item-top{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px}
+.rank{flex:0 0 30px;height:30px;border-radius:9px;display:grid;place-items:center;font-weight:800;font-size:13.5px;color:#fff;background:linear-gradient(135deg,#4c1d95,#7c3aed);font-variant-numeric:tabular-nums}
+.rank.g1{background:linear-gradient(135deg,#b45309,#f59e0b)}
+.rank.g2{background:linear-gradient(135deg,#475569,#94a3b8)}
+.rank.g3{background:linear-gradient(135deg,#78350f,#b45309)}
+.title{font-size:15.5px;font-weight:700;line-height:1.45;flex:1}
+.title a{color:var(--ink);text-decoration:none}
+.title a:hover{color:var(--p2)}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:9px;padding-left:42px}
+.tg{font-size:11px;padding:2.5px 9px;border-radius:6px;font-weight:600;white-space:nowrap}
+.tg.lv1{background:#fee2e2;color:#b91c1c}
+.tg.lv2{background:#fef3c7;color:#b45309}
+.tg.lv3{background:#f1f5f9;color:#475569}
+.tg.node{background:#ede9fe;color:#5b21b6}
+.tg.pt{background:#f5f3ff;color:#6d28d9}
+.tg.ind{background:#ecfdf5;color:#047857}
+.sum{font-size:13.5px;color:var(--ink2);line-height:1.75;padding-left:42px;margin-bottom:11px}
+.sum b{color:var(--ink);font-weight:600}
+.meta{display:flex;gap:18px;flex-wrap:wrap;padding-left:42px;font-size:12px;color:#8b86a3;border-top:1px dashed var(--line);padding-top:10px}
+.meta .mi{display:flex;gap:5px}
+.meta .mi strong{color:var(--ink2);font-weight:600}
+.meta a{color:var(--p2);text-decoration:none;font-weight:600}
+.meta a:hover{text-decoration:underline}
+
+.track{background:#fffbeb;border:1px solid #fde68a;border-radius:14px;padding:16px 20px}
+.track ul{list-style:none;font-size:13px;color:#78350f;line-height:1.9}
+.track li{padding-left:16px;position:relative}
+.track li::before{content:"·";position:absolute;left:4px;font-weight:800}
+
+footer{margin-top:36px;padding:22px 24px;background:#fff;border:1px solid var(--line);border-radius:14px;font-size:12.5px;color:var(--ink2);line-height:1.9}
+footer b{color:var(--ink)}
+footer .rule{background:#f5f3ff;border-left:3px solid var(--p3);padding:11px 14px;border-radius:0 8px 8px 0;margin:10px 0}
+@media(max-width:820px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .charts{grid-template-columns:1fr}
+  h1{font-size:23px}
+  .sum,.tags,.meta{padding-left:0}
+  .bar-row{grid-template-columns:92px 1fr 52px}
+}
 </style>
 </head>
 <body>
-<div class="wrap">
 
-  <header class="hero">
+<header>
+  <div class="hd">
+    <div class="badge">企业舆情监测 · 日报</div>
     <h1>企业舆情监测报告</h1>
-    <p>统计窗口：2026-11-09 09:40 — 2026-11-11 09:40（48小时）</p>
-    <div class="hero-tags">
-      <span>主窗口 8 条</span><span>例外区 3 条</span><span>一级 2</span><span>二级 4</span><span>三级 2</span>
-    </div>
+    <div class="sub">主榜 11 条（处置节点型） ｜ 辅榜 1 条（当日新发） ｜ 日化行业 7 条</div>
+    <div class="win">🕐 统计窗口 2026-11-09 09:40 — 2026-11-11 09:40 ｜ 48 小时 ｜ 双轨时效</div>
     <div class="hero-actions">
       <a class="btn-download" href="qingyu-20261111.html" download="qingyu-20261111.html">⬇ 下载本页 HTML</a>
       <a class="btn-ghost" href="https://github.com/caruso72/fenxi" target="_blank" rel="noopener">📚 历史归档</a>
     </div>
-  </header>
-
-  <div class="stats">
-    <div class="stat"><b>8</b><span>主窗口收录条数</span></div>
-    <div class="stat"><b>2</b><span>一级舆情</span></div>
-    <div class="stat"><b>7</b><span>涉及行业</span></div>
-    <div class="stat"><b>8</b><span>覆盖来源平台</span></div>
   </div>
+</header>
 
-  <h2 class="sec">行业分布</h2>
-  <div class="panel">
-    <div class="chart-row"><div class="chart-label">食品加工/肉制品</div><div class="chart-track"><div class="chart-fill" style="width:100%"></div></div><div class="chart-val">2 条 · 25%</div></div>
-    <div class="chart-row"><div class="chart-label">建筑/基建央企</div><div class="chart-track"><div class="chart-fill" style="width:50%"></div></div><div class="chart-val">1 条 · 13%</div></div>
-    <div class="chart-row"><div class="chart-label">城投/房地产</div><div class="chart-track"><div class="chart-fill" style="width:50%"></div></div><div class="chart-val">1 条 · 13%</div></div>
-    <div class="chart-row"><div class="chart-label">消费电子/3C 制造</div><div class="chart-track"><div class="chart-fill" style="width:50%"></div></div><div class="chart-val">1 条 · 13%</div></div>
-    <div class="chart-row"><div class="chart-label">餐饮/食品经营</div><div class="chart-track"><div class="chart-fill" style="width:50%"></div></div><div class="chart-val">1 条 · 13%</div></div>
-    <div class="chart-row"><div class="chart-label">文旅/景区服务</div><div class="chart-track"><div class="chart-fill" style="width:50%"></div></div><div class="chart-val">1 条 · 13%</div></div>
-    <div class="chart-row"><div class="chart-label">广告/行业组织</div><div class="chart-track"><div class="chart-fill" style="width:50%"></div></div><div class="chart-val">1 条 · 13%</div></div>
-    <div class="chart-row"><div class="chart-label">日化（主窗口）</div><div class="chart-track"><div class="chart-fill" style="width:3%"></div></div><div class="chart-val">0 条</div></div>
-  </div>
+<div class="wrap">
 
-  <h2 class="sec">舆情类型分布</h2>
-  <div class="panel">
-    <div class="chart-row"><div class="chart-label">贪腐违法</div><div class="chart-track"><div class="chart-fill" style="width:100%"></div></div><div class="chart-val">4 条 · 50%</div></div>
-    <div class="chart-row"><div class="chart-label">广告争议</div><div class="chart-track"><div class="chart-fill amber" style="width:50%"></div></div><div class="chart-val">2 条 · 25%</div></div>
-    <div class="chart-row"><div class="chart-label">生产安全</div><div class="chart-track"><div class="chart-fill" style="width:25%"></div></div><div class="chart-val">1 条 · 13%</div></div>
-    <div class="chart-row"><div class="chart-label">质量投诉/监管查处</div><div class="chart-track"><div class="chart-fill" style="width:25%"></div></div><div class="chart-val">1 条 · 13%</div></div>
-    <div class="chart-row"><div class="chart-label">社会公共安全</div><div class="chart-track"><div class="chart-fill" style="width:2%"></div></div><div class="chart-val">0 条</div></div>
-  </div>
+  <section>
+    <div class="cards">
+      <div class="card"><div class="k">本期收录</div><div class="v">12<span class="u">条</span></div></div>
+      <div class="card"><div class="k">一级舆情</div><div class="v">4<span class="u">条</span></div></div>
+      <div class="card"><div class="k">涉及行业</div><div class="v">6<span class="u">个</span></div></div>
+      <div class="card"><div class="k">处置节点型</div><div class="v">11<span class="u">条</span></div></div>
+    </div>
+  </section>
 
-  <h2 class="sec">舆情等级分布</h2>
-  <div class="panel">
-    <div class="level-grid">
-      <div class="level-box lv1"><b>2</b><em>一级（重大）· 25%</em></div>
-      <div class="level-box lv2"><b>4</b><em>二级（较大）· 50%</em></div>
-      <div class="level-box lv3"><b>2</b><em>三级（一般）· 25%</em></div>
+  <section>
+    <h2>可视化统计</h2>
+    <div class="note">四张图分别对应行业、舆情分类、等级、线索来源四个维度。线索来源为本次改版新增——它直接反映"主榜/辅榜"结构是否成立。</div>
+    <div class="charts">
+
+      <div class="chart">
+        <h3>行业分布（12 条）</h3>
+        <div class="bar-row"><div class="bar-lab">日化</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-num">7<span>58.3%</span></div></div>
+        <div class="bar-row"><div class="bar-lab">建筑基建</div><div class="bar-track"><div class="bar-fill" style="width:14%"></div></div><div class="bar-num">1<span>8.3%</span></div></div>
+        <div class="bar-row"><div class="bar-lab">城投房地产</div><div class="bar-track"><div class="bar-fill" style="width:14%"></div></div><div class="bar-num">1<span>8.3%</span></div></div>
+        <div class="bar-row"><div class="bar-lab">汽车服务</div><div class="bar-track"><div class="bar-fill" style="width:14%"></div></div><div class="bar-num">1<span>8.3%</span></div></div>
+        <div class="bar-row"><div class="bar-lab">餐饮</div><div class="bar-track"><div class="bar-fill" style="width:14%"></div></div><div class="bar-num">1<span>8.3%</span></div></div>
+        <div class="bar-row"><div class="bar-lab">食品加工</div><div class="bar-track"><div class="bar-fill" style="width:14%"></div></div><div class="bar-num">1<span>8.3%</span></div></div>
+      </div>
+
+      <div class="chart">
+        <h3>舆情分类分布（12 条）</h3>
+        <div class="bar-row"><div class="bar-lab">广告争议</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-num">5<span>41.7%</span></div></div>
+        <div class="bar-row"><div class="bar-lab">质量投诉</div><div class="bar-track"><div class="bar-fill" style="width:60%"></div></div><div class="bar-num">3<span>25.0%</span></div></div>
+        <div class="bar-row"><div class="bar-lab">贪腐违法</div><div class="bar-track"><div class="bar-fill" style="width:60%"></div></div><div class="bar-num">3<span>25.0%</span></div></div>
+        <div class="bar-row"><div class="bar-lab">生产安全</div><div class="bar-track"><div class="bar-fill" style="width:20%"></div></div><div class="bar-num">1<span>8.3%</span></div></div>
+        <div class="bar-row"><div class="bar-lab">社会公共安全</div><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><div class="bar-num">0<span>0%</span></div></div>
+      </div>
+
+      <div class="chart">
+        <h3>舆情等级分布（12 条）</h3>
+        <div class="bar-row"><div class="bar-lab">一级 · 重大</div><div class="bar-track"><div class="bar-fill r" style="width:80%"></div></div><div class="bar-num">4<span>33.3%</span></div></div>
+        <div class="bar-row"><div class="bar-lab">二级 · 较大</div><div class="bar-track"><div class="bar-fill o" style="width:60%"></div></div><div class="bar-num">3<span>25.0%</span></div></div>
+        <div class="bar-row"><div class="bar-lab">三级 · 一般</div><div class="bar-track"><div class="bar-fill g" style="width:100%"></div></div><div class="bar-num">5<span>41.7%</span></div></div>
+      </div>
+
+      <div class="chart">
+        <h3>线索来源分布（12 条）</h3>
+        <div class="bar-row"><div class="bar-lab">处罚公示</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-num">5<span>41.7%</span></div></div>
+        <div class="bar-row"><div class="bar-lab">纪检通报</div><div class="bar-track"><div class="bar-fill" style="width:60%"></div></div><div class="bar-num">3<span>25.0%</span></div></div>
+        <div class="bar-row"><div class="bar-lab">央媒点名</div><div class="bar-track"><div class="bar-fill" style="width:40%"></div></div><div class="bar-num">2<span>16.7%</span></div></div>
+        <div class="bar-row"><div class="bar-lab">司法判决</div><div class="bar-track"><div class="bar-fill" style="width:20%"></div></div><div class="bar-num">1<span>8.3%</span></div></div>
+        <div class="bar-row"><div class="bar-lab">当日新发</div><div class="bar-track"><div class="bar-fill" style="width:20%"></div></div><div class="bar-num">1<span>8.3%</span></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="sect-head"><h2>🔨 处置节点舆情（主榜）</h2><span class="cnt">11 条 · 占 91.7%</span></div>
+  <div class="sect-desc">每条标注节点类型，并同时列出「节点时间」与「事件首发时间」——节点落在 48 小时窗口内即可收录，不受首发时间限制。</div>
+
+  <div class="item">
+    <div class="item-top"><div class="rank g1">1</div><div class="title"><a href="https://www.ce.cn/xwzx/shgj/gdxw/202611/t20261109_3287760.shtml" target="_blank" rel="noopener">央视《焦点访谈》起底低俗擦边广告：滴露罚 80 万、舒客罚 50 万，7 品牌被点名</a></div></div>
+    <div class="tags"><span class="tg lv1">一级</span><span class="tg node">央媒点名</span><span class="tg ind">日化 / 快消</span><span class="tg pt">央视 · 中国经济网</span></div>
+    <div class="sum">央视《焦点访谈》播出专题<b>《广告"出圈"不能靠"出格"》</b>，系统起底低俗擦边广告乱象。被点名品牌构成一条完整链条：<b>滴露</b>衣物消毒液剧情广告物化女性、<b>舒客</b>牙贴广告违背社会良好风尚、<b>babysheep</b>安睡裤广告夸张演绎经期生理现象、<b>罗技</b>促销视频侮辱消费者，另有苏泊尔、绿源电动车、德芙此前"翻车"。处罚结果同步披露：滴露总经销<b>上海曼伦商贸被罚 80 万元</b>（播放量超 500 万次），制作方<b>广西瞬视信息科技罚没合计 26.5 万元</b>，<b>舒客被罚 50 万元</b>。市场监管总局广告司副司长骆岚出镜表态。整治数据：已发布 27 个典型案例、清理违规素材 17.5 万余条、前三季度查办广告违法案件 33754 件、罚没 1.65 亿元。</div>
+    <div class="meta">
+      <div class="mi"><strong>节点时间</strong>2026-11-09（央视网刊发全文，中工网 / 中国经济网 / 北青网同步转载）</div>
+      <div class="mi"><strong>事件首发</strong>2026-11-08（《焦点访谈》首播）</div>
+      <div class="mi"><a href="https://www.ce.cn/xwzx/shgj/gdxw/202611/t20261109_3287760.shtml" target="_blank" rel="noopener">查看原文 →</a></div>
     </div>
   </div>
 
-  <h2 class="sec">舆情明细（按重要性降序）</h2>
-
-  <div class="item lv1">
-    <div class="item-head">
-      <h4><a href="https://news.qq.com/rain/a/20261111A045TX00" target="_blank" rel="noopener">中国交建原党委书记、董事长刘起涛被开除党籍</a></h4>
-      <span class="tag lv1">一级</span><span class="tag cat">贪腐违法</span>
+  <div class="item">
+    <div class="item-top"><div class="rank g1">2</div><div class="title"><a href="https://www.163.com/dy/article/LBD09VLK05560NUH_pdya11y.html" target="_blank" rel="noopener">babysheep 品牌总监承认：月产 1000–2000 条 AI 广告素材，上线前无人审核</a></div></div>
+    <div class="tags"><span class="tg lv1">一级</span><span class="tg node">企业公开回应</span><span class="tg ind">日化 · 卫生用品</span><span class="tg pt">网易 / 央视新闻</span></div>
+    <div class="sum">福建泉州卫生用品品牌 <b>babysheep</b>（所属<b>晨瑞（福建）工贸有限公司</b>）在《新闻联播》受访画面中，品牌总监<b>彭昕</b>公开承认：套用网上高流量热点结构模仿制作，原本成本 2000 元以上的取景视频改用 AI 后<b>降至 200 余元、成本降近 10 倍</b>；该视频属每月发布的<b>1000–2000 条</b>素材之一，<b>上线前未经过审核</b>，并直言"人工确实审核不了"。争议广告为 8 月 1 日发布的 AI 短视频，画面含"谁来了月经"等台词。此前 8 月 3 日客服称已下架整改，8 月 6 日关联公司泉州市丰瑞卫生用品发布致歉声明并宣布全渠道永久下架。本条为<b>企业负责人首次公开承认审核机制缺失</b>，是本轮舆情中信息增量最大的一环。</div>
+    <div class="meta">
+      <div class="mi"><strong>节点时间</strong>2026-11-08 至 11-09（《新闻联播》受访画面 + 媒体跟进报道）</div>
+      <div class="mi"><strong>事件首发</strong>2026-08-01（争议广告发布）</div>
+      <div class="mi"><a href="https://www.163.com/dy/article/LBD09VLK05560NUH_pdya11y.html" target="_blank" rel="noopener">查看原文 →</a></div>
     </div>
-    <p class="desc">中央纪委国家监委驻国务院国资委纪检监察组通报，刘起涛因严重违纪违法被开除党籍，涉嫌受贿、国有公司人员滥用职权犯罪，已移送检察机关审查起诉。通报认定其主导违规并购、开展融资性贸易，造成巨额国有资产损失；搞政治攀附、政商"旋转门"。</p>
-    <div class="meta"><b>涉事企业</b>：中国交通建设集团有限公司（建筑/基建央企）&nbsp;·&nbsp;<b>来源</b>：腾讯新闻（转中央纪委国家监委网站）&nbsp;·&nbsp;<b>事件时间</b>：2026-11-11（通报发布）</div>
   </div>
 
-  <div class="item lv1">
-    <div class="item-head">
-      <h4><a href="https://news.qq.com/rain/a/20261111A04HXZ00" target="_blank" rel="noopener">云南巨图食品爆燃事故调查报告公布：2死4伤，起因系私改“消毒水”配方</a></h4>
-      <span class="tag lv1">一级</span><span class="tag cat">生产安全</span>
+  <div class="item">
+    <div class="item-top"><div class="rank g1">3</div><div class="title"><a href="https://www.ccdi.gov.cn/yaowenn/202611/t20261110_521537.html" target="_blank" rel="noopener">中国交建原党委书记、董事长刘起涛被开除党籍，涉受贿及滥用职权</a></div></div>
+    <div class="tags"><span class="tg lv1">一级</span><span class="tg node">纪检通报</span><span class="tg ind">建筑基建 · 央企</span><span class="tg pt">中央纪委国家监委</span></div>
+    <div class="sum">中央纪委国家监委驻国务院国资委纪检监察组、天津市监委通报：<b>中国交通建设集团有限公司</b>原党委书记、董事长<b>刘起涛</b>严重违纪违法被开除党籍。通报指其"政绩观扭曲、盲目蛮干，以表面业绩高速增长捞取政治资本""搞政治攀附、利用央企资源结交政治骗子、工程掮客""主导违规并购、开展融资性贸易，<b>造成巨额国有资产损失</b>"，涉嫌<b>受贿、国有公司人员滥用职权犯罪</b>，已移送检察机关审查起诉。</div>
+    <div class="meta">
+      <div class="mi"><strong>节点时间</strong>2026-11-10（中央纪委国家监委网站通报）</div>
+      <div class="mi"><strong>事件首发</strong>2026-11-10（同日首次通报）</div>
+      <div class="mi"><a href="https://www.ccdi.gov.cn/yaowenn/202611/t20261110_521537.html" target="_blank" rel="noopener">查看原文 →</a></div>
     </div>
-    <p class="desc">昆明经开区管委会公布事故调查报告：企业负责人私改“消毒水”配方，车间主管仅口头交底、未告知物料风险与操作禁忌，工人按新配方操作后不到20秒即爆燃，造成 2 死 4 伤。调查组建议对涉事企业人员立案调查，对仓库出租方、物业公司一并立案查处。</p>
-    <div class="meta"><b>涉事企业</b>：云南巨图食品有限公司（食品加工，涉及消毒剂使用）；关联方昆明信德物流、昆明新嘉源物业&nbsp;·&nbsp;<b>来源</b>：腾讯新闻（综合昆明经开区管委会）&nbsp;·&nbsp;<b>事件时间</b>：事故 2026-08-14；<b>调查报告公布 2026-11-11（窗口内）</b></div>
   </div>
 
-  <div class="item lv2">
-    <div class="item-head">
-      <h4><a href="https://www.yangtse.com/news/txs/202611/t20261110_411105.html" target="_blank" rel="noopener">“贵州通天河伴漂”涉事公司因违背社会良好风尚广告被罚25万并吊销营业执照</a></h4>
-      <span class="tag lv2">二级</span><span class="tag cat">广告争议</span><span class="tag new">物化女性</span>
+  <div class="item">
+    <div class="item-top"><div class="rank g2">4</div><div class="title"><a href="https://epaper.legaldaily.com.cn/fzrb/content/20261111/Articel06006GN.htm" target="_blank" rel="noopener">室内香薰精油冒充护肤品直播带货，商家与主播被判共担三倍赔偿</a></div></div>
+    <div class="tags"><span class="tg lv2">二级</span><span class="tg node">司法判决</span><span class="tg ind">日化 · 香氛</span><span class="tg pt">法治日报</span></div>
+    <div class="sum">深圳龙岗区法院审结信息网络买卖合同纠纷案：某珠宝品牌管理公司将<b>仅限室内使用的香薰精油</b>，在直播间宣传为可直接涂抹皮肤、具安眠功效的护肤品，商品快照与直播素材均展示人体涂抹场景。市场监管部门核查后认定产品本身合格但<b>无法提供功效佐证，构成虚假广告并处罚款</b>。法院认定构成消费欺诈，判令<b>商家与主播共同支付三倍赔偿 16830 元</b>；主播以"职务行为"抗辩因未披露实际销售主体被驳回。判决已生效。</div>
+    <div class="meta">
+      <div class="mi"><strong>节点时间</strong>2026-11-11（法治日报披露，判决已生效）</div>
+      <div class="mi"><strong>事件首发</strong>2026-11（判决生效）</div>
+      <div class="mi"><a href="https://epaper.legaldaily.com.cn/fzrb/content/20261111/Articel06006GN.htm" target="_blank" rel="noopener">查看原文 →</a></div>
     </div>
-    <p class="desc">国家企业信用信息公示系统新增行政处罚公示：贵定洛水音浪旅游开发有限公司通过微信向客户介绍“NPC伴漂”项目时，发送不雅青年女性图片及“她就是你的临时女朋友”等文字，构成发布违背社会良好风尚广告。贵定县市场监管局 9月30日作出处罚：罚款 25 万元并从重吊销营业执照。</p>
-    <div class="meta"><b>涉事企业</b>：贵定洛水音浪旅游开发有限公司（文旅/景区服务）&nbsp;·&nbsp;<b>来源</b>：扬子晚报网&nbsp;·&nbsp;<b>事件时间</b>：事件首发 2026-07；<b>处罚公示 2026-11-10（窗口内新处置节点）</b></div>
   </div>
 
-  <div class="item lv2">
-    <div class="item-head">
-      <h4><a href="https://www.ce.cn/cysc/newmain/yc/jsxw/202611/t20261110_3289282.shtml" target="_blank" rel="noopener">《广告行业抵制低俗广告自律公约》发布：明确杜绝物化、丑化、歧视特定群体</a></h4>
-      <span class="tag lv2">二级</span><span class="tag cat">广告争议</span><span class="tag new">行业监管</span>
+  <div class="item">
+    <div class="item-top"><div class="rank g2">5</div><div class="title"><a href="https://news.qq.com/rain/a/20261111A04DEF00" target="_blank" rel="noopener">柳州北城投资集团原党委书记、董事长唐建华被开除党籍</a></div></div>
+    <div class="tags"><span class="tg lv2">二级</span><span class="tg node">纪检通报</span><span class="tg ind">城投房地产</span><span class="tg pt">广西纪检监察网 / 腾讯新闻</span></div>
+    <div class="sum">柳州市纪委监委通报：<b>广西柳州市北城投资开发集团有限公司</b>原党委书记、董事长<b>唐建华</b>严重违纪违法被开除党籍。通报指其"对党不忠诚不老实、对抗组织审查""大搞权钱交易，利用职务便利在<b>工程项目承接</b>等方面为他人谋利并非法收受巨额财物"，涉嫌受贿犯罪，已移送检察机关审查起诉。</div>
+    <div class="meta">
+      <div class="mi"><strong>节点时间</strong>2026-11-11（柳州市纪委监委通报）</div>
+      <div class="mi"><strong>事件首发</strong>2026-11-11（同日首次通报）</div>
+      <div class="mi"><a href="https://news.qq.com/rain/a/20261111A04DEF00" target="_blank" rel="noopener">查看原文 →</a></div>
     </div>
-    <p class="desc">中国广告协会广告道德委员会在市场监管总局、中央网信办、广电总局指导下发布《广告行业抵制低俗广告自律公约》，提出自觉规避“软色情”擦边表达、杜绝物化丑化歧视特定群体、抵制引战对立及扭曲婚恋家庭观念内容、规范平台算法机制与流量导向等要求。该公约是低俗擦边广告整治的行业级落地动作。</p>
-    <div class="meta"><b>涉及主体</b>：中国广告协会广告道德委员会（广告行业组织）&nbsp;·&nbsp;<b>来源</b>：中国经济网&nbsp;·&nbsp;<b>事件时间</b>：2026-11-10</div>
   </div>
 
-  <div class="item lv2">
-    <div class="item-head">
-      <h4><a href="https://epaper.cs.com.cn/zgzqb/html/2026-11/11/nw.D110000zgzqb_20261111_4-B003.htm" target="_blank" rel="noopener">ST龙大（山东龙大美食）因涉嫌信息披露违法违规被证监会立案</a></h4>
-      <span class="tag lv2">二级</span><span class="tag cat">贪腐违法</span>
+  <div class="item">
+    <div class="item-top"><div class="rank g2">6</div><div class="title"><a href="https://www.scjc.gov.cn/scjc/scdc/2026/11/9/0ab6524e2cc24cfeb02a4497ed20cda4.shtml" target="_blank" rel="noopener">成都启新汽车服务公司原总经理刘冀东被"双开"，涉贪污受贿</a></div></div>
+    <div class="tags"><span class="tg lv2">二级</span><span class="tg node">纪检通报</span><span class="tg ind">汽车服务 · 国企</span><span class="tg pt">四川省纪委监委</span></div>
+    <div class="sum">四川省纪委监委通报：<b>成都启新汽车服务有限责任公司</b>原党委书记、执行董事、总经理<b>刘冀东</b>严重违纪违法被开除党籍和公职。通报指其"违规设立'小金库'""不正确履职，<b>造成重大国有资金损失风险</b>""利用职务便利非法占有公共财物"，涉嫌<b>贪污、受贿犯罪</b>，已移送检察机关审查起诉。</div>
+    <div class="meta">
+      <div class="mi"><strong>节点时间</strong>2026-11-09（四川省纪委监委通报）</div>
+      <div class="mi"><strong>事件首发</strong>2026-11-09（同日首次通报）</div>
+      <div class="mi"><a href="https://www.scjc.gov.cn/scjc/scdc/2026/11/9/0ab6524e2cc24cfeb02a4497ed20cda4.shtml" target="_blank" rel="noopener">查看原文 →</a></div>
     </div>
-    <p class="desc">公司于 2026-11-10 收到证监会《立案告知书》（证监立案字0042026018号），因涉嫌信息披露违法违规被立案。公司公告称生产经营正常，将配合调查。龙大美食为肉制品与预制菜领域上市公司，本次立案对其资本市场信用构成直接影响。</p>
-    <div class="meta"><b>涉事企业</b>：山东龙大美食股份有限公司（食品加工/肉制品，A股 002726）&nbsp;·&nbsp;<b>来源</b>：中国证券报&nbsp;·&nbsp;<b>事件时间</b>：2026-11-10</div>
   </div>
 
-  <div class="item lv2">
-    <div class="item-head">
-      <h4><a href="https://news.qq.com/rain/a/20261111A04DEF00" target="_blank" rel="noopener">柳州北城投资开发集团原党委书记、董事长唐建华被开除党籍</a></h4>
-      <span class="tag lv2">二级</span><span class="tag cat">贪腐违法</span>
+  <div class="item">
+    <div class="item-top"><div class="rank g3">7</div><div class="title"><a href="https://finance.sina.com.cn/stock/aigc/bwdt/sjzjxzcf/2026-11-09/doc-iniyehxt3118106.shtml" target="_blank" rel="noopener">西安通泽生物：化妆品原料标题用"抗炎"医疗用语，被罚 2000 元</a></div></div>
+    <div class="tags"><span class="tg lv3">三级</span><span class="tg node">处罚公示</span><span class="tg ind">日化 · 化妆品原料</span><span class="tg pt">西安市市监局 / 新浪财经</span></div>
+    <div class="sum">西安市市场监督管理局公示<b>西市监处罚〔2026〕2349 号</b>行政处罚决定书，对<b>西安通泽生物科技有限公司</b>广告违法行为作出处罚。该公司在 1688 平台店铺销售"传明酸 98% 氨甲环酸美白抗炎粉末"化妆品原料时，商品标题违规使用<b>"抗炎"医疗用语</b>、涉及疾病治疗功能宣传，违反《广告法》第五十八条。案件源自<b>网监部门转办的大数据监测线索</b>，2026 年 9 月 2 日立案，最终责令改正并罚款 2000 元。</div>
+    <div class="meta">
+      <div class="mi"><strong>节点时间</strong>2026-11-09（处罚决定书公示）</div>
+      <div class="mi"><strong>事件首发</strong>2026-11-09（公示即首发）</div>
+      <div class="mi"><a href="https://finance.sina.com.cn/stock/aigc/bwdt/sjzjxzcf/2026-11-09/doc-iniyehxt3118106.shtml" target="_blank" rel="noopener">查看原文 →</a></div>
     </div>
-    <p class="desc">柳州市纪委监委通报，唐建华严重违纪违法被开除党籍，构成严重职务违法并涉嫌受贿犯罪。通报指其大搞权钱交易，利用职务便利在工程项目承接等方面为他人谋利并非法收受巨额财物，已移送检察机关审查起诉。</p>
-    <div class="meta"><b>涉事企业</b>：广西柳州市北城投资开发集团有限公司（城投/房地产开发）&nbsp;·&nbsp;<b>来源</b>：腾讯新闻（转广西纪检监察网）&nbsp;·&nbsp;<b>事件时间</b>：2026-11-11</div>
   </div>
 
-  <div class="item lv3">
-    <div class="item-head">
-      <h4><a href="https://epaper.cs.com.cn/zgzqb/html/2026-11/11/nw.D110000zgzqb_20261111_3-B041.htm" target="_blank" rel="noopener">东莞捷荣技术收到《行政处罚事先告知书》，公司及责任人拟被处罚</a></h4>
-      <span class="tag lv3">三级</span><span class="tag cat">贪腐违法</span>
+  <div class="item">
+    <div class="item-top"><div class="rank g3">8</div><div class="title"><a href="https://finance.sina.com.cn/stock/aigc/bwdt/sjzjxzcf/2026-11-09/doc-iniyehxq6323362.shtml" target="_blank" rel="noopener">陕西艾肤生物：5 款化妆品功效宣传与备案不符，被罚 5000 元</a></div></div>
+    <div class="tags"><span class="tg lv3">三级</span><span class="tg node">处罚公示</span><span class="tg ind">日化 · 化妆品</span><span class="tg pt">西安市市监局 / 新浪财经</span></div>
+    <div class="sum">西安市市监局对<b>陕西艾肤生物科技有限公司</b>作出处罚：其臻愈系列<b>5 款化妆品</b>宣传功效与监管部门备案完全不符——备案功效仅为保湿、舒缓、修护的精油与面膜，被宣传为具其他功效。同时违反《广告法》第十七条（医疗用语）与第二十八条（虚假广告），责令改正并<b>罚款 5000 元</b>。案件由消费者<b>通过陕西市场监管投诉举报平台举报</b>触发，2026 年 7 月 29 日立案。</div>
+    <div class="meta">
+      <div class="mi"><strong>节点时间</strong>2026-11-09（处罚决定书公示）</div>
+      <div class="mi"><strong>事件首发</strong>2026-11-09（公示即首发）</div>
+      <div class="mi"><a href="https://finance.sina.com.cn/stock/aigc/bwdt/sjzjxzcf/2026-11-09/doc-iniyehxq6323362.shtml" target="_blank" rel="noopener">查看原文 →</a></div>
     </div>
-    <p class="desc">公司公告收到证监会广东监管局《行政处罚事先告知书》，因信息披露违法违规拟对公司及个人作出处罚，其中对赵晓群给予警告并处 200 万元罚款。公司称不触及重大违法强制退市情形，将行使听证与申辩权利。</p>
-    <div class="meta"><b>涉事企业</b>：东莞捷荣技术股份有限公司（消费电子/3C 精密结构件）&nbsp;·&nbsp;<b>来源</b>：中国证券报&nbsp;·&nbsp;<b>事件时间</b>：2026-11-11</div>
   </div>
 
-  <div class="item lv3">
-    <div class="item-head">
-      <h4><a href="http://www.czsjzq.gov.cn/xxfb/shgyjs/spypaq/spzlcjxx/t28321869.shtml" target="_blank" rel="noopener">崇左市江州区通报 9 批次食品不合格，多家餐饮店餐具检出洗涤剂残留与大肠菌群</a></h4>
-      <span class="tag lv3">三级</span><span class="tag cat">质量投诉/监管查处</span>
+  <div class="item">
+    <div class="item-top"><div class="rank g3">9</div><div class="title"><a href="https://www.hengshan.gov.cn/ztzl/xzzfsxzdggzl/xzzfgs/shgk/20261110/i3986052.html" target="_blank" rel="noopener">衡山县市监局批量公示：化妆品汞超标非法添加案罚 8.6 万元</a></div></div>
+    <div class="tags"><span class="tg lv3">三级</span><span class="tg node">处罚公示</span><span class="tg ind">日化 · 化妆品</span><span class="tg pt">衡山县人民政府</span></div>
+    <div class="sum">湖南衡山县市场监督管理局公示一批行政处罚案件，其中涉化妆品两起值得关注：一是<b>经营未经注册且重金属汞含量超标、非法添加激素药物的特殊化妆品案</b>，没收违法所得 13786 元、没收涉案化妆品、<b>罚款 86000 元</b>；二是经营不符合国家强制性标准的化妆品案，罚款 3000 元。同批还含使用腐败变质食材、气瓶违规充装等案件。</div>
+    <div class="meta">
+      <div class="mi"><strong>节点时间</strong>2026-11-10（处罚案件公示）</div>
+      <div class="mi"><strong>事件首发</strong>2026-11-10（公示即首发）</div>
+      <div class="mi"><a href="https://www.hengshan.gov.cn/ztzl/xzzfsxzdggzl/xzzfgs/shgk/20261110/i3986052.html" target="_blank" rel="noopener">查看原文 →</a></div>
     </div>
-    <p class="desc">江州区市场监督管理局 11 月 10 日发布 2026 年第 2 期食品不合格通告，9 批次不合格，其中阿威粉店、津仔鸡肉粉店使用的大碗检出阴离子合成洗涤剂（以十二烷基苯磺酸钠计）不符合国家标准，巡面面馆使用的小碗检出大肠杆菌。</p>
-    <div class="meta"><b>涉事主体</b>：江州区阿威粉店、津仔鸡肉粉店、巡面面馆（餐饮/食品经营）&nbsp;·&nbsp;<b>来源</b>：崇左市江州区人民政府官网&nbsp;·&nbsp;<b>事件时间</b>：2026-11-10</div>
   </div>
 
-  <h2 class="sec ex">🆕 例外区（旧事件 + 本窗口新处置节点）</h2>
-
-  <div class="item ex">
-    <div class="item-head">
-      <h4><a href="https://www.qdxin.cn/china/2026/395819.html" target="_blank" rel="noopener">央视《焦点访谈》集中点名低俗擦边广告：滴露被罚80万、舒客50万、罗技与德芙同批</a></h4>
-      <span class="tag lv2">二级</span><span class="tag cat">广告争议</span><span class="tag new">央媒点名</span>
+  <div class="item">
+    <div class="item-top"><div class="rank g3">10</div><div class="title"><a href="https://www.cqn.com.cn/ms/content/2026-11/09/content_9180207.htm" target="_blank" rel="noopener">九江公布第八批免罚轻罚典型案例：旅游公司经营 90 瓶过期洗发沐浴液</a></div></div>
+    <div class="tags"><span class="tg lv3">三级</span><span class="tg node">处罚公示</span><span class="tg ind">日化 · 洗护</span><span class="tg pt">中国质量新闻网</span></div>
+    <div class="sum">江西九江市市场监管局公布 2026 年第八批轻微违法免罚轻罚典型案例，含一起化妆品案件：武宁县某旅游公司在客房及仓库被查获<b>已过使用期限的洗发液、沐浴液共计 90 瓶</b>，过期品与合格品混放、仓库未设不合格品专区，违反《化妆品监督管理条例》。因系首次同类违法、货值不足 1 万元、已现场销毁，予以<b>减轻处罚</b>。该批案例的功能是统一全市执法尺度，属监管口径信号。</div>
+    <div class="meta">
+      <div class="mi"><strong>节点时间</strong>2026-11-09（典型案例公布）</div>
+      <div class="mi"><strong>事件首发</strong>2026-11-09（公布即首发）</div>
+      <div class="mi"><a href="https://www.cqn.com.cn/ms/content/2026-11/09/content_9180207.htm" target="_blank" rel="noopener">查看原文 →</a></div>
     </div>
-    <p class="desc">央视《焦点访谈》专题曝光低俗擦边广告乱象。上海市场监管局认定滴露消毒液广告含有性别歧视内容、妨碍社会公共秩序，播放量超 500 万次，对总经销商上海曼伦商贸罚款 80 万元、制作方广西瞬视罚没合计 26.5 万元；舒客牙贴广告因违背社会良好风尚被罚 50 万元；罗技、德芙同批被点名。报道同时披露有企业一个月用 AI 生产两千条广告、以"人工审核不了"为由放任擦边。</p>
-    <div class="meta"><b>涉事企业</b>：滴露（上海曼伦商贸，日化/消毒清洁）、舒客（口腔护理）、罗技（3C 外设）、德芙（食品）&nbsp;·&nbsp;<b>来源</b>：信网、央视《焦点访谈》&nbsp;·&nbsp;<b>首发</b>：2026-06（滴露广告）；<b>窗口内进展</b>：2026-11-08 央媒集中点名与处罚细节公开</div>
   </div>
 
-  <div class="item ex">
-    <div class="item-head">
-      <h4><a href="https://www.toutiao.com/w/1881427306183684/" target="_blank" rel="noopener">“罚款变营销预算”：AI 批量生产擦边广告的成本账引发业界讨论</a></h4>
-      <span class="tag lv3">三级</span><span class="tag cat">广告争议</span>
+  <div class="item">
+    <div class="item-top"><div class="rank g3">11</div><div class="title"><a href="https://scjgj.cq.gov.cn/zfxxgk_225/fdzdgknr/jdcj/spaq_1/jcjgxx/202611/t20261109_16387535.html" target="_blank" rel="noopener">重庆 5222 批次食品安全抽检通告：餐饮具检出阴离子合成洗涤剂</a></div></div>
+    <div class="tags"><span class="tg lv3">三级</span><span class="tg node">抽检通告</span><span class="tg ind">餐饮</span><span class="tg pt">重庆市市监局</span></div>
+    <div class="sum">重庆市市场监督管理局发布第 16 号食品安全抽检通告，共 5222 批次。不合格项中 <b>忠县虾好吃餐饮店使用的自消毒复用餐饮具检出阴离子合成洗涤剂</b>（以十二烷基苯磺酸钠计）不符合国家标准——即洗涤剂残留未冲净，与日化产品使用环节直接相关。另有多批次豇豆、山药、荔枝农残超标。属地监管部门已启动查处、下架、召回。</div>
+    <div class="meta">
+      <div class="mi"><strong>节点时间</strong>2026-11-09（抽检通告发布）</div>
+      <div class="mi"><strong>事件首发</strong>2026-11-09（通告即首发）</div>
+      <div class="mi"><a href="https://scjgj.cq.gov.cn/zfxxgk_225/fdzdgknr/jdcj/spaq_1/jcjgxx/202611/t20261109_16387535.html" target="_blank" rel="noopener">查看原文 →</a></div>
     </div>
-    <p class="desc">围绕央视报道，业内讨论指出：《广告法》以广告费为基数计算罚款（起步 20 万、封顶 100 万），而 AI 把广告制作成本压至接近零，导致违法成本实质性归零，罚款从"惩戒"变成"营销预算"。今年前三季度全国查办广告违法案件 3.3 万余件、罚没 1.65 亿元、清理违规素材 17.5 万条。</p>
-    <div class="meta"><b>涉及主体</b>：广告行业整体（含 AI 生成广告产业链）&nbsp;·&nbsp;<b>来源</b>：今日头条&nbsp;·&nbsp;<b>首发</b>：2026-11 上旬；<b>窗口内进展</b>：央视报道后的行业反思扩散</div>
   </div>
 
-  <div class="item ex">
-    <div class="item-head">
-      <h4><a href="https://news.qq.com/rain/a/20261111A03CEJ00" target="_blank" rel="noopener">彪马（PUMA）授权店客服“露点”言论争议，涉事客服已离职</a></h4>
-      <span class="tag lv3">三级</span><span class="tag cat">广告争议</span><span class="tag new">客服失当</span>
+  <div class="sect-head"><h2>🆕 当日新发事件（辅榜）</h2><span class="cnt">1 条 · 占 8.3%</span></div>
+  <div class="sect-desc">辅榜仅保留窗口内首次曝光的新事件，上限 30%。本期主榜已凑满，故辅榜仅 1 条。</div>
+
+  <div class="item">
+    <div class="item-top"><div class="rank g1">12</div><div class="title"><a href="https://news.qq.com/rain/a/20261111A04HXZ00" target="_blank" rel="noopener">云南巨图食品爆燃事故调查报告公布：2 死 4 伤，私改"消毒水"配方</a></div></div>
+    <div class="tags"><span class="tg lv1">一级</span><span class="tg node">当日新发</span><span class="tg ind">食品加工</span><span class="tg pt">腾讯新闻</span></div>
+    <div class="sum">云南巨图食品有限公司爆燃事故调查报告公布，事故造成 <b>2 人死亡、4 人受伤</b>。调查认定企业<b>私自更改"消毒水"生产配方</b>，在非合规条件下作业引发爆燃。该企业属食品加工环节的日化类投入品（消毒清洁剂）相关生产，与日化供应链存在交叉。事故报告披露属新节点，同时是窗口内首次完整曝光。</div>
+    <div class="meta">
+      <div class="mi"><strong>节点时间</strong>2026-11-11（事故调查报告公布）</div>
+      <div class="mi"><strong>事件首发</strong>2026-11-11（窗口内首次曝光）</div>
+      <div class="mi"><a href="https://news.qq.com/rain/a/20261111A04HXZ00" target="_blank" rel="noopener">查看原文 →</a></div>
     </div>
-    <p class="desc">消费者曝光在 PUMA 游泳旗舰店咨询无胸垫泳衣时，客服答复"如果不穿胸垫，您就露点"，措辞露骨，网友认为构成对消费者的骚扰。11-10 店铺回应称涉事客服为刚入职不久的年轻女孩、专业培训不到位，已办理离职；11-11 报道扩散。</p>
-    <div class="meta"><b>涉事企业</b>：彪马（PUMA）品牌授权店（运动服饰）&nbsp;·&nbsp;<b>来源</b>：腾讯新闻（现代快报）&nbsp;·&nbsp;<b>首发</b>：2026-11-07；<b>窗口内进展</b>：2026-11-10 店铺首次正式回应</div>
   </div>
 
-  <div class="note">
-    <b>📌 例外区规则说明</b><br>
-    主窗口外的既往事件，若在本期窗口内出现新的处置节点（监管立案/处罚公示、央媒点名、官方通报、企业正式回应、司法进展、行业组织动作），即收录于本区，不占用主窗口条目数，数量不设上限。<br>
-    设立原因：日化与快消行业的广告争议舆情，主流形态正是"旧事件 + 新处置"——广告本身往往已发布数月，真正形成舆情峰值的是处罚公示、央媒点名、企业回应这些节点。若严格按事件首发时间过滤，此类关键舆情会被系统性遗漏。
-  </div>
+  <section>
+    <h2>⏳ 持续跟踪</h2>
+    <div class="note">窗口内无新处置节点、但仍在办或热度未退的重大事件。<b>不计入收录条数</b>。</div>
+    <div class="track">
+      <ul>
+        <li><b>京津冀三地消协敦促 10 家航司、5 家平台整改机票退改签</b>——节点 11-06（通报会）已超 48 小时窗口，不纳入主榜；11-10 新华社发通稿二次传播，规则公示不明显、收费不规范、维权保障不足三大问题仍在整改期内，12-10 前须反馈。国航、南航、东航、海航、厦航、川航、天津航空、吉祥、春秋、河北航空 + 携程、去哪儿、飞猪、同程、途牛。
+          <br><a href="https://www.100ec.cn/detail--6665536.html" target="_blank" rel="noopener" style="color:#b45309;font-weight:600">来源 →</a></li>
+        <li><b>大麦网被指霸王条款：15 岁未成年人私自购票，退款强扣 30% 手续费</b>——投诉时间 10-13 已超窗，属电诉宝个案投诉，尚处调解阶段，无官方处置节点。
+          <br><a href="https://www.100ec.cn/detail--6665611.html" target="_blank" rel="noopener" style="color:#b45309;font-weight:600">来源 →</a></li>
+      </ul>
+    </div>
+  </section>
 
-  <div class="warn">
-    <b>⚠️ 收录量说明</b><br>
-    48 小时窗口（2026-11-09 09:40 — 2026-11-11 09:40）内，可核实「事件发生或首次官方通报」的企业主体舆情共 <b>8 条</b>，另例外区 3 条。<br>
-    主窗口仍不足 10 条，按规则不凑数。其中<b>日化行业主窗口 0 条</b>，但例外区已覆盖滴露（80 万罚款 + 央视点名）这一日化重点案例。
-  </div>
+  <footer>
+    <b>检索窗口</b>：2026-11-09 09:40 — 2026-11-11 09:40（48 小时）｜<b>收录</b>：12 条（主榜 11 / 辅榜 1）｜<b>覆盖平台</b>：中央纪委国家监委、市场监管总局及省市市场监管局、央视 / 中国经济网 / 法治日报 / 中国质量新闻网 / 新华社系、新浪财经、腾讯新闻、网易、网经社等
+    <div class="rule">
+      <b>双轨时效规则</b>：主榜（处置节点型）以<b>节点本身的发布/发生时间</b>为时效基准——处罚公示日、监管通报日、央媒播出日、司法判决日、纪检通报日，落在 48 小时内即可收录，<b>不受事件最初发生时间限制</b>；辅榜（当日新发）以<b>首次曝光时间</b>为基准。两轨不得混用。无法确认精确时间的候选一律剔除。
+    </div>
+    <b>等级标准</b>：一级＝全国主流媒体广泛报道、监管介入立案、涉人身安全或违法犯罪、品牌声誉重创；二级＝多家媒体报道、区域发酵、企业公开回应、罚款较大或涉知名品牌；三级＝单一或地方媒体报道、讨论有限、罚款较小或地方个案。
+    <br><b>合规声明</b>：本报告基于官方通报与权威媒体公开报道整理，不含性骚扰/猥亵类案件；所有结论以官方通报为准，未经证实信息不予收录。来源链接均为原文地址。
+  </footer>
 
-  <div class="note" style="background:#eef2ff;border-color:#c7d2fe;color:#3730a3;">
-    📌 检索说明：覆盖腾讯新闻、网易新闻、新浪新闻、搜狐新闻、凤凰新闻、澎湃新闻、今日头条、微博、百度、抖音、微信公众号、快手、B站、国家网信办官网及地方政府与监管部门官网、国家企业信用信息公示系统。判定基准为事件发生时间或官方通报/处罚公示发布时间，媒体报道与转载时间不作为收录依据。涉及个人违法事件仅基于官方通报中性陈述，不含受害者可识别信息。
-  </div>
-
-  <footer>企业舆情监测报告 · 窗口 2026-11-09 09:40 — 2026-11-11 09:40（48小时）· 主窗口 8 条 + 例外 3 条<br>报告生成时间：2026-11-11 09:52 ｜ 自动生成，仅供参考</footer>
 </div>
 </body>
 </html>
