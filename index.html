@@ -3,261 +3,224 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>企业舆情监测报告（2026-11-14）</title>
+<title>企业舆情监测报告 2026-11-15</title>
 <style>
-:root{--bg:#f5f6fa;--card:#ffffff;--ink:#22252a;--muted:#6b7280;--line:#e5e7eb;--l1:#d93025;--l2:#e8710a;--l3:#1a73e8;--acc:#1f3a5f;}
-*{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;padding:24px 12px;}
-.wrap{max-width:1080px;margin:0 auto;}
-header{background:linear-gradient(135deg,#1f3a5f,#2c5f8a);color:#fff;border-radius:14px;padding:28px 26px;margin-bottom:16px;}
-header h1{font-size:26px;letter-spacing:2px;}
-header .sub{margin-top:8px;font-size:14px;opacity:.92;}
-header .sub b{color:#ffd66b;}
-.toolbar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px;}
-.toolbar a{display:inline-block;padding:9px 18px;border-radius:8px;font-size:14px;text-decoration:none;font-weight:600;}
-.btn-dl{background:#1a73e8;color:#fff;}
-.btn-his{background:#fff;color:#1f3a5f;border:1px solid var(--line);}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:20px;}
-.card{background:var(--card);border-radius:12px;padding:18px 16px;text-align:center;border:1px solid var(--line);}
-.card .num{font-size:30px;font-weight:800;color:var(--acc);}
-.card .lab{font-size:13px;color:var(--muted);margin-top:4px;}
-section{background:var(--card);border-radius:12px;padding:20px 18px;margin-bottom:18px;border:1px solid var(--line);}
-section h2{font-size:19px;margin-bottom:6px;color:var(--acc);border-left:5px solid var(--acc);padding-left:10px;}
-section .sec-note{font-size:13px;color:var(--muted);margin-bottom:12px;}
-.item{border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:12px;background:#fcfcfd;}
-.item .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;}
-.item h3{font-size:16px;}
-.badge{flex-shrink:0;font-size:12px;font-weight:700;color:#fff;padding:3px 10px;border-radius:20px;}
-.b1{background:var(--l1);} .b2{background:var(--l2);} .b3{background:var(--l3);}
-.fields{display:grid;grid-template-columns:110px 1fr;gap:4px 10px;margin-top:10px;font-size:13.5px;}
-.fields dt{color:var(--muted);}
-.fields dd a{color:#1a5fb4;word-break:break-all;}
-.tag{display:inline-block;background:#eef2f7;color:#33475b;border-radius:4px;padding:1px 8px;font-size:12px;margin-right:6px;}
-.track-item{border-left:4px solid #9aa5b1;padding:10px 14px;background:#f8f9fb;border-radius:0 8px 8px 0;margin-bottom:10px;font-size:14px;}
-footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;margin-top:8px;}
-@media(max-width:640px){.fields{grid-template-columns:96px 1fr;}}
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"PingFang SC","Microsoft YaHei",sans-serif; background:#f0f2f5; color:#262626; padding:16px; }
+  .wrap { max-width:1080px; margin:0 auto; }
+  .header { background:linear-gradient(135deg,#1f3b73,#2d5fa8); color:#fff; border-radius:12px; padding:26px 28px; }
+  .header h1 { font-size:26px; letter-spacing:2px; }
+  .header .sub { margin-top:10px; font-size:14px; opacity:.92; line-height:1.9; }
+  .header .sub b { color:#ffd666; }
+  .toolbar { margin:14px 0; display:flex; gap:12px; flex-wrap:wrap; }
+  .toolbar a { display:inline-block; padding:9px 18px; border-radius:8px; font-size:14px; text-decoration:none; font-weight:600; }
+  .btn-dl { background:#2d5fa8; color:#fff; }
+  .btn-his { background:#fff; color:#1f3b73; border:1px solid #c9d6ee; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin-bottom:18px; }
+  .card { background:#fff; border-radius:10px; padding:16px 18px; box-shadow:0 1px 4px rgba(0,0,0,.06); }
+  .card .num { font-size:30px; font-weight:700; color:#1f3b73; }
+  .card .lab { font-size:13px; color:#8a8a8a; margin-top:4px; }
+  .section { background:#fff; border-radius:10px; padding:20px 22px; margin-bottom:18px; box-shadow:0 1px 4px rgba(0,0,0,.06); }
+  .section h2 { font-size:19px; padding-bottom:10px; border-bottom:2px solid #eef1f6; margin-bottom:14px; }
+  .item { border:1px solid #e8ecf3; border-left:5px solid #ccc; border-radius:8px; padding:14px 16px; margin-bottom:12px; }
+  .lv1 { border-left-color:#d9363e; }
+  .lv2 { border-left-color:#e8830c; }
+  .lv3 { border-left-color:#1a7f37; }
+  .item .top { display:flex; align-items:flex-start; gap:10px; flex-wrap:wrap; }
+  .item .idx { background:#1f3b73; color:#fff; font-size:12px; border-radius:5px; padding:2px 8px; margin-top:2px; white-space:nowrap; }
+  .item h3 { font-size:16px; line-height:1.5; }
+  .tag { font-size:12px; padding:2px 9px; border-radius:11px; white-space:nowrap; font-weight:600; }
+  .t1 { background:#fdecec; color:#d9363e; }
+  .t2 { background:#fdf1e0; color:#c2690a; }
+  .t3 { background:#e8f5ec; color:#1a7f37; }
+  .tag-cat { background:#eef2fb; color:#2d5fa8; }
+  .tag-sec { background:#f4f0fa; color:#6941c6; }
+  .meta { margin-top:9px; font-size:13px; color:#555; line-height:1.95; }
+  .meta b { color:#262626; }
+  .meta a { color:#2d5fa8; word-break:break-all; }
+  .note { font-size:13px; color:#666; background:#f7f9fc; border-radius:8px; padding:12px 14px; line-height:1.9; }
+  .footer { text-align:center; font-size:12px; color:#999; padding:18px 0 26px; line-height:2; }
+  .track .item { border-left-color:#8a6d1d; }
+  .lv-tag-track { background:#faf6e8; color:#8a6d1d; }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<header>
-  <h1>企业舆情监测报告</h1>
-  <div class="sub">
-    统计窗口：<b>2026-11-12 08:00 至 2026-11-14 08:00</b>（北京时间，滚动48小时）<br>
-    收录总数：<b>12 条</b>（主榜 9 条 ｜ 辅榜 2 条 ｜ 立白专项 1 条，专项不占主辅配比）
-  </div>
-</header>
-
-<div class="toolbar">
-  <a class="btn-dl" href="qingyu-20261114.html" download>⬇ 下载本页HTML</a>
-  <a class="btn-his" href="https://github.com/caruso72/fenxi" target="_blank" rel="noopener">📚 历史归档</a>
-</div>
-
-<div class="cards">
-  <div class="card"><div class="num">12</div><div class="lab">收录条数</div></div>
-  <div class="card"><div class="num">2</div><div class="lab">一级舆情</div></div>
-  <div class="card"><div class="num">4</div><div class="lab">涉及行业数</div></div>
-  <div class="card"><div class="num">9</div><div class="lab">处置节点类条数</div></div>
-</div>
-
-<!-- 主榜 -->
-<section>
-  <h2>🔨 处置节点舆情（主榜）</h2>
-  <div class="sec-note">收录口径：A1 处罚公示/监管查处、A2 央媒点名、A3 消费者集中投诉。节点时间=处置动作发布/发生时间；同条并列事件首发时间。共 9 条。</div>
-
-  <div class="item">
-    <div class="top"><h3>1. 德芙七夕广告"宣扬错误婚恋观"落地处罚：代运营方宗正食品被罚80万元</h3><span class="badge b1">一级</span></div>
-    <dl class="fields">
-      <dt>事件概述</dt><dd>2026年8月快手"德芙官方旗舰店"发布"趁男朋友不在跟暧昧对象分享"七夕带货视频，引发全网批评；德芙曾致歉。11月12日上海市场监管部门公布长三角违法广告典型案例：运营主体上海宗正食品有限公司因"宣扬错误婚恋观、违背社会良好风尚"被上海市普陀区市场监管局罚款80万元。</dd>
-      <dt>涉事企业及行业</dt><dd>上海宗正食品有限公司（德芙授权经销商，母公司玛氏箭牌）｜快消/食品糖果</dd>
-      <dt>舆情分类</dt><dd><span class="tag">② 广告争议</span>（涉及不当婚恋观营销，涉女性议题导向争议）</dd>
-      <dt>来源平台</dt><dd>央广网（依据"上海市场监管"官方公布）</dd>
-      <dt>来源链接</dt><dd><a href="https://www.cnr.cn/food/jdt/20261113/t20261113_527870860.shtml" target="_blank" rel="noopener">https://www.cnr.cn/food/jdt/20261113/t20261113_527870860.shtml</a></dd>
-      <dt>舆情等级</dt><dd><span class="badge b1">一级</span> 央媒及全国主流媒体广泛报道，知名品牌，大额罚款</dd>
-      <dt>节点时间</dt><dd>2026-11-12（上海市场监管公众号公布典型案例及处罚结果）</dd>
-      <dt>事件首发时间</dt><dd>2026-08-23（涉事短视频首发并引发争议）</dd>
-    </dl>
+  <div class="header">
+    <h1>📋 企业舆情监测报告</h1>
+    <div class="sub">
+      监测窗口：<b>2026-11-13 08:00 至 2026-11-15 08:00</b>（北京时间，48小时）<br>
+      收录总数：<b>10 条</b>｜处置节点主榜：<b>9 条</b>｜当日新发辅榜：<b>1 条</b>｜🎯立白专项：<b>0 条（本期无新增节点）</b><br>
+      报告生成时刻：2026-11-15 08:00（每期按日期存档，不覆盖历史）
+    </div>
   </div>
 
-  <div class="item">
-    <div class="top"><h3>2. 市场监管总局集中发布6则召回通告：奔驰、宝马、丰田、福特、斯泰兰蒂斯合计召回超1.3万辆</h3><span class="badge b2">二级</span></div>
-    <dl class="fields">
-      <dt>事件概述</dt><dd>11月13日国家市场监管总局网站发布6则召回公告：北京奔驰41辆国产C级/E级（前轴车轮轴承问题）、宝马(中国)扩大召回进口5系/8系共2721辆（传动轴花键磨损）、丰田3085辆进口86（转向螺旋电缆磨损）、福特林肯领航员2779辆（雨刮臂失效）、斯泰兰蒂斯扩大召回朱丽叶/斯坦维1146辆及大切诺基4xe 3814辆，涉及燃油、碰撞防护等多项安全隐患。</dd>
-      <dt>涉事企业及行业</dt><dd>北京奔驰、宝马(中国)、丰田(中国)、福特(中国)、斯泰兰蒂斯(上海)｜汽车制造</dd>
-      <dt>舆情分类</dt><dd><span class="tag">① 质量投诉</span>（缺陷产品召回，涉行车安全）</dd>
-      <dt>来源平台</dt><dd>澎湃新闻（据市场监管总局网站）</dd>
-      <dt>来源链接</dt><dd><a href="https://www.thepaper.cn/newsDetail_forward_34467767" target="_blank" rel="noopener">https://www.thepaper.cn/newsDetail_forward_34467767</a></dd>
-      <dt>舆情等级</dt><dd><span class="badge b2">二级</span> 多家主流媒体报道，知名品牌，涉安全隐患但属主动召回</dd>
-      <dt>节点时间</dt><dd>2026-11-13（召回计划在总局网站集中公示）</dd>
-      <dt>事件首发时间</dt><dd>2026-11-13（与节点同步公开）</dd>
-    </dl>
+  <div class="toolbar">
+    <a class="btn-dl" href="qingyu-20261115.html" download>⬇ 下载本页HTML</a>
+    <a class="btn-his" href="https://github.com/caruso72/fenxi" target="_blank">📚 历史归档</a>
   </div>
 
-  <div class="item">
-    <div class="top"><h3>3. 长三角违法广告典型案例：浙江东阳5家日化企业虚构"美国诺贝尔"等境外机构宣称功效，罚没合计21.15万元</h3><span class="badge b2">二级</span></div>
-    <dl class="fields">
-      <dt>事件概述</dt><dd>11月12日长三角三省一市市场监管部门联合公布违法广告典型案例。东阳市文匠日用百货等5家企业生产除尘魔盒、驱鼠散等日化产品，在电商平台及外包装大量使用虚构的"美国诺贝尔""德国慕尼黑科学研究院"等境外机构名称，宣称"清洁率99.9%""驱鼠率99%"等未经论证数据。东阳市监局责令改正并分别罚款4万元，罚没合计21.15万元。</dd>
-      <dt>涉事企业及行业</dt><dd>东阳市文匠日用百货、义乌市赫呈贸易、东阳市鑫都清洁用品、东阳市宏航日用品厂、东阳市果壳日用品｜日化（家清/驱虫灭害）</dd>
-      <dt>舆情分类</dt><dd><span class="tag">② 广告争议</span>（虚构机构、虚假功效宣称）</dd>
-      <dt>来源平台</dt><dd>中国质量新闻网（长三角市场监管部门联合公布）</dd>
-      <dt>来源链接</dt><dd><a href="https://www.cqn.com.cn/ms/content/2026-11/12/content_9180937.htm" target="_blank" rel="noopener">https://www.cqn.com.cn/ms/content/2026-11/12/content_9180937.htm</a></dd>
-      <dt>舆情等级</dt><dd><span class="badge b2">二级</span> 行业典型案件、多家媒体转载，批量处罚</dd>
-      <dt>节点时间</dt><dd>2026-11-12（典型案例联合公布）</dd>
-      <dt>事件首发时间</dt><dd>2026-07（东阳市监局作出行政处罚）</dd>
-    </dl>
+  <div class="cards">
+    <div class="card"><div class="num">10</div><div class="lab">收录总数（条）</div></div>
+    <div class="card"><div class="num">4</div><div class="lab">一级舆情（条）</div></div>
+    <div class="card"><div class="num">8</div><div class="lab">涉及行业（个）</div></div>
+    <div class="card"><div class="num">9</div><div class="lab">处置节点类条数（条）</div></div>
   </div>
 
-  <div class="item">
-    <div class="top"><h3>4. 郴州市网信办等部门集中约谈31家App运营单位：教育、医疗、文旅领域违规收集个人信息</h3><span class="badge b2">二级</span></div>
-    <dl class="fields">
-      <dt>事件概述</dt><dd>11月12日郴州市网信办联合市教育局、市卫健委、市文旅广体局召开集中约谈会。2026年8月以来"林邑净网"专项检测发现120个App存在未公开收集使用规则、未明示个人信息收集目的方式范围等问题，市县两级网信办已对31家违规App运营负责人约谈，督促落实整改，并将开展"回头看"专项检查。</dd>
-      <dt>涉事企业及行业</dt><dd>郴州教育、医疗、文旅等领域31家App运营单位｜互联网（属地平台治理）</dd>
-      <dt>舆情分类</dt><dd><span class="tag">⑤ 社会公共安全</span>（个人信息与数据安全）</dd>
-      <dt>来源平台</dt><dd>新湖南（湖南日报报业集团）</dd>
-      <dt>来源链接</dt><dd><a href="https://www.hunantoday.cn/news/xhn/202611/34240203.html" target="_blank" rel="noopener">https://www.hunantoday.cn/news/xhn/202611/34240203.html</a></dd>
-      <dt>舆情等级</dt><dd><span class="badge b2">二级</span> 批量约谈、省级党媒报道、区域发酵</dd>
-      <dt>节点时间</dt><dd>2026-11-12（集中约谈会召开）</dd>
-      <dt>事件首发时间</dt><dd>2026-08（专项执法行动启动）</dd>
-    </dl>
+  <!-- 主榜 -->
+  <div class="section">
+    <h2>🔨 处置节点舆情（主榜）</h2>
+
+    <div class="item lv1">
+      <div class="top"><span class="idx">主榜 01</span><h3>天山股份遭证监会立案，公司及相关责任人被责令改正、出具警示函</h3><span class="tag t1">一级</span><span class="tag tag-sec">A1 监管查处</span><span class="tag tag-cat">④贪腐违法</span></div>
+      <div class="meta">
+        <b>事件概述：</b>11月13日天山股份公告，因商誉减值测试及应收账款坏账计提不审慎、财务核算问题致信披不准确，公司收到新疆证监局《责令改正措施决定》，赵新军等3名责任人收警示函；同时因涉嫌信息披露违法违规，中国证监会决定对公司立案。<br>
+        <b>涉事企业及行业：</b>天山材料股份有限公司（000877.SZ）｜建材水泥<br>
+        <b>舆情分类：</b>④贪腐违法（信披违规）　<b>来源平台：</b>金十数据（公告快讯）<br>
+        <b>来源链接：</b><a href="https://flash.jin10.com/detail/20261113164736920800" target="_blank">https://flash.jin10.com/detail/20261113164736920800</a><br>
+        <b>节点时间：</b>2026-11-13 16:47（公告披露）　<b>事件首发时间：</b>2026-11-13 16:47
+      </div>
+    </div>
+
+    <div class="item lv1">
+      <div class="top"><span class="idx">主榜 02</span><h3>市场监管总局公布5起打击劣质低价典型案例：电动车锂电池制售者被移送公安、23家酒店价格欺诈合计罚96万余元</h3><span class="tag t1">一级</span><span class="tag tag-sec">A1 监管查处</span><span class="tag tag-cat">①质量投诉</span></div>
+      <div class="meta">
+        <b>事件概述：</b>11月14日市场监管总局公布5起典型案例：上海王某无资质组装销售不合格电动自行车锂电池（涉嫌犯罪移送公安、公安已立案）；青岛新亚旅行社价格欺诈罚5万元；肇庆森淼医药低价调包销售"金戈"药品被罚；广元23家酒店虚假折扣合计罚没96万余元；湖北库神生态肥以不合格肥料冒充合格产品罚没6.76万元。<br>
+        <b>涉事企业及行业：</b>亿茗锂电、青岛新亚国际旅行社、肇庆森淼医药、广元23家酒店、湖北库神生态肥｜电商/文旅/医药/农资综合<br>
+        <b>舆情分类：</b>①质量投诉（涉价格欺诈、以假充真）　<b>来源平台：</b>中国新闻网（转央视新闻）<br>
+        <b>来源链接：</b><a href="https://m.chinanews.com/wap/detail/cht/zw/10714530.shtml" target="_blank">https://m.chinanews.com/wap/detail/cht/zw/10714530.shtml</a><br>
+        <b>节点时间：</b>2026-11-14（总局公布）　<b>事件首发时间：</b>2026-11-14
+      </div>
+    </div>
+
+    <div class="item lv1">
+      <div class="top"><span class="idx">主榜 03</span><h3>和平饭店"51万元天价酒水账单"系酒商AI伪造，警方查处15人、4人被采取刑事强制措施</h3><span class="tag t1">一级</span><span class="tag tag-sec">A1 查处通报</span><span class="tag tag-cat">⑤社会公共安全</span></div>
+      <div class="meta">
+        <b>事件概述：</b>11月13日中午上海黄浦警方通报：某互联网酒类销售公司负责人赵某某为博关注、提升销量，组织他人用AI软件篡改和平饭店账单、伪造成交酒品，编造"花51万元在和平饭店吃顿饭"谣言并制作虚假视频，通过控制账号、雇佣代发大量传播。15名涉案人员被查处，其中4人被依法采取刑事强制措施、11人被行政处罚。和平饭店为被造谣受害方，警方明确依法维护企业合法权益。<br>
+        <b>涉事企业及行业：</b>某互联网酒类销售公司（未具名）；上海和平饭店（受害方）｜酒类营销/酒店文旅<br>
+        <b>舆情分类：</b>⑤社会公共安全（编造传播虚假信息）　<b>来源平台：</b>央视网（转黄浦警方通报）<br>
+        <b>来源链接：</b><a href="https://news.cctv.cn/2026/11/13/ARTI442C6XoWLl76t5yxZz7M261113.shtml" target="_blank">https://news.cctv.cn/2026/11/13/ARTI442C6XoWLl76t5yxZz7M261113.shtml</a><br>
+        <b>节点时间：</b>2026-11-13 12:00（警方通报）　<b>事件首发时间：</b>2026-11-08（虚假小票网络流传）
+      </div>
+    </div>
+
+    <div class="item lv1">
+      <div class="top"><span class="idx">主榜 04</span><h3>央视《新闻直播间》起底MCN机构"买号、洗稿、刷量"黑灰产业链，数百万违规账号被处置</h3><span class="tag t1">一级</span><span class="tag tag-sec">A2 央媒点名</span><span class="tag tag-cat">④贪腐违法</span></div>
+      <div class="meta">
+        <b>事件概述：</b>11月13日央视《新闻直播间》播出MCN机构黑灰产调查，起底"买号、洗稿、刷量"违法产业链：暗语交易规避风控、批量购号搭建"水军矩阵"、"矩阵"模式更隐蔽，平台已处置数百万违规账号。直指流量造假灰色产业，对MCN及依赖刷量的品牌营销生态形成点名震慑。<br>
+        <b>涉事企业及行业：</b>相关MCN机构及刷量产业链从业者｜互联网/内容营销<br>
+        <b>舆情分类：</b>④贪腐违法（流量黑灰产）　<b>来源平台：</b>央视网<br>
+        <b>来源链接：</b><a href="https://tv.cctv.com/2026/11/13/VIDE8IvuiCnufdDWhyrZgNHg261113.shtml" target="_blank">https://tv.cctv.com/2026/11/13/VIDE8IvuiCnufdDWhyrZgNHg261113.shtml</a><br>
+        <b>节点时间：</b>2026-11-13（央视播出）　<b>事件首发时间：</b>2026-11-13
+      </div>
+    </div>
+
+    <div class="item lv2">
+      <div class="top"><span class="idx">主榜 05</span><h3>市场监管总局连发6则召回通告：宝马、奔驰、丰田、福特等超1.35万辆汽车召回</h3><span class="tag t2">二级</span><span class="tag tag-sec">A1 召回</span><span class="tag tag-cat">①质量投诉</span></div>
+      <div class="meta">
+        <b>事件概述：</b>11月13日市场监管总局网站集中发布6则召回通告，涉及北京奔驰、宝马（中国）、丰田（中国）、福特（中国）、斯泰兰蒂斯5家车企共13586辆，隐患覆盖车轮轴承、传动轴花键磨损致动力中断、侧气囊延迟展开、雨刮臂失效、喇叭线路断路等安全环节，车企将通过经销商免费维修换件。<br>
+        <b>涉事企业及行业：</b>北京奔驰、宝马（中国）、丰田（中国）、福特（中国）、斯泰兰蒂斯（上海）｜汽车<br>
+        <b>舆情分类：</b>①质量投诉（产品缺陷）　<b>来源平台：</b>腾讯新闻（转每日经济新闻）<br>
+        <b>来源链接：</b><a href="https://news.qq.com/rain/a/20261113A0F7DT00" target="_blank">https://news.qq.com/rain/a/20261113A0F7DT00</a><br>
+        <b>节点时间：</b>2026-11-13（总局网站发布）　<b>事件首发时间：</b>2026-11-13
+      </div>
+    </div>
+
+    <div class="item lv3">
+      <div class="top"><span class="idx">主榜 06</span><h3>江苏省市场监管局通告26批次食品抽检不合格，两批次龙眼二氧化硫超标</h3><span class="tag t3">三级</span><span class="tag tag-sec">A1 抽检不合格</span><span class="tag tag-cat">①质量投诉</span></div>
+      <div class="meta">
+        <b>事件概述：</b>11月13日江苏省市场监管局发布通告，近期组织抽检18大类2302批次食品，检出食用农产品、餐饮食品、糕点、肉制品、调味品、方便食品、炒货及坚果制品、水果制品8大类26批次不合格，其中两批次龙眼检出二氧化硫超标。已责成属地监管处置，督促下架、召回并依法查处。<br>
+        <b>涉事企业及行业：</b>26批次不合格食品生产经营企业｜食品饮料<br>
+        <b>舆情分类：</b>①质量投诉　<b>来源平台：</b>澎湃新闻<br>
+        <b>来源链接：</b><a href="https://www.thepaper.cn/newsDetail_forward_34475769" target="_blank">https://www.thepaper.cn/newsDetail_forward_34475769</a><br>
+        <b>节点时间：</b>2026-11-13（省局通告）　<b>事件首发时间：</b>2026-11-13
+      </div>
+    </div>
+
+    <div class="item lv3">
+      <div class="top"><span class="idx">主榜 07</span><h3>陕西省市场监管局曝光十起网络交易监管典型案件：私域直播虚假宣传罚没41.96万元、侵权宠物用品5万余件被查</h3><span class="tag t3">三级</span><span class="tag tag-sec">A1 监管查处</span><span class="tag tag-cat">①质量投诉</span></div>
+      <div class="meta">
+        <b>事件概述：</b>11月13日陕西省市场监管局发布十起网络交易监管典型案件：西安万新英华教育虚假宣传罚没41.96万元；"校外卖"平台未审商户资质被罚没6.84万元；西安唐汉医药美团售卖二次回收药品被罚没2万元；私域直播将普通食品宣传为疾病预防治疗产品罚19万元；查获假冒"FRONTLINE"等宠物用品5万余件（移送公安）；媄微尚品化妆品虚假功效宣传被罚3万元等。<br>
+        <b>涉事企业及行业：</b>西安万新英华教育、校园圈数科、西安唐汉医药、西安瘦龙健康、西安媄微尚品化妆品等｜电商/教育/医药/日化<br>
+        <b>舆情分类：</b>①质量投诉（涉虚假宣传、售假）　<b>来源平台：</b>西西新闻<br>
+        <b>来源链接：</b><a href="https://www.xixinews.com/shenghuo/20261113/73811.html" target="_blank">https://www.xixinews.com/shenghuo/20261113/73811.html</a><br>
+        <b>节点时间：</b>2026-11-13（省局发布）　<b>事件首发时间：</b>2026-11-13
+      </div>
+    </div>
+
+    <div class="item lv3">
+      <div class="top"><span class="idx">主榜 08</span><h3>天津市河北区市场监管局发布抽检不合格食品典型案例（第一期）：驴肉火烧掺马肉等4案通报</h3><span class="tag t3">三级</span><span class="tag tag-sec">A1 监管查处</span><span class="tag tag-cat">①质量投诉</span></div>
+      <div class="meta">
+        <b>事件概述：</b>11月13日天津市河北区市场监管局发布抽检不合格食品典型案例（第一期），通报4起案件：某食品商行经营霉菌超标山楂片（免罚、线索移送生产商属地）；某驴肉火烧馆经营掺假掺杂酱驴肉（检出马源性成分）被警告、没收违法所得并罚款；某小吃店自制驴肉火烧驴马混掺被没收违法所得并罚款；某冷冻食品店经营阿斯巴甜超标野山椒（线索移送）。<br>
+        <b>涉事企业及行业：</b>天津市河北区相关食品经营主体｜食品餐饮<br>
+        <b>舆情分类：</b>①质量投诉　<b>来源平台：</b>网易号（转天津市河北区市场监管局、天津新闻广播）<br>
+        <b>来源链接：</b><a href="https://www.163.com/dy/article/LBNQIPJG0545BQ6G_pdya11y.html" target="_blank">https://www.163.com/dy/article/LBNQIPJG0545BQ6G_pdya11y.html</a><br>
+        <b>节点时间：</b>2026-11-13（区局发布）　<b>事件首发时间：</b>2026-11-13
+      </div>
+    </div>
+
+    <div class="item lv3">
+      <div class="top"><span class="idx">主榜 09</span><h3>南宁市江南区市场监管局通告3家企业不合格食品核查处置情况：叉烧添加日落黄胭脂红被罚</h3><span class="tag t3">三级</span><span class="tag tag-sec">A1 处罚公示</span><span class="tag tag-cat">①质量投诉</span></div>
+      <div class="meta">
+        <b>事件概述：</b>11月13日南宁市江南区市场监管局发布核查处置通告：莲宣食品小作坊叉烧肉违规添加日落黄、胭脂红被罚款2000元并召回；七哥蔬菜批发部经营噻虫嗪超标苦瓜被警告；何锡山蔬菜批发部经营镉超标小米椒、噻虫胺超标豇豆并案处理。涉事企业已落实整改与召回。<br>
+        <b>涉事企业及行业：</b>南宁市江南区3家食品经营主体｜食品农产品<br>
+        <b>舆情分类：</b>①质量投诉　<b>来源平台：</b>网易号（转南宁市江南区市场监管局）<br>
+        <b>来源链接：</b><a href="https://www.163.com/dy/article/LBNFCA6A0556KBWI_pdya11y.html" target="_blank">https://www.163.com/dy/article/LBNFCA6A0556KBWI_pdya11y.html</a><br>
+        <b>节点时间：</b>2026-11-13（通告发布）　<b>事件首发时间：</b>2026-11-13
+      </div>
+    </div>
   </div>
 
-  <div class="item">
-    <div class="top"><h3>5. 山东省公布衣料用液体洗涤剂抽检结果：2批次洗衣液总活性物不合格</h3><span class="badge b3">三级</span></div>
-    <dl class="fields">
-      <dt>事件概述</dt><dd>山东省市场监管局网站公布2026年衣料用液体洗涤剂产品质量省级监督抽查结果：34批次中2批次不符合标准，分别为阳信县信城丰阳超市销售的"酵素香氛洗衣液"和淘宝网售"宝宝天然酵素洗衣液"（标称佛山黑瑞医药），不合格项目均为总活性物。省局已责成属地市监部门做好不合格结果处理。</dd>
-      <dt>涉事企业及行业</dt><dd>标称生产企业佛山黑瑞医药有限公司等及涉事销售者｜日化（洗涤用品）</dd>
-      <dt>舆情分类</dt><dd><span class="tag">① 质量投诉</span></dd>
-      <dt>来源平台</dt><dd>中国质量新闻网（山东省市场监管局公示）</dd>
-      <dt>来源链接</dt><dd><a href="https://www.cqn.com.cn/ms/content/2026-11/12/content_9180740.htm" target="_blank" rel="noopener">https://www.cqn.com.cn/ms/content/2026-11/12/content_9180740.htm</a></dd>
-      <dt>舆情等级</dt><dd><span class="badge b3">三级</span> 省级抽检公示，非知名品牌，媒体少量转载</dd>
-      <dt>节点时间</dt><dd>2026-11-12（抽检结果公示）</dd>
-      <dt>事件首发时间</dt><dd>2026-11-12（与节点同步公开）</dd>
-    </dl>
+  <!-- 立白专项 -->
+  <div class="section">
+    <h2>🎯 立白专项（每期必检）</h2>
+    <div class="note">
+      本期无新增节点。监测对象：广州立白企业集团/立白科技集团、朝云集团（06606.HK）及旗下品牌（立白、好爸爸、蓝天六必治、威王、超威、贝贝健、西兰），创始人陈凯旋及家族成员（陈凯臣等）。<br>
+      本期核查情况：①企业声誉——窗口内无负面报道，11月10-13日立白科技集团亮相武汉第46届中国洗涤用品行业年会并举办日化产业高质量发展分论坛，属正面传播；②黑猫投诉——立白品牌最新投诉（如11月3日"漂白剂致白衣变色"个案）发布及办结时间均在窗口前，未形成窗口内新节点，且为个案投诉、非集中爆发；③家族成员、产品宣传、企业管理、政府查处各线均未检索到窗口内新节点。将持续跟踪。
+    </div>
   </div>
 
-  <div class="item">
-    <div class="top"><h3>6. 福建省药监局公布"两品一械"典型案例：香柏某化妆品香水未按生产质量管理规范组织生产，罚没并召回</h3><span class="badge b3">三级</span></div>
-    <dl class="fields">
-      <dt>事件概述</dt><dd>11月12日福建省药监局公布2026年第三批典型案例。香柏某化妆品有限公司飞行检查中发现1项关键项目、8项重点项目不符合化妆品生产质量管理规定，"Sofflé他/她香水"投料记录与备案技术要求不符，涉案货值8091元，企业提交召回报告。监管部门责令改正，没收违法所得并处罚款3.5万元。</dd>
-      <dt>涉事企业及行业</dt><dd>香柏某化妆品有限公司｜化妆品（香氛）</dd>
-      <dt>舆情分类</dt><dd><span class="tag">① 质量投诉</span>（生产质量违规+产品召回）</dd>
-      <dt>来源平台</dt><dd>中国质量新闻网（福建省药监局典型案例）</dd>
-      <dt>来源链接</dt><dd><a href="https://www.cqn.com.cn/zj/content/2026-11/12/content_9180936.htm" target="_blank" rel="noopener">https://www.cqn.com.cn/zj/content/2026-11/12/content_9180936.htm</a></dd>
-      <dt>舆情等级</dt><dd><span class="badge b3">三级</span> 省级典型案例通报，企业未具名，罚款额较小</dd>
-      <dt>节点时间</dt><dd>2026-11-12（典型案例公布）</dd>
-      <dt>事件首发时间</dt><dd>2025-09-18（飞行检查发现）</dd>
-    </dl>
+  <!-- 辅榜 -->
+  <div class="section">
+    <h2>🆕 当日新发（辅榜）</h2>
+    <div class="item lv2">
+      <div class="top"><span class="idx">辅榜 01</span><h3>奥迪朋友圈广告错播英菲尼迪视频，腾讯广告致歉并承担赔偿</h3><span class="tag t2">二级</span><span class="tag tag-sec">辅榜·广告争议首发</span><span class="tag tag-cat">②广告争议</span></div>
+      <div class="meta">
+        <b>事件概述：</b>11月13日上午，微信朋友圈奥迪Q8广告点开视频内容实为英菲尼迪车型介绍，迅速登上热搜（相关话题最高阅读超2000万）。腾讯广告当天下午发布致歉函，称因华东二区某汽车行业服务商疏漏发生素材错播，已下线广告并会同服务商承担赔偿，承诺强化服务商管理与审核规范。<br>
+        <b>涉事企业及行业：</b>一汽-大众奥迪（广告主）、腾讯广告（投放平台）｜汽车/互联网广告<br>
+        <b>舆情分类：</b>②广告争议（投放事故）　<b>来源平台：</b>中新经纬<br>
+        <b>来源链接：</b><a href="https://www.jwview.com/jingwei/11-14/272014.shtml" target="_blank">https://www.jwview.com/jingwei/11-14/272014.shtml</a><br>
+        <b>事件首发时间：</b>2026-11-13 09:00（错播曝光，当日首次曝光于窗口内）
+      </div>
+    </div>
   </div>
 
-  <div class="item">
-    <div class="top"><h3>7. 云南省药监局公布典型案例：美发店经营备案已注销的"方晟清爽洁净洗发乳"被没收并罚款</h3><span class="badge b3">三级</span></div>
-    <dl class="fields">
-      <dt>事件概述</dt><dd>11月12日云南省药监局公布三起典型案例之一：大理州祥云县某造型美发店经营的方晟清爽洁净洗发乳，其备案编号已于2023年9月注销仍继续生产销售，属未备案普通化妆品。祥云县市监局没收违法经营化妆品并减轻罚款3000元。</dd>
-      <dt>涉事企业及行业</dt><dd>方晟品牌洗发乳（标称粤G妆网备字产品）相关生产经营链条及涉事美发店｜日化（洗护发）</dd>
-      <dt>舆情分类</dt><dd><span class="tag">① 质量投诉</span>（经营未备案化妆品）</dd>
-      <dt>来源平台</dt><dd>云南省药品监督管理局官网</dd>
-      <dt>来源链接</dt><dd><a href="https://mpa.yn.gov.cn/xwzx/yjdt/202611/t20261112_4383777.html" target="_blank" rel="noopener">https://mpa.yn.gov.cn/xwzx/yjdt/202611/t20261112_4383777.html</a></dd>
-      <dt>舆情等级</dt><dd><span class="badge b3">三级</span> 地方通报，小额罚款，个案性质</dd>
-      <dt>节点时间</dt><dd>2026-11-12（典型案例公布）</dd>
-      <dt>事件首发时间</dt><dd>2026-03-25（监督抽样发现问题）</dd>
-    </dl>
+  <!-- 持续跟踪 -->
+  <div class="section track">
+    <h2>⏳ 持续跟踪区（不占收录数）</h2>
+    <div class="item">
+      <div class="top"><span class="idx">跟踪 01</span><h3>德芙广告文案翻车运营方被罚80万元，舆论热度延续</h3><span class="tag lv-tag-track">持续跟踪</span></div>
+      <div class="meta">
+        <b>事件概述：</b>快手"德芙官方旗舰店"运营主体上海宗正食品因发布"宣扬错误婚恋观、违背社会良好风尚"带货视频，10月被上海普陀区市监局罚款80万元；11月12日长三角市场监管部门联合公布典型案例后舆情再起，11月13-14日央广网、红网等持续评论"低俗擦边营销"现象，与滴露物化女性广告（80万/26.5万罚单）并列为监管严打信号。节点（11月12日通报）在窗口前，热度未退，列入跟踪。<br>
+        <b>来源链接：</b><a href="https://finance.sina.cn/2026-11-12/detail-iniynppc3865306.d.html" target="_blank">新浪财经：冲上热搜！德芙广告翻车，被罚80万元</a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="top"><span class="idx">跟踪 02</span><h3>央视曝光餐饮"取消外卖""顾客勒索商家"摆拍 MCN"暴力起号"，联合调查组进驻调查</h3><span class="tag lv-tag-track">持续跟踪</span></div>
+      <div class="meta">
+        <b>事件概述：</b>11月11日央视新闻调查揭穿"取消外卖"系列短视频均系MCN机构策划摆拍（3800元/月出15条），涉事MCN已被当地联合调查组进驻调查、核心账号转私密；美团官方同步核实"Lv8顾客勒索商家"视频亦属摆拍。处置尚未公布结果，热度延续，列入跟踪。<br>
+        <b>来源链接：</b><a href="https://www.163.com/dy/article/LBMISOI705315FER.html" target="_blank">蓝洞商业：用「暴力起号」收割小店</a>
+      </div>
+    </div>
   </div>
 
-  <div class="item">
-    <div class="top"><h3>8. 陕西省市监局公布网络交易监管典型案例：西安媄微尚品化妆品虚假宣传功效被罚3万元</h3><span class="badge b3">三级</span></div>
-    <dl class="fields">
-      <dt>事件概述</dt><dd>11月13日陕西省市场监管局发布网络交易监管典型案例。西安媄微尚品化妆品有限公司通过微信渠道销售化妆品时，在未取得对应功效备案且无合法佐证材料的情况下宣称产品具有相关功效，构成虚假商业宣传，被责令改正并罚款3万元。同批案例还涉及宝鸡某饮品公司虚假广告被罚5万余元等。</dd>
-      <dt>涉事企业及行业</dt><dd>西安媄微尚品化妆品有限公司｜化妆品（电商渠道）</dd>
-      <dt>舆情分类</dt><dd><span class="tag">② 广告争议</span>（虚假功效宣传）</dd>
-      <dt>来源平台</dt><dd>中国质量新闻网（陕西省市场监管局典型案例）</dd>
-      <dt>来源链接</dt><dd><a href="https://m.cqn.com.cn/ms/content/2026-11/13/content_9181176.htm" target="_blank" rel="noopener">https://m.cqn.com.cn/ms/content/2026-11/13/content_9181176.htm</a></dd>
-      <dt>舆情等级</dt><dd><span class="badge b3">三级</span> 省级案例通报，企业规模小，罚款额较小</dd>
-      <dt>节点时间</dt><dd>2026-11-13（典型案例发布）</dd>
-      <dt>事件首发时间</dt><dd>2025-05（接到投诉举报立案）</dd>
-    </dl>
+  <div class="footer">
+    合规声明：本报告基于公开渠道信息整理，仅用于企业舆情研究与风险提示，不构成任何投资或商业建议。<br>
+    涉个人权益内容仅基于官方通报与权威报道作中性陈述，不渲染细节、不传播未经证实信息、不展示受害者可识别信息。<br>
+    所有条目均经时效核验（双轨窗口：主榜以处置节点时间为基准，辅榜以首次曝光时间为基准），来源链接以发布时状态为准。<br>
+    数据归档：github.com/caruso72/fenxi ｜ 生成时间：2026-11-15 08:00
   </div>
-
-  <div class="item">
-    <div class="top"><h3>9. 重庆市监局通报5414批次食品抽检：21批次不合格，涉及小葱、红糖、散装白酒、粉丝等</h3><span class="badge b3">三级</span></div>
-    <dl class="fields">
-      <dt>事件概述</dt><dd>11月13日重庆市市场监督管理局发布2026年第17号食品安全抽检通告：5414批次中21批次不合格，涉及农残（氯氟氰菊酯、噻虫嗪等）、添加剂超范围超限量（柠檬黄、纽甜、苯甲酸、铝残留量）等问题，属地监管部门已启动核查处置，责令下架、召回并立案查处。</dd>
-      <dt>涉事企业及行业</dt><dd>重庆璧山、铜梁、潼南、忠县、酉阳、彭水等地21家食品生产经营者｜食品（流通/生产）</dd>
-      <dt>舆情分类</dt><dd><span class="tag">① 质量投诉</span></dd>
-      <dt>来源平台</dt><dd>重庆市市场监督管理局官网</dd>
-      <dt>来源链接</dt><dd><a href="https://scjgj.cq.gov.cn/zfxxgk_225/fdzdgknr/jdcj/spaq_1/jcjgxx/202611/t20261113_16407277.html" target="_blank" rel="noopener">https://scjgj.cq.gov.cn/zfxxgk_225/fdzdgknr/jdcj/spaq_1/jcjgxx/202611/t20261113_16407277.html</a></dd>
-      <dt>舆情等级</dt><dd><span class="badge b3">三级</span> 省级例行抽检公示，多为小微经营者</dd>
-      <dt>节点时间</dt><dd>2026-11-13（通告发布）</dd>
-      <dt>事件首发时间</dt><dd>2026-11-13（与节点同步公开）</dd>
-    </dl>
-  </div>
-</section>
-
-<!-- 立白专项 -->
-<section>
-  <h2>🎯 立白专项</h2>
-  <div class="sec-note">监测对象：广州立白企业集团/立白科技集团、朝云集团（06601.HK）及旗下品牌（立白、好爸爸、蓝天六必治、威王、超威、贝贝健、西兰）、创始人陈凯旋及家族成员。本期计 1 条，不计入主/辅榜配比。另：本期未发现立白/朝云集团处罚、家族成员纠纷诉讼等负面节点；朝云集团股价近两周窄幅震荡（11-13收报1.94港元），华安证券11-13维持"买入"评级，无负面舆情节点。</div>
-
-  <div class="item">
-    <div class="top"><h3>立-1. 媒体调查：立白等品牌"抗HPV内衣洗衣液"宣称99.9%洗除率/灭活率，立白客服截至发稿未提供检测报告</h3><span class="badge b3">三级</span></div>
-    <dl class="fields">
-      <dt>事件概述</dt><dd>《消费者报道》11月12日刊发调查：奥妙、立白、蔬果园等品牌电商在售"抗HPV"内衣洗衣液宣称"洗除率/灭活率99.9%"。记者核实发现，蔬果园实测报告仅验证特定条件下"病毒洗除率"而宣传使用"灭活HPV"表述；立白官方热线表示无法回答产品宣传问题，官方旗舰店客服表示会反馈但截至发稿未提供检测报告。涉"产品宣传不当"潜在监管风险，后续存在被监管关注或抽检认定的可能。</dd>
-      <dt>涉事企业及行业</dt><dd>广州立白企业集团有限公司（立白品牌）｜日化（织物洗涤）</dd>
-      <dt>舆情分类</dt><dd><span class="tag">② 广告争议</span>（功效宣称依据存疑）</dd>
-      <dt>来源平台</dt><dd>腾讯新闻（转载《消费者报道》）</dd>
-      <dt>来源链接</dt><dd><a href="https://news.qq.com/rain/a/20261112A08IA800" target="_blank" rel="noopener">https://news.qq.com/rain/a/20261112A08IA800</a></dd>
-      <dt>舆情等级</dt><dd><span class="badge b3">三级</span> 单一专业媒体调查、讨论有限，但知名品牌涉功效宣传合规风险，持续跟踪</dd>
-      <dt>节点时间</dt><dd>2026-11-12（调查报道发布）</dd>
-      <dt>事件首发时间</dt><dd>2026-11-12（该报道为窗口内首次系统曝光）</dd>
-    </dl>
-  </div>
-</section>
-
-<!-- 辅榜 -->
-<section>
-  <h2>🆕 当日新发（辅榜）</h2>
-  <div class="sec-note">收录口径：窗口内首次曝光的质量/安全事故、广告争议首发、高管被查首发。共 2 条，占比 17%（≤30%），无灌水凑数。</div>
-
-  <div class="item">
-    <div class="top"><h3>辅-1. 比亚迪承认旗舰SUV"大唐"轮毂前后装反，公开致歉：免费换新、质保重新起算</h3><span class="badge b2">二级</span></div>
-    <dl class="fields">
-      <dt>事件概述</dt><dd>11月13日，多位车主投诉新上市大唐纯电SUV前/后轮毂装反，比亚迪微博致歉并回应：问题追溯到湖北轮毂总成供应商，已修复并增加产线目视检查；免费更换轮毂、提供代步车或交通补偿，相关车辆质保期重新起算。该车型国内订单约15万辆，临近出海节点，品控问题受到广泛关注。</dd>
-      <dt>涉事企业及行业</dt><dd>比亚迪股份有限公司｜汽车/3C制造</dd>
-      <dt>舆情分类</dt><dd><span class="tag">① 质量投诉</span>（装配质量+集中车主投诉）</dd>
-      <dt>来源平台</dt><dd>网易号（据彭博社报道及比亚迪官方声明）</dd>
-      <dt>来源链接</dt><dd><a href="https://www.163.com/dy/article/LBKKQ7IB05561FZO.html" target="_blank" rel="noopener">https://www.163.com/dy/article/LBKKQ7IB05561FZO.html</a></dd>
-      <dt>舆情等级</dt><dd><span class="badge b2">二级</span> 知名品牌、多家媒体跟进、企业公开回应</dd>
-      <dt>事件发生时间（首发基准）</dt><dd>2026-11-13（车主投诉与比亚迪致歉声明首次曝光）</dd>
-    </dl>
-  </div>
-
-  <div class="item">
-    <div class="top"><h3>辅-2. 微软全球服务中断波及至少70国，公司道歉：故障源于网络容量升级，与网络攻击无关</h3><span class="badge b1">一级</span></div>
-    <dl class="fields">
-      <dt>事件概述</dt><dd>11月13日，微软就导致数百万用户受影响的全球性服务中断深表歉意，称故障由早先一次"网络容量升级"引发，与网络攻击或AI智能体无关；Teams、Outlook及Copilot在至少70个国家无法使用，英国NHS、美国联邦政府及法院系统受影响，央视新闻报道。</dd>
-      <dt>涉事企业及行业</dt><dd>微软（Microsoft）｜互联网/云服务</dd>
-      <dt>舆情分类</dt><dd><span class="tag">⑤ 社会公共安全</span>（关键服务中断）</dd>
-      <dt>来源平台</dt><dd>央视新闻</dd>
-      <dt>来源链接</dt><dd><a href="https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&amp;item_id=14980190419015907298&amp;channelId=1119" target="_blank" rel="noopener">https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&amp;item_id=14980190419015907298&amp;channelId=1119</a></dd>
-      <dt>舆情等级</dt><dd><span class="badge b1">一级</span> 央媒报道、跨国影响、跨平台持续关注</dd>
-      <dt>事件发生时间（首发基准）</dt><dd>2026-11-13（故障曝光及致歉）</dd>
-    </dl>
-  </div>
-</section>
-
-<!-- 持续跟踪 -->
-<section>
-  <h2>⏳ 持续跟踪区</h2>
-  <div class="sec-note">窗口内无新处置节点、但事件仍在办理/热度未退的重大事件，共 3 条（不计入收录数）。</div>
-  <div class="track-item"><b>捷荣技术（002855）证监会处罚进程：</b>11-10控股股东捷荣集团、实控人赵晓群等收到广东证监局《行政处罚事先告知书》，11-12公司披露补充公告，涉信息披露违法违规，事件仍在办理中。<a href="https://epaper.cs.com.cn/zgzqb/html/2026-11/12/nw.D110000zgzqb_20261112_3-B035.htm" target="_blank" rel="noopener">来源：中国证券报</a></div>
-  <div class="track-item"><b>林州重机（002535）财务造假处罚落地：</b>11-11收到河南证监局《行政处罚决定书》，认定2025年半年报虚增营收3.23亿元，公司五年内再次虚假记载属从重情节，11-12公告披露，投资者索赔在途。<a href="http://epaper.zqrb.cn/html/2026-11/12/content_1287348.htm" target="_blank" rel="noopener">来源：证券日报</a></div>
-  <div class="track-item"><b>京津冀消协机票退改签整改（节点2026-11-06通报会）：</b>10家航空公司、5家线上售票平台被敦促限期整改，12-10为整改反馈截止日，仍在办理期。<a href="https://big5.china.com.cn/gate/big5/travel.china.com.cn/txt/2026-11/12/content_118771432.shtml" target="_blank" rel="noopener">来源：中国网</a></div>
-</section>
-
-<footer>
-  <b>合规声明：</b>本报告基于公开渠道信息整理，仅供内部舆情参考，不构成任何投资建议或法律意见。涉性骚扰/侵害女性类话题仅基于官方通报与权威报道中性陈述，不渲染细节、不传播未经证实信息、不展示受害者可识别信息。所有条目均经时效核验（基准窗口 2026-11-12 08:00 至 2026-11-14 08:00，双轨时效口径），无法确认精确时间的线索一律未收录。等级划分为编辑内部研判，链接内容以原始来源为准。<br><br>
-  生成时间：2026-11-14 08:00（北京时间）｜ 数据窗口滚动48小时 ｜ 历史归档：github.com/caruso72/fenxi
-</footer>
 
 </div>
 </body>
