@@ -3,227 +3,273 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2027届校招面试吐槽 · 全网热帖采集报告（11-17）</title>
+<title>企业舆情监测报告（2026-11-18）</title>
 <style>
   :root{
-    --grad-a:#6d28d9;--grad-b:#9333ea;--accent:#7c3aed;--bg:#f6f7fb;
-    --ink:#1e293b;--muted:#64748b;--gold:#f59e0b;--card:#ffffff;
+    --c-lv1:#d93025; --c-lv2:#e8a000; --c-lv3:#1a73e8;
+    --c-bg:#f4f6fa; --c-card:#ffffff; --c-text:#1f2329; --c-sub:#5f6672;
+    --c-border:#e3e7ee; --c-primary:#0b57d0;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;background:var(--bg);color:var(--ink);padding:30px 16px;}
-  .wrap{max-width:980px;margin:0 auto;}
-  .hero{background:linear-gradient(135deg,var(--grad-a),var(--grad-b));color:#fff;border-radius:22px;padding:44px 36px;text-align:center;box-shadow:0 14px 40px rgba(109,40,217,.28);}
-  .hero h1{font-size:28px;letter-spacing:1px;}
-  .hero p{margin-top:10px;font-size:14px;opacity:.92;}
-  .hero-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px;}
-  .hero-tags span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:5px 14px;font-size:12.5px;}
-  .hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px;}
-  .hero-actions a{display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;transition:.2s;}
-  .btn-download{background:rgba(255,255,255,.95);color:#4c1d95;box-shadow:0 6px 18px rgba(0,0,0,.18);}
-  .btn-download:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.26);}
-  .btn-ghost{background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.45);}
-  .btn-ghost:hover{background:rgba(255,255,255,.32);}
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px;}
-  .stat{background:var(--card);border-radius:16px;padding:20px 16px;text-align:center;box-shadow:0 4px 16px rgba(30,41,59,.06);border-top:4px solid var(--accent);}
-  .stat b{display:block;font-size:24px;color:var(--accent);}
-  .stat span{font-size:12.5px;color:var(--muted);}
-  .sec-title{font-size:19px;margin:34px 0 6px;padding-left:12px;border-left:5px solid var(--accent);}
-  .category{background:var(--card);border-radius:16px;padding:20px 24px;margin-top:16px;box-shadow:0 4px 16px rgba(30,41,59,.06);}
-  .category h3{font-size:16.5px;}
-  .bar{height:9px;background:#ede9fe;border-radius:99px;margin-top:10px;overflow:hidden;}
-  .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--grad-a),var(--grad-b));border-radius:99px;}
-  .rank-item{display:flex;gap:14px;align-items:flex-start;background:var(--card);border-radius:16px;padding:18px 22px;margin-top:12px;box-shadow:0 4px 16px rgba(30,41,59,.06);}
-  .badge{flex:0 0 40px;height:40px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;background:#94a3b8;}
-  .badge.gold{background:linear-gradient(135deg,#f59e0b,#d97706);}
-  .badge.silver{background:linear-gradient(135deg,#94a3b8,#64748b);}
-  .badge.bronze{background:linear-gradient(135deg,#d97706,#92400e);}
-  .rank-body h4{font-size:15.5px;}
-  .rank-body a{color:var(--accent);text-decoration:none;}
-  .rank-body a:hover{text-decoration:underline;}
-  .rank-body p{font-size:13.5px;color:var(--muted);margin-top:6px;}
-  .chip{display:inline-block;border-radius:999px;padding:3px 12px;font-size:11.5px;font-weight:600;margin-right:8px;}
-  .chip.plat-xhs{background:#ffe4e6;color:#be123c;}
-  .chip.plat-wb{background:#ffedd5;color:#c2410c;}
-  .chip.plat-gzh{background:#dcfce7;color:#15803d;}
-  .chip.plat-dy{background:#f3e8ff;color:#6741d9;}
-  .chip.plat-nc{background:#e0f2fe;color:#0369a1;}
-  .chip.plat-media{background:#eef2ff;color:#3730a3;}
-  .heat{flex:0 0 130px;text-align:right;}
-  .heat .stars{color:var(--gold);font-size:15px;letter-spacing:2px;}
-  .heat small{display:block;color:var(--muted);font-size:12px;margin-top:2px;}
-  .note{background:#fffbe8;border:1px solid #f5d90a;border-radius:14px;padding:16px 20px;font-size:13.5px;color:#6b5b00;margin-top:34px;}
-  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:30px;}
-  @media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr);}.heat{flex-basis:90px;}}
+  body{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;background:var(--c-bg);color:var(--c-text);line-height:1.65;padding:24px 16px 48px;}
+  .wrap{max-width:1080px;margin:0 auto;}
+  header.hero{background:linear-gradient(135deg,#0b3d91 0%,#0b57d0 60%,#1a73e8 100%);color:#fff;border-radius:14px;padding:30px 28px 24px;box-shadow:0 6px 18px rgba(11,87,208,.18);}
+  header.hero h1{font-size:26px;letter-spacing:1px;}
+  header.hero .win{margin-top:10px;font-size:14px;opacity:.92;}
+  header.hero .cnt{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px;font-size:13px;}
+  header.hero .cnt span{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:4px 12px;border-radius:999px;}
+  .toolbar{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 20px;}
+  .toolbar a{text-decoration:none;font-size:14px;padding:9px 16px;border-radius:8px;font-weight:600;}
+  .btn-dl{background:var(--c-primary);color:#fff;}
+  .btn-his{background:#fff;color:var(--c-primary);border:1px solid var(--c-border);}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:24px;}
+  .stat{background:var(--c-card);border-radius:12px;padding:18px 20px;border:1px solid var(--c-border);box-shadow:0 2px 6px rgba(31,35,41,.05);}
+  .stat .num{font-size:30px;font-weight:700;}
+  .stat .lab{font-size:13px;color:var(--c-sub);margin-top:4px;}
+  .stat.b1 .num{color:var(--c-lv1);} .stat.b2 .num{color:var(--c-lv2);} .stat.b3 .num{color:var(--c-primary);} .stat.b4 .num{color:#0f9d58;}
+  section{background:var(--c-card);border-radius:12px;border:1px solid var(--c-border);padding:22px;margin-bottom:22px;box-shadow:0 2px 6px rgba(31,35,41,.05);}
+  section>h2{font-size:19px;padding-bottom:10px;border-bottom:2px solid var(--c-border);margin-bottom:16px;}
+  .sec-main>h2{border-bottom-color:#d93025;}
+  .sec-libai>h2{border-bottom-color:#0f9d58;}
+  .sec-fu>h2{border-bottom-color:#1a73e8;}
+  .sec-track>h2{border-bottom-color:#e8a000;}
+  .item{border:1px solid var(--c-border);border-radius:10px;padding:16px 18px;margin-bottom:14px;background:#fcfdff;}
+  .item .top{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap;}
+  .badge{flex:none;font-size:12px;font-weight:700;color:#fff;padding:3px 10px;border-radius:999px;letter-spacing:1px;}
+  .lv1{background:var(--c-lv1);} .lv2{background:var(--c-lv2);} .lv3{background:var(--c-lv3);}
+  .idx{font-size:15px;font-weight:700;color:var(--c-sub);flex:none;}
+  .item h3{font-size:16px;font-weight:700;}
+  .fields{margin-top:10px;display:grid;grid-template-columns:1fr;gap:6px;font-size:14px;}
+  .fields .row b{color:var(--c-sub);font-weight:600;flex:none;}
+  .fields .row{display:flex;gap:6px;}
+  .fields a{color:var(--c-primary);word-break:break-all;text-decoration:none;border-bottom:1px dotted var(--c-primary);}
+  .tag{display:inline-block;font-size:12px;background:#eef2f8;color:#3c4a63;border-radius:4px;padding:1px 8px;margin-right:6px;}
+  .empty-tip{background:#f2fbf5;border:1px dashed #9ad9b0;color:#2c7a4b;border-radius:8px;padding:14px 16px;font-size:14px;}
+  .track-note{font-size:13px;color:var(--c-sub);margin-bottom:12px;}
+  footer{font-size:12.5px;color:var(--c-sub);background:var(--c-card);border:1px solid var(--c-border);border-radius:12px;padding:18px 22px;line-height:1.8;}
+  footer strong{color:var(--c-text);}
+  @media (max-width:640px){ header.hero h1{font-size:21px;} .stat .num{font-size:24px;} }
 </style>
 </head>
 <body>
 <div class="wrap">
 
   <header class="hero">
-    <h1>🔥 2027届高校毕业生校招面试吐槽 · 全网热帖采集报告</h1>
-    <p>检索时间：2026-11-17（周二）｜检索平台：牛客网、今日头条、搜狐/微信长文、微博、腾讯新闻、技术社区｜本期有效热帖 12 条</p>
-    <div class="hero-tags">
-      <span># 27届秋招地狱难度</span>
-      <span># 泡池子</span>
-      <span># 第一学历一票否决</span>
-      <span># AI面试一次机会</span>
-      <span># 流程卷到六轮</span>
-      <span># 开奖难</span>
-      <span># HC缩减</span>
-      <span># 面试全A仍挂</span>
-    </div>
-    <div class="hero-actions">
-      <a class="btn-download" href="2027-top15-20261117.html" download="2027-top15-20261117.html">⬇ 下载本页 HTML</a>
-      <a class="btn-ghost" href="https://github.com/caruso72/fenxi" target="_blank" rel="noopener">📚 历史归档</a>
+    <h1>企业舆情监测报告</h1>
+    <div class="win">统计窗口：2026-11-16 08:00 ～ 2026-11-18 08:00（T-48h，精确到小时）｜执行时刻：2026-11-18 08:00</div>
+    <div class="cnt">
+      <span>收录总数：11 条</span>
+      <span>🔨 处置节点主榜：10 条</span>
+      <span>🆕 当日新发辅榜：1 条</span>
+      <span>🎯 立白专项：0 条（本期无新增节点）</span>
     </div>
   </header>
 
-  <div class="stats">
-    <div class="stat"><b>12</b><span>本期有效热帖（TOP15 未满额）</span></div>
-    <div class="stat"><b>6 大类</b><span>吐槽主题归纳</span></div>
-    <div class="stat"><b>8 个</b><span>独立来源站点</span></div>
-    <div class="stat"><b>96</b><span>榜首综合热度分</span></div>
+  <div class="toolbar">
+    <a class="btn-dl" href="qingyu-20261118.html" download="qingyu-20261118.html">⬇ 下载本页HTML</a>
+    <a class="btn-his" href="https://github.com/caruso72/fenxi" target="_blank" rel="noopener">📚 历史归档</a>
   </div>
 
-  <h2 class="sec-title">📊 分类归纳（按综合热度降序）</h2>
-  <div class="category-list">
-    <div class="category">
-      <h3>1. 泡池子 / 0 offer 焦虑 <span style="color:var(--gold);">★★★★★</span></h3>
-      <p style="font-size:13.5px;color:var(--muted);margin-top:6px;">代表吐槽：“秋招泡的不是池子，是汪洋大海”——终面通过后卡在“已通过”与“已发放”之间数月，手握一堆面试通过反馈却 0 offer。</p>
-      <div class="bar"><i style="width:96%;"></i></div>
-    </div>
-    <div class="category">
-      <h3>2. 学历 / 第一学历歧视（AI 筛选放大） <span style="color:var(--gold);">★★★★★</span></h3>
-      <p style="font-size:13.5px;color:var(--muted);margin-top:6px;">代表吐槽：“抵不过人家轻飘飘一句‘对面是 985 会比较匹配’”——AI 招聘系统把隐性门槛变成可批量执行的一票否决。</p>
-      <div class="bar"><i style="width:92%;"></i></div>
-    </div>
-    <div class="category">
-      <h3>3. 超长面试流程 / 开奖慢 / 养鱼 <span style="color:var(--gold);">★★★★☆</span></h3>
-      <p style="font-size:13.5px;color:var(--muted);margin-top:6px;">代表吐槽：“7、8月提前批面试，10、11月才开奖，非得卡着，然后陷入死锁状态”；“流程从三轮卷到六轮”。</p>
-      <div class="bar"><i style="width:85%;"></i></div>
-    </div>
-    <div class="category">
-      <h3>4. AI 进面试：既要考 AI，也被 AI 筛 <span style="color:var(--gold);">★★★★</span></h3>
-      <p style="font-size:13.5px;color:var(--muted);margin-top:6px;">代表吐槽：“笔试从算法卷到 AI Coding，面试从八股卷到 RAG 和 Agent”；部分银行把数字人 AI 面试设为“仅一次机会、记录全行通用”。</p>
-      <div class="bar"><i style="width:80%;"></i></div>
-    </div>
-    <div class="category">
-      <h3>5. 面试官态度 / KPI 面 / HR 画饼 <span style="color:var(--gold);">★★★☆</span></h3>
-      <p style="font-size:13.5px;color:var(--muted);margin-top:6px;">代表吐槽：“多谢海王提前放生我”——约面数量与录取数量被写进招聘部门 KPI，“保温”话术越甜，被拒时反弹越大。</p>
-      <div class="bar"><i style="width:74%;"></i></div>
-    </div>
-    <div class="category">
-      <h3>6. HC 缩减与薪资争议 <span style="color:var(--gold);">★★★</span></h3>
-      <p style="font-size:13.5px;color:var(--muted);margin-top:6px;">代表吐槽：200 个 HC 对应 3000+ 份简历；“校招岗位需求较 2022 年高峰收缩约四成”；已谈妥的年薪可因学历背景被下调。</p>
-      <div class="bar"><i style="width:66%;"></i></div>
-    </div>
+  <div class="cards">
+    <div class="stat b1"><div class="num">11</div><div class="lab">收录总条数</div></div>
+    <div class="stat b2"><div class="num">3</div><div class="lab">一级舆情条数</div></div>
+    <div class="stat b3"><div class="num">10</div><div class="lab">涉及行业数</div></div>
+    <div class="stat b4"><div class="num">10</div><div class="lab">处置节点类条数（主榜）</div></div>
   </div>
 
-  <h2 class="sec-title">🏆 热帖榜单（本期有效 12 条）</h2>
-  <div class="rank-list">
-    <div class="rank-item">
-      <div class="badge gold">1</div>
-      <div class="rank-body">
-        <h4><a href="https://www.nowcoder.com/creation/subject/bff6bef8a4d648168a8ac3b197f94ae5" target="_blank" rel="noopener">「27届秋招，到底有多难？」官方话题汇总帖</a><span class="chip plat-nc">牛客网</span></h4>
-        <p>投上百份简历 0 面试、笔试全 A 却进不了面、面试聊得挺好转头就挂；HR 视角回帖称「27届校招计划 200 个 HC，一周收到 3000+ 份简历」，另有「连个晒 offer 的都没有」的高热讨论。</p>
-      </div>
-      <div class="heat"><span class="stars">★★★★★</span><small>热度 96</small></div>
-    </div>
-    <div class="rank-item">
-      <div class="badge silver">2</div>
-      <div class="rank-body">
-        <h4><a href="https://m.sohu.com/a/611186515_100024718/" target="_blank" rel="noopener">大学生求职最怕的事，三个字：「泡池子」</a><span class="chip plat-media">长文转载</span></h4>
-        <p>「秋招泡的不是池子，是汪洋大海」「谢谢你，池子侠，让不会游泳的我学会了泡」——终面通过后卡在“已通过”与“offer 已发放”之间数月，还遭遇“差额体检”二次刷人。</p>
-      </div>
-      <div class="heat"><span class="stars">★★★★★</span><small>热度 94</small></div>
-    </div>
-    <div class="rank-item">
-      <div class="badge bronze">3</div>
-      <div class="rank-body">
-        <h4><a href="https://m.toutiao.com/article/7684549711461728787/" target="_blank" rel="noopener">1270万毕业生涌入校招，第一学历为何成了 AI 招聘的「一票否决」？</a><span class="chip plat-media">今日头条</span></h4>
-        <p>已谈妥 40 万年薪的候选人因第一学历被要求重面并降薪至 35 万；另一人过完头部大厂 5 轮面试，入职审批被“必须统招全日制四年制本科”驳回。文章指 2026 年 ATS 系统把隐性门槛变成可批量执行的规则。</p>
-      </div>
-      <div class="heat"><span class="stars">★★★★★</span><small>热度 92</small></div>
-    </div>
-    <div class="rank-item">
-      <div class="badge">4</div>
-      <div class="rank-body">
-        <h4><a href="http://api-cdn.nowcoder.com/creation/subject/da27ba9cbb4c4b078484919f87ac5854" target="_blank" rel="noopener">「锐评27届秋招！难！太难！」热帖</a><span class="chip plat-nc">牛客网</span></h4>
-        <p>一句话总结「岗位少了，流程长了，要求高了，心态崩了」；双非投 200 份换 1 个面试、985 投 200 份换 20 个面试；高赞回帖直指“大厂面完就该早点开奖，卡着就是死锁”。</p>
-      </div>
-      <div class="heat"><span class="stars">★★★★☆</span><small>热度 89</small></div>
-    </div>
-    <div class="rank-item">
-      <div class="badge">5</div>
-      <div class="rank-body">
-        <h4><a href="https://m.toutiao.com/a7688049129880846891/" target="_blank" rel="noopener">「双一流硕士过了 5 轮面试，因第一学历是专科被拒」＋AI 面试新争议</a><span class="chip plat-media">今日头条</span></h4>
-        <p>引用调查：64.9% 求职者遇到过歧视，“第一学历”歧视以 52.1% 排第一；同时某股份制银行 2027 届秋招把 AI 面试纳入标准流程——每人只有一次机会、记录全行通用，过了才进笔试。</p>
-      </div>
-      <div class="heat"><span class="stars">★★★★☆</span><small>热度 87</small></div>
-    </div>
-    <div class="rank-item">
-      <div class="badge">6</div>
-      <div class="rank-body">
-        <h4><a href="https://www.nowcoder.com/creation/subject/45e0c1f9707f4cb692de9c8b52acb125" target="_blank" rel="noopener">「秋招你被哪家公司挂了？」· 面了 50+ 场泡池子泡死</a><span class="chip plat-nc">牛客网</span></h4>
-        <p>“滴滴、快手、去哪儿、小鹏……其中字节 13 场，两次三面挂，题全 A 但该挂还是挂”；211 本同学总结“大厂简历投不进去，中厂泡池子，小厂状态不更新”。</p>
-      </div>
-      <div class="heat"><span class="stars">★★★★</span><small>热度 85</small></div>
-    </div>
-    <div class="rank-item">
-      <div class="badge">7</div>
-      <div class="rank-body">
-        <h4><a href="https://www.toutiao.com/a1880559560062088/" target="_blank" rel="noopener">「秋招面了 20+ 场，踩完坑分享经验」——27届是近 5 年变化最大的一届</a><span class="chip plat-media">今日头条</span></h4>
-        <p>归纳三大特点：HC 大幅缩减（剩余名额优先给暑期实习转正）、泡池子极其严重（二面后取消岗位频发）、面试难度超过 1-2 年社招，新增 AI 能力边界 / AI 落地业务考察。</p>
-      </div>
-      <div class="heat"><span class="stars">★★★★</span><small>热度 82</small></div>
-    </div>
-    <div class="rank-item">
-      <div class="badge">8</div>
-      <div class="rank-body">
-        <h4><a href="https://www.nowcoder.com/feed/main/detail/8fab497565f049fcac13c34aeecc2cc2" target="_blank" rel="noopener">「HR 视角下的 27 届秋招」：简历像垃圾场、AI 作弊、面试迟到失联</a><span class="chip plat-nc">牛客网</span></h4>
-        <p>面试官长文吐槽：项目经历夸大“一个人干了一个团队的活”、面试时“停顿几秒就开始念一段明显不像自己说的话”、约好 10 点 10 点半还不出现且消息不回，最离谱的是入职当天突然“来不了了，还想再考虑一下”。</p>
-      </div>
-      <div class="heat"><span class="stars">★★★★</span><small>热度 78</small></div>
-    </div>
-    <div class="rank-item">
-      <div class="badge">9</div>
-      <div class="rank-body">
-        <h4><a href="https://zhangferry.com/interview-share/" target="_blank" rel="noopener">iOS 求职寒冬？听听他们怎么说（客户端岗面经合集）</a><span class="chip plat-media">技术社区</span></h4>
-        <p>多位候选人复盘“没走完的面试流程”：因为答得不好被直接 pass、盲目面试导致大量无效沟通浪费时间；也有人认为流程“从浅到深、基本没有八股”才是舒适体验——同一市场下的两种极端体感。</p>
-      </div>
-      <div class="heat"><span class="stars">★★★</span><small>热度 74</small></div>
-    </div>
-    <div class="rank-item">
-      <div class="badge">10</div>
-      <div class="rank-body">
-        <h4><a href="https://m.sohu.com/a/610135531_220034/" target="_blank" rel="noopener">今年最难上岸的年轻人，又遭当头一棒（泡池子议题媒体转载版）</a><span class="chip plat-media">搜狐/公众号转载</span></h4>
-        <p>与榜单第 2 条同题的站外转载版本，用于观察传播广度；文中记录 HR 话术“你的排序在第 5 位，机会很大”“最后一面公司基本不筛人”，以及“多谢海王提前放生我”的高赞反馈。</p>
-      </div>
-      <div class="heat"><span class="stars">★★★</span><small>热度 71</small></div>
-    </div>
-    <div class="rank-item">
-      <div class="badge">11</div>
-      <div class="rank-body">
-        <h4><a href="https://www.upcv.tech/jianlixiezuo/9288.html" target="_blank" rel="noopener">抖音秋招值不值得投？算法岗年薪 80 万真相与城市成本分析</a><span class="chip plat-dy">抖音</span></h4>
-        <p>薪资争议向的对照帖：明确列出“慎重投递”的三类人（想求稳养老的、专业不对口无实习的、沟通弱习惯单打独斗的），并把大厂协作成本、手撕代码与系统设计难度直接摆到台面上。</p>
-      </div>
-      <div class="heat"><span class="stars">★★☆</span><small>热度 66</small></div>
-    </div>
-    <div class="rank-item">
-      <div class="badge">12</div>
-      <div class="rank-body">
-        <h4><a href="https://new.qq.com/rain/a/LNK2026082527713500" target="_blank" rel="noopener">抖音、小红书、网易同日发布 2027 校招（岗位供给端背景帖）</a><span class="chip plat-media">腾讯新闻</span></h4>
-        <p>供给端背景对照：8 月 25 日抖音发布 2027 校招（产品/运营/设计/数据科学，北上深杭），小红书方向含 AI Agent、AI Infra、AI Coding、多模态等，网易覆盖杭州北京广州上海宁波——岗位方向密集但名额收紧，构成吐槽潮的底色。</p>
-      </div>
-      <div class="heat"><span class="stars">★★</span><small>热度 63</small></div>
-    </div>
-  </div>
+  <!-- 主榜 -->
+  <section class="sec-main">
+    <h2>🔨 处置节点舆情（主榜，共10条）</h2>
 
-  <div class="note">
-    📌 收录说明：① 本期按 top_n=15 检索，实际收录 <b>12 条</b>可直链条目（10 条为吐槽/面经类，2 条为薪资与岗位供给类对照条目），未满额部分已如实标注，未做凑数。② <b>小红书原帖站外无法直链</b>，本期以含原帖内容的牛客/媒体转载版替代并注明；微博、抖音以话题公告页与聚合报道收录。③ 热度分为综合评分（话题量、互动数、媒体转载量）的相对序，<b>非各平台官方热度值</b>；牛客全站热榜条目（如“本硕双9，字节50w”4741、“秋招行情惨淡”4250）因无独立详情页链接，未单列为榜单条目。④ 全部内容为站外公开来源的用户自述与媒体报道，<b>未经独立核实</b>，仅供舆情参考，不作为个体事实结论。
-  </div>
+    <div class="item">
+      <div class="top"><span class="badge lv1">一级</span><span class="idx">01</span><h3>德芙“趁男朋友不在”七夕带货视频被罚80万元，央媒批“莫拿争议换流量”</h3></div>
+      <div class="fields">
+        <div class="row"><b>事件概述：</b><span>上海市普陀区市场监管局11月2日对快手“德芙官方旗舰店”运营主体上海宗正食品有限公司作出行政处罚（沪市监普处〔2026〕072026001458号），认定其七夕短视频将对待感情的不忠行为包装成“甜蜜体验”、宣扬错误婚恋观、违背社会良好风尚，依据《广告法》第九条第（七）项罚款80万元。11月16日中新网刊发评论《企业宣传莫拿争议换流量》点名该案，并与滴露消毒液广告争议并列，指出品牌“把冒犯当创意、把争议当流量”的营销路径风险，舆论对代运营内容审核失守与品牌“翻车后切割”话术的批评持续发酵。</span></div>
+        <div class="row"><b>涉事企业及行业：</b><span>玛氏旗下德芙品牌（运营主体：上海宗正食品有限公司）｜食品/快消（广告营销）</span></div>
+        <div class="row"><b>舆情分类：</b><span><span class="tag">② 广告争议</span><span class="tag">女性形象/婚恋观不当营销</span></span></div>
+        <div class="row"><b>来源平台：</b><span>中国新闻网（央媒级）</span></div>
+        <div class="row"><b>来源链接：</b><span><a href="https://www.chinanews.com/cj/2026/11-16/10733114.shtml" target="_blank" rel="noopener">https://www.chinanews.com/cj/2026/11-16/10733114.shtml</a></span></div>
+        <div class="row"><b>舆情等级：</b><span>一级（知名品牌、大额罚款、央媒点名、跨平台持续讨论）</span></div>
+        <div class="row"><b>节点时间：</b><span>2026-11-16（央媒评论点名+罚单集中披露）</span></div>
+        <div class="row"><b>事件首发时间：</b><span>2026-08-23（网友集中质疑涉事视频文案）</span></div>
+      </div>
+    </div>
 
-  <footer>campus-hotposts-monitor · 检索快照 2026-11-17 10:35（Asia/Shanghai）· 17 条可用来源 / 8 个独立站点 · 浅色主题</footer>
+    <div class="item">
+      <div class="top"><span class="badge lv1">一级</span><span class="idx">02</span><h3>央视《每周质量报告》曝光乳山“低价看房游”购房陷阱，两地连夜成立工作组核查</h3></div>
+      <div class="fields">
+        <div class="row"><b>事件概述：</b><span>11月15日央视总台《每周质量报告》曝光“低价旅游团”实为看房团：无锡合富至胜营销策划有限公司以150-200元“包吃住三日游”引流中老年人赴山东乳山银滩购房，存在价格虚高、承诺不实、贴身盯防销售等问题，涉鼎泰臻寓等楼盘。报道播出后，乳山市第一时间组织住建、市监、文旅、公安等部门成立整治专项工作组现场核查，无锡市监、公安等部门同步对涉事营销企业开展现场核查，并承诺依法依规严肃查处。</span></div>
+        <div class="row"><b>涉事企业及行业：</b><span>无锡合富至胜营销策划有限公司、乳山鼎泰臻寓等楼盘开发/销售主体｜房地产</span></div>
+        <div class="row"><b>舆情分类：</b><span><span class="tag">② 广告争议（虚假宣传诱导）</span><span class="tag">涉老年群体权益</span></span></div>
+        <div class="row"><b>来源平台：</b><span>央视《每周质量报告》→鲁网/荔枝新闻/上游新闻等转载</span></div>
+        <div class="row"><b>来源链接：</b><span><a href="https://sd.sdnews.com.cn/weihai/whxw/202611/t20261117_4767369.htm" target="_blank" rel="noopener">https://sd.sdnews.com.cn/weihai/whxw/202611/t20261117_4767369.htm</a></span></div>
+        <div class="row"><b>舆情等级：</b><span>一级（央媒曝光、监管工作组成立、跨省联动处置）</span></div>
+        <div class="row"><b>节点时间：</b><span>2026-11-15（央视播出）／2026-11-16（两地工作组核查，处置节点）</span></div>
+        <div class="row"><b>事件首发时间：</b><span>2026-11-15（央视首曝）</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge lv1">一级</span><span class="idx">03</span><h3>山鹰国际实控人、董事长吴明武被证监会立案后，公司首次拉响面值退市警报</h3></div>
+      <div class="fields">
+        <div class="row"><b>事件概述：</b><span>11月16日晚，山鹰国际（600567.SH）披露股票收盘价0.94元/股首次低于1元的终止上市风险提示公告，可能触发交易类强制退市。公司实际控制人、董事长吴明武此前于11月3日收到证监会《立案告知书》（证监立案字0382026008号），因涉嫌内幕交易和短线交易被立案。同日公司完成董事会换届，吴明武仍连任董事长，市场对其“被立案仍连任”及退市风险争议较大，多家媒体集中报道。</span></div>
+        <div class="row"><b>涉事企业及行业：</b><span>山鹰国际控股股份公司（600567.SH）｜造纸/包装制造</span></div>
+        <div class="row"><b>舆情分类：</b><span><span class="tag">④ 贪腐违法（证券违法被立案）</span><span class="tag">退市风险</span></span></div>
+        <div class="row"><b>来源平台：</b><span>中国证券网/腾讯新闻·中国经济传媒/中国证券报（信息披露媒体）</span></div>
+        <div class="row"><b>来源链接：</b><span><a href="https://www.cnstock.com/commonDetail/829282" target="_blank" rel="noopener">https://www.cnstock.com/commonDetail/829282</a></span></div>
+        <div class="row"><b>舆情等级：</b><span>一级（证监会立案+面值退市警报，全国主流媒体广泛报道）</span></div>
+        <div class="row"><b>节点时间：</b><span>2026-11-16（首次面值退市风险提示公告披露）</span></div>
+        <div class="row"><b>事件首发时间：</b><span>2026-11-04（立案事项公告披露）</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge lv2">二级</span><span class="idx">04</span><h3>天津市消协发布消费警示“三问苹果”：手表维修费超购机价、拒配合约谈</h3></div>
+      <div class="fields">
+        <div class="row"><b>事件概述：</b><span>11月16日天津市消费者协会就消费者Apple Watch Series 10健康监测软件接连故障、维修报价2309元超过购机实付价一事发布消费警示，公开“三问”苹果公司：故障原因究竟为何、高于购买价的维修是否合理、缘何拒绝配合消协约谈。此前苹果回函被指“避重就轻”，并以“地理距离”为由拒绝配合约谈，事件经北方网、东北新闻网等媒体报道后引发对大厂售后规则公平性的广泛讨论。</span></div>
+        <div class="row"><b>涉事企业及行业：</b><span>苹果公司（Apple）｜消费电子/3C</span></div>
+        <div class="row"><b>舆情分类：</b><span><span class="tag">① 质量投诉</span><span class="tag">售后服务争议</span></span></div>
+        <div class="row"><b>来源平台：</b><span>北方网（津云）</span></div>
+        <div class="row"><b>来源链接：</b><span><a href="http://news.enorth.com.cn/system/2026/11/16/060004557.shtml" target="_blank" rel="noopener">http://news.enorth.com.cn/system/2026/11/16/060004557.shtml</a></span></div>
+        <div class="row"><b>舆情等级：</b><span>二级（消协公开警示+企业拒绝配合约谈，多家媒体报道）</span></div>
+        <div class="row"><b>节点时间：</b><span>2026-11-16（消协消费警示发布日）</span></div>
+        <div class="row"><b>事件首发时间：</b><span>2026-04（消费者手表故障投诉发生）</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge lv2">二级</span><span class="idx">05</span><h3>中消协点名电商平台：AI制图、虚假参数、羽绒服虚标绒子含量、二手伪装全新</h3></div>
+      <div class="fields">
+        <div class="row"><b>事件概述：</b><span>据央视新闻11月16日消息，中消协针对网购服装领域高发纠纷点名电商平台及商家：通过美颜修图、AI制图、虚假参数标注、夸大面料质感误导消费者，部分羽绒服、针织衫虚报绒子含量、羊毛含量，二手衣物伪装全新出售，直播间以“滤镜直播”“录播伪装实时互动”“全网最低价”话术实施“视觉骗局”。中消协要求平台不做流量“收割机”、当好规则“守门人”，落实先行赔付等责任。</span></div>
+        <div class="row"><b>涉事企业及行业：</b><span>电商平台经营者及平台内服装商家（未点名具体企业）｜电商/服装零售</span></div>
+        <div class="row"><b>舆情分类：</b><span><span class="tag">② 广告争议（虚假宣传）</span><span class="tag">行业性点名</span></span></div>
+        <div class="row"><b>来源平台：</b><span>央视新闻（经江苏检察网等转载）</span></div>
+        <div class="row"><b>来源链接：</b><span><a href="https://www.jsjc.gov.cn/yaowen/202611/t20261117_1372605.shtml" target="_blank" rel="noopener">https://www.jsjc.gov.cn/yaowen/202611/t20261117_1372605.shtml</a></span></div>
+        <div class="row"><b>舆情等级：</b><span>二级（中消协点名+央视报道，行业性警示）</span></div>
+        <div class="row"><b>节点时间：</b><span>2026-11-16（央视新闻报道中消协点名）</span></div>
+        <div class="row"><b>事件首发时间：</b><span>2026-11-16（本轮点名首曝）</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge lv2">二级</span><span class="idx">06</span><h3>中鲁远洋总经理王欢被留置调查，缺席董事会通讯会议</h3></div>
+      <div class="fields">
+        <div class="row"><b>事件概述：</b><span>11月18日，山东省中鲁远洋渔业股份有限公司披露第九届董事会第六次（临时）会议决议公告，董事、总经理王欢因被留置调查无法参会。该消息随巨潮资讯公告披露即被市场关注，公司治理与高管涉纪风险成为焦点，公司此前已于11月13日发出会议通知，事件具体涉纪事由尚待官方进一步通报。</span></div>
+        <div class="row"><b>涉事企业及行业：</b><span>山东省中鲁远洋渔业股份有限公司（上市公司）｜远洋渔业/食品</span></div>
+        <div class="row"><b>舆情分类：</b><span><span class="tag">④ 贪腐违法（高管被留置）</span></span></div>
+        <div class="row"><b>来源平台：</b><span>巨潮资讯网（信息披露平台）</span></div>
+        <div class="row"><b>来源链接：</b><span><a href="https://static.cninfo.com.cn/finalpage/2026-11-18/1225675054.PDF" target="_blank" rel="noopener">https://static.cninfo.com.cn/finalpage/2026-11-18/1225675054.PDF</a></span></div>
+        <div class="row"><b>舆情等级：</b><span>二级（上市公司高管被留置、信披渠道确认，媒体跟进中）</span></div>
+        <div class="row"><b>节点时间：</b><span>2026-11-18（董事会决议公告披露留置事项）</span></div>
+        <div class="row"><b>事件首发时间：</b><span>2026-11-18（公告披露即首曝）</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge lv2">二级</span><span class="idx">07</span><h3>AI虚拟人“方桃子”代言美瞳虚构使用体验，运营方被罚6.82万元，央媒发声“AI代言不是法外之地”</h3></div>
+      <div class="fields">
+        <div class="row"><b>事件概述：</b><span>拥有50余万粉丝的AI演员“方桃子”在美瞳广告中宣称“戴了一天都很舒服”“可以放心眨眼”等主观体验，被监管部门认定虚构使用商品效果、构成虚假广告，且存在未经审查发布医疗器械广告行为，其IP运营方广州我的影视文化传媒有限公司被罚6.82万元。11月18日经济日报旗下中经评论刊发《AI代言不是法外之地》点名该案，指出94.1%广告主已投入AI营销背景下的监管新考题，为AI生成广告合规敲响警钟。</span></div>
+        <div class="row"><b>涉事企业及行业：</b><span>广州我的影视文化传媒有限公司（AI虚拟人IP运营方）、涉事美瞳品牌方｜美妆个护/数字营销</span></div>
+        <div class="row"><b>舆情分类：</b><span><span class="tag">② 广告争议（AI虚假广告）</span></span></div>
+        <div class="row"><b>来源平台：</b><span>经济日报·中经评论（腾讯新闻转载）</span></div>
+        <div class="row"><b>来源链接：</b><span><a href="https://news.qq.com/rain/a/20261118A04KJV00" target="_blank" rel="noopener">https://news.qq.com/rain/a/20261118A04KJV00</a></span></div>
+        <div class="row"><b>舆情等级：</b><span>二级（央媒评论点名、监管处罚落地，行业风向标意义）</span></div>
+        <div class="row"><b>节点时间：</b><span>2026-11-18（央媒评论点名+处罚引发热议）</span></div>
+        <div class="row"><b>事件首发时间：</b><span>2026-08（AI美瞳广告投放引发关注）</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge lv2">二级</span><span class="idx">08</span><h3>浙江东阳5家日化企业虚构“美国诺贝尔”等境外机构功效数据被罚没21.15万元，典型案例集中曝光</h3></div>
+      <div class="fields">
+        <div class="row"><b>事件概述：</b><span>东北新闻网消费维权频道11月16日集中曝光一批广告违法典型案例：东阳市文匠日用百货等5家企业生产除尘魔盒、驱鼠散等日化类产品，在电商平台及产品外包装虚构“美国诺贝尔”“德国慕尼黑科学研究院”等境外机构名称，宣称“清洁率99.9%”“驱鼠率99%”等未经论证数据，2026年7月被东阳市市场监管局责令改正并分别罚款4万元，罚没款合计21.15万元。同批曝光还包括杭州展玩文化传媒使用“最高级”用语被罚5万元等案例。</span></div>
+        <div class="row"><b>涉事企业及行业：</b><span>东阳市文匠日用百货、义乌市赫呈贸易、东阳市鑫都清洁用品、东阳市宏航日用品厂、东阳市果壳日用品5家企业｜日化/家清用品</span></div>
+        <div class="row"><b>舆情分类：</b><span><span class="tag">② 广告争议（虚构功效）</span></span></div>
+        <div class="row"><b>来源平台：</b><span>东北新闻网消费维权频道</span></div>
+        <div class="row"><b>来源链接：</b><span><a href="https://xiaofei.nen.com.cn/network/protection/weiquankuaixun/2026/11/16/976754477501519159.shtml" target="_blank" rel="noopener">https://xiaofei.nen.com.cn/network/protection/weiquankuaixun/2026/11/16/976754477501519159.shtml</a></span></div>
+        <div class="row"><b>舆情等级：</b><span>二级（权威媒体集中曝光监管典型案例、涉日化行业重点）</span></div>
+        <div class="row"><b>节点时间：</b><span>2026-11-16（典型案例集中曝光日）</span></div>
+        <div class="row"><b>事件首发时间：</b><span>2026-07（行政处罚作出）</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge lv3">三级</span><span class="idx">09</span><h3>天津市市场监管委公布4起网络餐饮典型案例：生熟混放、健康证过期、超范围经营冷荤</h3></div>
+      <div class="fields">
+        <div class="row"><b>事件概述：</b><span>11月18日天津市市场监管委通过天津日报/北方网公布4起网络餐饮典型案例：涉及入网餐饮店后厨生熟食混放、安排无有效健康证人员接触直接入口食品、线上门店未公示实体店信息、超许可范围制售冷荤食品等问题，分别处以警告、责令改正等行政处罚，警示入网餐饮经营者落实食品安全主体责任。</span></div>
+        <div class="row"><b>涉事企业及行业：</b><span>天津市南开区、河西区、北辰区、西青区4家入网餐饮店（未点名）｜餐饮/网络餐饮</span></div>
+        <div class="row"><b>舆情分类：</b><span><span class="tag">① 质量投诉（食品安全）</span></span></div>
+        <div class="row"><b>来源平台：</b><span>天津日报／北方网（监管官方通报）</span></div>
+        <div class="row"><b>来源链接：</b><span><a href="https://epaper.tianjinwe.com/tjrb/html/2026-11/18/content_143098_4024087.htm" target="_blank" rel="noopener">https://epaper.tianjinwe.com/tjrb/html/2026-11/18/content_143098_4024087.htm</a></span></div>
+        <div class="row"><b>舆情等级：</b><span>三级（地方监管通报、小额处罚、区域传播）</span></div>
+        <div class="row"><b>节点时间：</b><span>2026-11-18（典型案例公布日）</span></div>
+        <div class="row"><b>事件首发时间：</b><span>2026年7月～9月（执法检查发生）</span></div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="top"><span class="badge lv3">三级</span><span class="idx">10</span><h3>西安未央区通报3起网络餐饮违法案例：外卖标注不实、后厨脏乱、生食无专间</h3></div>
+      <div class="fields">
+        <div class="row"><b>事件概述：</b><span>11月16日西安市未央区市场监督管理局通报3起网络餐饮食品安全典型违法案例：某餐饮店外卖蟹肉棒线上标注与实际不符构成虚假宣传被罚款；某餐饮店后厨卫生差、索证索票不全、“三防”不到位被警告；某餐饮店加工三文鱼等生食海鲜未设专用操作专间被责令整改并警告。多家入网餐饮店被责令整改并予以行政处罚。</span></div>
+        <div class="row"><b>涉事企业及行业：</b><span>西安市未央区3家入网餐饮店（未点名）｜餐饮/网络餐饮</span></div>
+        <div class="row"><b>舆情分类：</b><span><span class="tag">① 质量投诉（食品安全）</span></span></div>
+        <div class="row"><b>来源平台：</b><span>网易号（转自监管通报/媒体）</span></div>
+        <div class="row"><b>来源链接：</b><span><a href="https://www.163.com/dy/article/LBTJCTTB055616WO_pdya11y.html" target="_blank" rel="noopener">https://www.163.com/dy/article/LBTJCTTB055616WO_pdya11y.html</a></span></div>
+        <div class="row"><b>舆情等级：</b><span>三级（区级监管通报、小额处罚、地方传播）</span></div>
+        <div class="row"><b>节点时间：</b><span>2026-11-16（监管通报发布日）</span></div>
+        <div class="row"><b>事件首发时间：</b><span>2026年6月～11月（执法检查与投诉核查发生）</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 立白专项 -->
+  <section class="sec-libai">
+    <h2>🎯 立白专项（独立板块，不占主/辅榜配比）</h2>
+    <div class="empty-tip">本期无新增节点。监测期内（2026-11-16 08:00 ～ 2026-11-18 08:00）未检索到广州立白企业集团/立白科技集团、朝云集团（06601.HK）及旗下品牌（立白、好爸爸、蓝天六必治、威王、超威、贝贝健、西兰），创始人陈凯旋及家族成员的负面处置节点或新发负面。相关延续事项见「⏳持续跟踪区」。注：朝云集团于2026-11-12获华安证券维持“买入”评级（上半年营收16.35亿元同比+22.1%），无负面舆情节点。</div>
+  </section>
+
+  <!-- 辅榜 -->
+  <section class="sec-fu">
+    <h2>🆕 当日新发（辅榜，共1条，≤30%配比）</h2>
+
+    <div class="item">
+      <div class="top"><span class="badge lv2">二级</span><span class="idx">F1</span><h3>“雪中飞向侯明昊道歉”冲上热搜：品牌违规售卖艺人线下活动席位致歉</h3></div>
+      <div class="fields">
+        <div class="row"><b>事件概述：</b><span>11月15日演员侯明昊工作室发布严正声明，谴责合作品牌雪中飞未经同意公开售卖11月21日石家庄线下活动座位、误导公众并损害粉丝权益，要求立即停止售票并全额退款。“雪中飞向侯明昊道歉”等话题随后冲上热搜，品牌方11月16日致歉，承认“未获得艺人团队事先同意发布错误活动机制”，并表示将协助受损粉丝登记维权。粉丝付费购票与黄牛炒卖问题引发对品牌线下活动合规管理的质疑。</span></div>
+        <div class="row"><b>涉事企业及行业：</b><span>雪中飞（波司登集团旗下羽绒服装品牌）｜服装</span></div>
+        <div class="row"><b>舆情分类：</b><span><span class="tag">② 广告争议（活动运营违规）</span><span class="tag">消费者权益</span></span></div>
+        <div class="row"><b>来源平台：</b><span>腾讯新闻（南都/沈阳交通广播综合）</span></div>
+        <div class="row"><b>来源链接：</b><span><a href="https://news.qq.com/rain/a/20261117A08NX900" target="_blank" rel="noopener">https://news.qq.com/rain/a/20261117A08NX900</a></span></div>
+        <div class="row"><b>舆情等级：</b><span>二级（热搜话题、品牌公开道歉、知名品牌）</span></div>
+        <div class="row"><b>事件首发时间：</b><span>2026-11-15（工作室声明首曝）</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 持续跟踪 -->
+  <section class="sec-track">
+    <h2>⏳ 持续跟踪（不占收录数）</h2>
+    <div class="track-note">窗口内无新处置节点、但事件仍在办理或热度未退的重大事项，本期列2条：</div>
+    <div class="item">
+      <div class="top"><span class="idx">T1</span><h3>立白诉个体商户“好爸爸”商标侵权惩罚性赔偿案（判赔4万元，判决已生效）</h3></div>
+      <div class="fields">
+        <div class="row"><b>跟踪说明：</b><span>上海杨浦法院对未经许可跨平台销售“立白”“好爸爸”洗衣粉、重复侵权的个体商户适用惩罚性赔偿，判赔经济损失及合理开支4万元，一审判决已生效。杨浦区政府官网2026-11-12发布案例解读，属立白维权正面司法节点，因发布时间在窗口外（11-12），不入主榜，作为立白专项背景持续跟踪。</span></div>
+        <div class="row"><b>来源链接：</b><span><a href="https://www.shyp.gov.cn/shypq/xwzx-bmdt/20261112/516807.html" target="_blank" rel="noopener">https://www.shyp.gov.cn/shypq/xwzx-bmdt/20261112/516807.html</a></span></div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="top"><span class="idx">T2</span><h3>广东、江西两地药监局通报12批次化妆品抽检不合格（召回+立案调查进行中）</h3></div>
+      <div class="fields">
+        <div class="row"><b>跟踪说明：</b><span>广东省药监局2026年第5期化妆品抽检通报7批次不符合规定（贝舒婷护发素防腐剂超标、菌落总数超标43倍等），江西省药监局“你点我检”通报5批次不合格；两地药监局已要求暂停销售、召回并对涉嫌违法立案调查，处置仍在进行中。首次集中披露约在2026-11-14（新京报贝壳财经），节点早于本窗口且精确通告发布日待核，故不入主榜，列入持续跟踪。</span></div>
+        <div class="row"><b>来源链接：</b><span><a href="https://ca315.com/portal/article/333227" target="_blank" rel="noopener">https://ca315.com/portal/article/333227</a></span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <strong>合规声明：</strong>本报告基于公开渠道（监管官网、权威媒体、信息披露平台、消费投诉平台）信息整理，仅供企业舆情监测参考。涉性骚扰、猥亵等敏感类型舆情仅依据官方通报与权威报道作中性陈述，不渲染细节、不传播未经证实信息、不展示受害者可识别信息。所有条目均经时效核实（处置节点时间须落于统计窗口内），无法确认精确时间的线索已剔除或归入持续跟踪区。等级评定为编者依据传播范围与处置性质作出的专业判断，不构成对任何企业的定性结论或投资建议。
+  </footer>
+
 </div>
 </body>
 </html>
