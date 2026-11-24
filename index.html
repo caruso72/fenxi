@@ -3,244 +3,280 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>企业舆情监测报告 2026-11-23</title>
+<title>企业舆情监测报告 2026-11-24</title>
 <style>
   :root{
-    --c1:#d93025; --c1bg:#fdecea;
-    --c2:#e8710a; --c2bg:#fef3e6;
-    --c3:#1a73e8; --c3bg:#e8f0fe;
-    --ink:#1f2328; --sub:#57606a; --line:#e1e4e8;
-    --bg:#f6f8fa; --card:#ffffff; --accent:#0b5fff;
+    --red:#c0392b; --orange:#e67e22; --blue:#2980b9; --ink:#2c3e50;
+    --bg:#f4f6f8; --card:#ffffff; --line:#e3e8ee; --muted:#7f8c9b;
   }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;padding:0 0 40px}
-  .wrap{max-width:1060px;margin:0 auto;padding:0 18px}
-  header{background:linear-gradient(135deg,#0b2a5b 0%,#0b5fff 70%,#3f8cff 100%);color:#fff;padding:34px 0 30px}
-  header h1{font-size:28px;letter-spacing:1px}
-  header .win{margin-top:10px;font-size:14px;opacity:.92}
-  header .stats{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px}
-  header .chip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);border-radius:20px;padding:5px 14px;font-size:13px}
-  .toolbar{margin:18px 0 6px;display:flex;gap:12px;flex-wrap:wrap}
-  .toolbar a{text-decoration:none;font-size:14px;padding:8px 16px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--accent);font-weight:600}
-  .toolbar a:hover{background:#eef3ff}
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:18px 0 8px}
-  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
-  .kpi .num{font-size:32px;font-weight:800;color:var(--accent)}
-  .kpi .lab{font-size:13px;color:var(--sub);margin-top:4px}
-  h2.section{font-size:20px;margin:30px 0 4px;padding-left:10px;border-left:5px solid var(--accent)}
-  .note{font-size:12.5px;color:var(--sub);margin:6px 0 12px;padding-left:15px}
-  .item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:12px 0}
-  .item .head{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
-  .item .idx{flex:0 0 auto;background:var(--accent);color:#fff;font-weight:700;border-radius:8px;font-size:13px;padding:3px 10px;margin-top:2px}
-  .item h3{font-size:16.5px;flex:1 1 300px}
-  .lv{flex:0 0 auto;font-size:12.5px;font-weight:700;border-radius:6px;padding:3px 10px;margin-top:2px}
-  .lv.l1{color:var(--c1);background:var(--c1bg);border:1px solid #f5c6c2}
-  .lv.l2{color:var(--c2);background:var(--c2bg);border:1px solid #f6d3ae}
-  .lv.l3{color:var(--c3);background:var(--c3bg);border:1px solid #bcd2f7}
-  table.f{width:100%;border-collapse:collapse;margin-top:12px;font-size:13.5px}
-  table.f th{width:96px;text-align:left;color:var(--sub);font-weight:600;vertical-align:top;padding:6px 10px 6px 0;white-space:nowrap;border-top:1px dashed var(--line)}
-  table.f td{padding:6px 0;border-top:1px dashed var(--line);vertical-align:top}
-  table.f tr:first-child th,table.f tr:first-child td{border-top:none}
-  td a{color:var(--accent);word-break:break-all}
-  .node{display:inline-block;background:#eef6ee;color:#1a7f37;border:1px solid #bfe3c6;border-radius:6px;font-size:12px;padding:2px 8px;margin-right:6px}
-  .empty{background:var(--card);border:1px dashed var(--line);border-radius:12px;padding:20px;color:var(--sub);text-align:center;font-size:14px}
-  .track{background:#fffdf5;border:1px solid #f0e2b6;border-radius:12px;padding:14px 20px;margin:12px 0;font-size:14px}
-  .track b{color:#8a6d00}
-  footer{margin-top:34px;border-top:1px solid var(--line);padding-top:16px;font-size:12.5px;color:var(--sub)}
-  footer p{margin-bottom:6px}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; padding-bottom:60px;}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 16px;}
+  header{background:linear-gradient(135deg,#1a2a44 0%,#274b7a 100%); color:#fff; padding:34px 0 26px;}
+  header h1{font-size:26px; letter-spacing:2px;}
+  header .sub{margin-top:10px; font-size:14px; opacity:.92;}
+  header .stats{margin-top:14px; font-size:14px;}
+  header .stats b{font-size:18px; color:#ffd76e;}
+  .bar{background:#12203a; color:#dfe7f3; font-size:13px; padding:10px 0;}
+  .bar a{color:#8fc4ff; text-decoration:none; margin-right:18px;}
+  .bar a:hover{text-decoration:underline;}
+  .cards{display:flex; flex-wrap:wrap; gap:14px; margin:22px 0;}
+  .card{flex:1 1 200px; background:var(--card); border-radius:10px; padding:18px 20px; box-shadow:0 2px 8px rgba(30,50,80,.08); border-top:4px solid var(--blue);}
+  .card .num{font-size:34px; font-weight:700; color:var(--blue);}
+  .card .lab{font-size:13px; color:var(--muted); margin-top:4px;}
+  .card.red{border-top-color:var(--red);} .card.red .num{color:var(--red);}
+  .card.orange{border-top-color:var(--orange);} .card.orange .num{color:var(--orange);}
+  .card.green{border-top-color:#27ae60;} .card.green .num{color:#27ae60;}
+  section{margin:26px 0;}
+  h2{font-size:20px; padding:10px 14px; background:#fff; border-left:5px solid var(--red); border-radius:6px; box-shadow:0 1px 4px rgba(0,0,0,.06);}
+  h2.special{border-left-color:#c0392b; background:linear-gradient(90deg,#fff6f5,#fff);}
+  h2.aux{border-left-color:var(--blue);}
+  h2.track{border-left-color:#8e44ad;}
+  .item{background:var(--card); border-radius:8px; padding:16px 18px; margin-top:14px; box-shadow:0 1px 5px rgba(0,0,0,.06);}
+  .item .head{display:flex; align-items:flex-start; gap:10px; flex-wrap:wrap;}
+  .item .idx{flex:0 0 auto; background:#274b7a; color:#fff; border-radius:6px; font-size:13px; padding:2px 9px; margin-top:2px;}
+  .item .title{font-size:16px; font-weight:700; flex:1 1 auto;}
+  .lv{font-size:12px; color:#fff; border-radius:4px; padding:2px 8px; white-space:nowrap;}
+  .lv1{background:var(--red);} .lv2{background:var(--orange);} .lv3{background:var(--blue);}
+  .fields{margin-top:10px; font-size:14px; display:grid; grid-template-columns:96px 1fr; gap:4px 10px;}
+  .fields .k{color:var(--muted);}
+  .fields a{color:var(--blue); word-break:break-all;}
+  .tag{display:inline-block; background:#eef3fa; color:#274b7a; border-radius:4px; padding:0 8px; font-size:12px; margin-left:6px; vertical-align:1px;}
+  .note{font-size:12.5px; color:var(--muted); margin-top:8px;}
+  footer{margin-top:36px; padding:18px; background:#eef1f5; border-radius:8px; font-size:12.5px; color:#5c6b7a;}
+  .empty{background:#fff8f0; border:1px dashed #e0a96d; border-radius:8px; padding:16px 18px; margin-top:14px; font-size:14px; color:#8a5b21;}
+  @media(max-width:640px){ .fields{grid-template-columns:1fr;} .fields .k{margin-top:6px;} }
 </style>
 </head>
 <body>
+
 <header>
   <div class="wrap">
     <h1>企业舆情监测报告</h1>
-    <div class="win">监测窗口：2026-11-21 08:00 — 2026-11-23 08:00（48小时，双轨时效）｜执行时刻：2026-11-23 08:01（GMT+8）</div>
-    <div class="stats">
-      <span class="chip">收录总数：11 条</span>
-      <span class="chip">🔨 主榜（处置节点）：11 条</span>
-      <span class="chip">🆕 辅榜（当日新发）：0 条</span>
-      <span class="chip">🎯 立白专项：本期无新增节点</span>
-    </div>
+    <div class="sub">监测窗口：2026-11-22 08:00 — 2026-11-24 08:00（GMT+8，48小时）｜重点行业：日化/快消｜出具时间：2026-11-24 08:00</div>
+    <div class="stats">收录总数 <b>12</b> 条｜处置节点舆情（主榜）<b>9</b> 条｜当日新发（辅榜）<b>3</b> 条｜🎯立白专项 <b>0</b> 条（本期无新增节点）</div>
   </div>
 </header>
 
-<div class="wrap">
-  <div class="toolbar">
-    <a href="qingyu-20261123.html" download>⬇ 下载本页HTML</a>
-    <a href="https://github.com/caruso72/fenxi" target="_blank">📚 历史归档</a>
+<div class="bar">
+  <div class="wrap">
+    <a href="qingyu-20261124.html" download>⬇下载本页HTML</a>
+    <a href="https://github.com/caruso72/fenxi" target="_blank">📚历史归档</a>
+    <span>时效规则：主榜以处置节点发布/发生时间为基准；辅榜以事件首次曝光时间为基准；不以转载/热搜时间为准。</span>
   </div>
+</div>
+
+<div class="wrap">
 
   <div class="cards">
-    <div class="kpi"><div class="num">11</div><div class="lab">收录条数（主榜11 / 辅榜0 / 立白0）</div></div>
-    <div class="kpi"><div class="num" style="color:var(--c1)">3</div><div class="lab">一级舆情条数</div></div>
-    <div class="kpi"><div class="num">9</div><div class="lab">涉及行业数</div></div>
-    <div class="kpi"><div class="num">11</div><div class="lab">处置节点类条数（占比100%）</div></div>
+    <div class="card"><div class="num">12</div><div class="lab">收录总数（条）</div></div>
+    <div class="card red"><div class="num">5</div><div class="lab">一级舆情（条）</div></div>
+    <div class="card green"><div class="num">9</div><div class="lab">涉及行业大类</div></div>
+    <div class="card orange"><div class="num">9</div><div class="lab">处置节点类条数（A1/A2/A3）</div></div>
   </div>
 
-  <h2 class="section">🔨 处置节点舆情（主榜）</h2>
-  <p class="note">收录口径：处罚公示/监管查处、央媒点名、消费者集体投诉、司法与纪检节点等处置节点发生在窗口内的舆情；每条标注「节点时间」与「事件首发时间」。</p>
+  <!-- ================= 主榜 ================= -->
+  <section>
+    <h2>🔨 处置节点舆情（主榜，9条）</h2>
 
-  <div class="item">
-    <div class="head"><span class="idx">01</span><h3>央视《财经调查》曝光网红褪黑素乱象：剂量超标、进口身份造假，洛神月等品牌紧急下架</h3><span class="lv l1">一级</span></div>
-    <table class="f">
-      <tr><th>事件概述</th><td>央视《财经调查》报道部分褪黑素助眠产品以进口普通食品身份上架却被当作保健品售卖，部分产品剂量超标2-3倍、假冒海淘身份规避监管，点名JAYHOO、洛神月、EGUOO、vitafusion、Heivy等品牌及安徽佳洪健康等产业链企业；报道播出后洛神月等品牌产品已紧急下架。</td></tr>
-      <tr><th>涉事企业/行业</th><td>佳洪健康股份有限公司、裕盛生物科技、三合鼎胜生命健康控股及JAYHOO/洛神月/EGUOO/vitafusion/Heivy等品牌｜保健食品/快消</td></tr>
-      <tr><th>舆情分类</th><td>② 广告争议（虚假宣传/身份造假）</td></tr>
-      <tr><th>来源平台</th><td>央视网（央视新闻《财经调查》栏目）</td></tr>
-      <tr><th>来源链接</th><td><a href="https://news.cctv.com/2026/11/23/ARTITKrY8Kd16RkPXhIuteJr261122.shtml" target="_blank">https://news.cctv.com/2026/11/23/ARTITKrY8Kd16RkPXhIuteJr261122.shtml</a></td></tr>
-      <tr><th>舆情等级</th><td>一级（央媒点名、多品牌涉及、跨平台持续发酵）</td></tr>
-      <tr><th>发生时间</th><td><span class="node">节点时间：2026-11-22（央视播出，11-23央视网刊发）</span>事件首发：2026-11-22</td></tr>
-    </table>
-  </div>
+    <div class="item">
+      <div class="head"><span class="idx">主榜1</span><span class="title">央视《财经调查》曝光网红褪黑素剂量超标、进口身份造假，多品牌紧急下架</span><span class="lv lv1">一级</span></div>
+      <div class="fields">
+        <span class="k">事件概述</span><span>央视财经11月22日播出调查：网售褪黑素以进口普通食品身份上架并按保健品售卖，部分产品剂量超标2—3倍；安徽佳洪健康提供"超标+假进口"一条龙服务，裕盛生物以进口食品类目申报绕开剂量管控，广州三合鼎胜伪造原产地证明。JAYHOO、EGUOO、vitafusion等品牌被点名，涉面向未成年人宣传"儿童专用褪黑素"违规，多品牌产品已在电商渠道紧急下架。</span>
+        <span class="k">涉事企业</span><span>JAYHOO、EGUOO、vitafusion、洛神月、安徽佳洪健康、裕盛生物、广州三合鼎胜等｜行业：保健食品/大健康电商</span>
+        <span class="k">舆情分类</span><span>①质量投诉（叠加②广告争议：虚假宣传）</span>
+        <span class="k">来源平台</span><span>央视网（央视财经《财经调查》）</span>
+        <span class="k">来源链接</span><span><a href="https://news.cctv.com/2026/11/23/ARTITKrY8Kd16RkPXhIuteJr261122.shtml" target="_blank">https://news.cctv.com/2026/11/23/ARTITKrY8Kd16RkPXhIuteJr261122.shtml</a></span>
+        <span class="k">舆情等级</span><span><b style="color:var(--red)">一级</b>（央媒曝光、跨平台发酵、多品牌下架）</span>
+        <span class="k">节点时间</span><span>2026-11-22（央视播出日）</span>
+        <span class="k">首发时间</span><span>2026-11-22（央视首发）</span>
+      </div>
+    </div>
 
-  <div class="item">
-    <div class="head"><span class="idx">02</span><h3>金科股份控股股东及合伙人因涉嫌信披违法违规被证监会立案，公司同时被责令改正</h3><span class="lv l1">一级</span></div>
-    <table class="f">
-      <tr><th>事件概述</th><td>金科股份11月22日公告，控股股东京渝星筑、京渝星璨及其合伙人北京天娇绿苑房地产开发有限公司因涉嫌信息披露违法违规于11月20日收到证监会《立案告知书》；同日公司披露收到重庆证监局责令改正决定（独立董事人数不足且未按期补选）。公司股票此前3个交易日涨幅偏离值累计超20%。</td></tr>
-      <tr><th>涉事企业/行业</th><td>金科股份（000656.SZ）及其控股股东京渝星筑、京渝星璨｜房地产</td></tr>
-      <tr><th>舆情分类</th><td>④ 贪腐违法（信披违法违规立案）</td></tr>
-      <tr><th>来源平台</th><td>中国证券网（上海证券报）</td></tr>
-      <tr><th>来源链接</th><td><a href="https://www.cnstock.com/commonDetail/831853" target="_blank">https://www.cnstock.com/commonDetail/831853</a></td></tr>
-      <tr><th>舆情等级</th><td>一级（证监会立案、知名房企、主流媒体广泛报道）</td></tr>
-      <tr><th>发生时间</th><td><span class="node">节点时间：2026-11-22（公告披露）</span>事件首发：2026-11-20（收到立案告知书）</td></tr>
-    </table>
-  </div>
+    <div class="item">
+      <div class="head"><span class="idx">主榜2</span><span class="title">中国石油集团党组成员、副总经理谢军接受中央纪委国家监委审查调查</span><span class="lv lv1">一级</span></div>
+      <div class="fields">
+        <span class="k">事件概述</span><span>11月22日，中央纪委国家监委网站通报：中国石油天然气集团有限公司党组成员、副总经理谢军涉嫌严重违纪违法，目前正接受纪律审查和监察调查。谢军曾任西南油气田分公司总经理、集团公司规划计划部总经理等职，2022年1月任现职。11月23日中国石油党组召开会议表态坚决拥护党中央决定。</span>
+        <span class="k">涉事企业</span><span>中国石油天然气集团有限公司｜行业：能源（央企）</span>
+        <span class="k">舆情分类</span><span>④贪腐违法</span>
+        <span class="k">来源平台</span><span>中央纪委国家监委网站（新华社同步发布）</span>
+        <span class="k">来源链接</span><span><a href="https://www.ccdi.gov.cn/toutiaon/202611/t20261122_523657_m.html" target="_blank">https://www.ccdi.gov.cn/toutiaon/202611/t20261122_523657_m.html</a></span>
+        <span class="k">舆情等级</span><span><b style="color:var(--red)">一级</b>（国家监委通报、央媒广泛报道）</span>
+        <span class="k">节点时间</span><span>2026-11-22（纪检监察通报发布日）</span>
+        <span class="k">首发时间</span><span>2026-11-22（通报即首发）</span>
+      </div>
+    </div>
 
-  <div class="item">
-    <div class="head"><span class="idx">03</span><h3>"全国首例职场性侵获精神工伤认定案"一审宣判后当事人崔丽丽首次发声：认定企业违法解除，23日召开媒体说明会</h3><span class="lv l1">一级</span></div>
-    <table class="f">
-      <tr><th>事件概述</th><td>潮新闻11月21日专访报道，"全国首例职场性侵获精神工伤认定案"劳动争议部分一审已宣判，法院认定企业在当事人工伤期构成违法解除劳动合同、支持补发停工留薪期工资；当事人表示不上诉，并计划11月23日下午在天津召开媒体说明会。此前2024年行为人已被判刑，劳动仲裁曾裁决企业支付约113万元。报道基于当事人陈述与判决情况中性转述，不渲染细节、不涉及受害者可识别信息之外内容。</td></tr>
-      <tr><th>涉事企业/行业</th><td>天津某公司（公开报道未点名企业名称）｜综合（职场权益/劳动争议）</td></tr>
-      <tr><th>舆情分类</th><td>⑤ 社会公共安全（职场人身侵害与劳动争议）</td></tr>
-      <tr><th>来源平台</th><td>腾讯新闻（转载潮新闻）</td></tr>
-      <tr><th>来源链接</th><td><a href="https://news.qq.com/rain/a/20261122A04UAG00" target="_blank">https://news.qq.com/rain/a/20261122A04UAG00</a></td></tr>
-      <tr><th>舆情等级</th><td>一级（涉违法犯罪与职场人身安全、全国主流媒体广泛报道）</td></tr>
-      <tr><th>发生时间</th><td><span class="node">节点时间：2026-11-21（当事人发声/专访披露）</span>事件首发：2023-09（事件发生）</td></tr>
-    </table>
-  </div>
+    <div class="item">
+      <div class="head"><span class="idx">主榜3</span><span class="title">babysheep安睡裤广告贬损女性生理现象，运营方被罚款45万元<span class="tag">重点关注A类</span></span><span class="lv lv1">一级</span></div>
+      <div class="fields">
+        <span class="k">事件概述</span><span>11月23日，澎湃新闻、中国妇女报等从国家企业信用信息公示系统获悉：母婴及女性卫生用品品牌babysheep运营方泉州市丰瑞卫生用品有限公司，因广告违背社会良好风尚被泉州市丰泽区市监局罚款45万元。涉案安睡裤短视频含"你们俩谁来了月经啊，我在后面都闻到味了"等表述，整体展现86238次，违反广告法第九条第七项；该公司曾于8月6日致歉并全渠道永久下架视频、清查含AI素材在内的营销素材。</span>
+        <span class="k">涉事企业</span><span>泉州市丰瑞卫生用品有限公司（babysheep）｜行业：日化（母婴/女性卫生用品）</span>
+        <span class="k">舆情分类</span><span>②广告争议（涉冒犯女性，重点关注A类）</span>
+        <span class="k">来源平台</span><span>中国妇女网/澎湃新闻（处罚信息源：国家企业信用信息公示系统）</span>
+        <span class="k">来源链接</span><span><a href="https://www.cnwomen.com.cn/2026/11/23/991689001.html" target="_blank">https://www.cnwomen.com.cn/2026/11/23/991689001.html</a></span>
+        <span class="k">舆情等级</span><span><b style="color:var(--red)">一级</b>（监管处罚落地、多家主流媒体披露、"旧广告+新处罚"典型）</span>
+        <span class="k">节点时间</span><span>2026-11-23（处罚公示经媒体披露日）</span>
+        <span class="k">首发时间</span><span>2026-08-01（争议短视频发布，8月6日品牌致歉）</span>
+      </div>
+    </div>
 
-  <div class="item">
-    <div class="head"><span class="idx">04</span><h3>天阳科技因涉嫌信披违法违规被证监会立案，此前曾因"蹭热点"发英伟达采购快讯收深交所监管函</h3><span class="lv l2">二级</span></div>
-    <table class="f">
-      <tr><th>事件概述</th><td>天阳宏业科技11月22日公告，因涉嫌信息披露违法违规于11月20日收到证监会《立案告知书》。此前公司10月9日在公众号发布《天阳科技采购2万张英伟达GPU》快讯，信息发布不准确、风险提示不充分，10月17日曾被深交所下发监管函。</td></tr>
-      <tr><th>涉事企业/行业</th><td>天阳宏业科技股份有限公司（300872.SZ）｜金融科技/互联网</td></tr>
-      <tr><th>舆情分类</th><td>④ 贪腐违法（信披违法违规立案）</td></tr>
-      <tr><th>来源平台</th><td>中国基金报</td></tr>
-      <tr><th>来源链接</th><td><a href="https://www.chnfund.com/article/AR7f3fc2ac-7526-2409-c6ef-3a251483a7fa" target="_blank">https://www.chnfund.com/article/AR7f3fc2ac-7526-2409-c6ef-3a251483a7fa</a></td></tr>
-      <tr><th>舆情等级</th><td>二级（证监会立案、多家媒体报道、企业公告回应）</td></tr>
-      <tr><th>发生时间</th><td><span class="node">节点时间：2026-11-22（公告披露）</span>事件首发：2026-11-20（收到立案告知书）</td></tr>
-    </table>
-  </div>
+    <div class="item">
+      <div class="head"><span class="idx">主榜4</span><span class="title">ST洲际、天阳科技因涉嫌信披违法违规被证监会立案</span><span class="lv lv1">一级</span></div>
+      <div class="fields">
+        <span class="k">事件概述</span><span>11月22日晚间，ST洲际（600759）、天阳科技（300872）分别公告：两公司均于11月20日收到证监会《立案告知书》，因涉嫌信息披露违法违规被立案调查。天阳科技10月曾因微信公众号发布《天阳科技采购2万张英伟达GPU》快讯蹭热点、信息不准确不完整，被深交所出具监管函；ST洲际此前已因内控否定意见被实施风险警示。</span>
+        <span class="k">涉事企业</span><span>洲际油气股份有限公司、天阳宏业科技股份有限公司｜行业：能源、金融科技</span>
+        <span class="k">舆情分类</span><span>④贪腐违法（信披违规）</span>
+        <span class="k">来源平台</span><span>澎湃新闻（来源公告：上交所/深交所披露）</span>
+        <span class="k">来源链接</span><span><a href="https://www.thepaper.cn/newsDetail_forward_34536054" target="_blank">https://www.thepaper.cn/newsDetail_forward_34536054</a></span>
+        <span class="k">舆情等级</span><span><b style="color:var(--red)">一级</b>（证监会立案）</span>
+        <span class="k">节点时间</span><span>2026-11-22（立案公告披露日，告知书签发11-20）</span>
+        <span class="k">首发时间</span><span>2026-11-22（公告披露）</span>
+      </div>
+    </div>
 
-  <div class="item">
-    <div class="head"><span class="idx">05</span><h3>ST洲际因涉嫌信披违法违规被证监会立案</h3><span class="lv l2">二级</span></div>
-    <table class="f">
-      <tr><th>事件概述</th><td>洲际油气11月22日公告，因涉嫌信息披露违法违规于11月20日收到证监会《立案告知书》，证监会决定对公司立案。公司今年4月因内控审计否定意见被实施其他风险警示。</td></tr>
-      <tr><th>涉事企业/行业</th><td>洲际油气股份有限公司（600759.SH，ST洲际）｜能源（油气勘探开发）</td></tr>
-      <tr><th>舆情分类</th><td>④ 贪腐违法（信披违法违规立案）</td></tr>
-      <tr><th>来源平台</th><td>中国证券报（电子报公告版）</td></tr>
-      <tr><th>来源链接</th><td><a href="https://epaper.cs.com.cn/zgzqb/html/2026-11/23/nw.D110000zgzqb_20261123_8-A07.htm" target="_blank">https://epaper.cs.com.cn/zgzqb/html/2026-11/23/nw.D110000zgzqb_20261123_8-A07.htm</a></td></tr>
-      <tr><th>舆情等级</th><td>二级（证监会立案、多家媒体报道）</td></tr>
-      <tr><th>发生时间</th><td><span class="node">节点时间：2026-11-22（公告披露）</span>事件首发：2026-11-20（收到立案告知书）</td></tr>
-    </table>
-  </div>
+    <div class="item">
+      <div class="head"><span class="idx">主榜5</span><span class="title">金科股份控股股东及合伙人被证监会立案，公司另收重庆证监局责令改正决定</span><span class="lv lv1">一级</span></div>
+      <div class="fields">
+        <span class="k">事件概述</span><span>11月22日金科股份（000656）公告：控股股东京渝星筑、京渝星璨及合伙人北京天娇绿苑房地产开发有限公司因涉嫌信息披露违法违规，于11月20日收到证监会《立案告知书》。同日公司披露收到重庆证监局《责令改正决定》：2026年7月18日独董封和平辞职后独董中欠缺会计专业人士且人数低于三分之一，至今未完成补选，违反《上市公司独立董事管理办法》，相关措施记入诚信档案。</span>
+        <span class="k">涉事企业</span><span>金科地产集团股份有限公司及控股股东｜行业：房地产</span>
+        <span class="k">舆情分类</span><span>④贪腐违法（信披违规+公司治理违规）</span>
+        <span class="k">来源平台</span><span>法治网—法治日报</span>
+        <span class="k">来源链接</span><span><a href="https://www.legaldaily.com.cn/Company/content/2026-11/23/content_9495766.html" target="_blank">https://www.legaldaily.com.cn/Company/content/2026-11/23/content_9495766.html</a></span>
+        <span class="k">舆情等级</span><span><b style="color:var(--red)">一级</b>（证监会立案+责令改正，知名房企）</span>
+        <span class="k">节点时间</span><span>2026-11-22（公告披露日）</span>
+        <span class="k">首发时间</span><span>2026-11-22（公告披露）</span>
+      </div>
+    </div>
 
-  <div class="item">
-    <div class="head"><span class="idx">06</span><h3>启迪设计年报虚假记载拟被罚400万、多名责任人最高拟3年市场禁入，11月23日停牌后将实施其他风险警示</h3><span class="lv l2">二级</span></div>
-    <table class="f">
-      <tr><th>事件概述</th><td>启迪设计11月22日披露收到江苏证监局《行政处罚事先告知书》：因2021-2022年年报存在虚假记载，公司拟被警告并罚400万元，李海建等责任人拟被罚80万-350万元，其中李海建拟被采取3年证券市场禁入；公司另收警示函（多项会计差错、关联方资金占用等）。公司股票11月23日停牌一天，11月24日起被实施其他风险警示。</td></tr>
-      <tr><th>涉事企业/行业</th><td>启迪设计（300500.SZ）｜建筑设计/工程咨询</td></tr>
-      <tr><th>舆情分类</th><td>④ 贪腐违法（财务造假/信披违法）</td></tr>
-      <tr><th>来源平台</th><td>中国基金报</td></tr>
-      <tr><th>来源链接</th><td><a href="https://www.chnfund.com/article/AR8d9e4666-03b1-7920-2e1f-3a251497c8e9" target="_blank">https://www.chnfund.com/article/AR8d9e4666-03b1-7920-2e1f-3a251497c8e9</a></td></tr>
-      <tr><th>舆情等级</th><td>二级（大额处罚、拟实施ST、多家媒体报道）</td></tr>
-      <tr><th>发生时间</th><td><span class="node">节点时间：2026-11-22（公告披露处罚事先告知书）</span>事件首发：2026-11-20（收到警示函）</td></tr>
-    </table>
-  </div>
+    <div class="item">
+      <div class="head"><span class="idx">主榜6</span><span class="title">黑猫发布双十一投诉数据报告：SK-II价保集体投诉、丝塔芙"拒不发货"发酵</span><span class="lv lv2">二级</span></div>
+      <div class="fields">
+        <span class="k">事件概述</span><span>11月23日，黑猫投诉发布《2026双十一消费投诉数据报告》（统计期10-20至11-15）：电商投诉累计80634件环比增25.36%；美妆投诉1304件环比增156.69%，SK-II因价保问题于11月初引发集体投诉，丝塔芙"预售拒不发货"持续发酵，拒绝价保占美妆投诉近三成；日用电器投诉2827件，维修与三包问题占比近四成。</span>
+        <span class="k">涉事企业</span><span>SK-II（宝洁旗下）、丝塔芙（高德美旗下）及各电商平台商家｜行业：美妆个护/电商</span>
+        <span class="k">舆情分类</span><span>①质量投诉（消费纠纷类集体投诉）</span>
+        <span class="k">来源平台</span><span>黑猫投诉（新浪旗下）</span>
+        <span class="k">来源链接</span><span><a href="https://tousu.sina.com.cn/articles/view/443437/" target="_blank">https://tousu.sina.com.cn/articles/view/443437/</a></span>
+        <span class="k">舆情等级</span><span><b style="color:var(--orange)">二级</b>（知名品牌集体投诉、平台权威报告确认）</span>
+        <span class="k">节点时间</span><span>2026-11-23（报告发布日，投诉集中爆发经权威确认）</span>
+        <span class="k">首发时间</span><span>2026-11-23（以报告发布日计；SK-II集体投诉11月上旬爆发）</span>
+      </div>
+    </div>
 
-  <div class="item">
-    <div class="head"><span class="idx">07</span><h3>网红鹿哈带货毛肚事件处罚落地：代工厂被罚没45万并吊销食品生产许可证，"3000万单"宣传被指涉嫌虚假宣传</h3><span class="lv l2">二级</span></div>
-    <table class="f">
-      <tr><th>事件概述</th><td>官方处罚结果显示，南充市嘉陵区市场监管局对涉事代工厂罚款42.5万元、没收违法所得2.5万元并吊销《食品生产许可证》，企业负责人被罚约3.7万元并禁业5年；调查认定工厂存在生产乱象，鹿哈关联的长沙凌达乐文化传媒及鹿哈本人对外宣传的3000万单销量被指夸大成交量、涉嫌虚假宣传。</td></tr>
-      <tr><th>涉事企业/行业</th><td>长沙凌达乐文化传媒有限公司（鹿哈）、南充代工厂｜食品/直播电商快消</td></tr>
-      <tr><th>舆情分类</th><td>① 质量投诉（生产乱象）叠加② 广告争议（虚假宣传）</td></tr>
-      <tr><th>来源平台</th><td>腾讯新闻</td></tr>
-      <tr><th>来源链接</th><td><a href="https://news.qq.com/rain/a/20261121A0DQWA00" target="_blank">https://news.qq.com/rain/a/20261121A0DQWA00</a></td></tr>
-      <tr><th>舆情等级</th><td>二级（旧事件+新处罚节点、吊销许可证、知名网红品牌）</td></tr>
-      <tr><th>发生时间</th><td><span class="node">节点时间：2026-11-21（官方处罚结果公布报道）</span>事件首发：2026-10（带货翻车曝光）</td></tr>
-    </table>
-  </div>
+    <div class="item">
+      <div class="head"><span class="idx">主榜7</span><span class="title">海客保遭扎堆投诉：消费者莫名"被投保"，黑猫涉诉多达300条</span><span class="lv lv2">二级</span></div>
+      <div class="fields">
+        <span class="k">事件概述</span><span>11月23日每日经济新闻调查报道：海客天津保险经纪旗下"海客保"通过短视频信息流、充电扫码、学生信息问卷弹窗等隐蔽场景诱导投保，默认勾选自动续费与免密扣款，健康告知暗藏理赔障碍，消费者在不知情状态下被连续扣款、退保困难；黑猫投诉平台涉该司投诉多达300条，专家指其营销模式为消费者设下四道风险关卡。</span>
+        <span class="k">涉事企业</span><span>海客天津保险经纪有限公司（海客保）｜行业：互联网保险</span>
+        <span class="k">舆情分类</span><span>①质量投诉（黑猫集中投诉）</span>
+        <span class="k">来源平台</span><span>每日经济新闻（腾讯新闻分发）</span>
+        <span class="k">来源链接</span><span><a href="https://news.qq.com/rain/a/20261123A0DTU500" target="_blank">https://news.qq.com/rain/a/20261123A0DTU500</a></span>
+        <span class="k">舆情等级</span><span><b style="color:var(--orange)">二级</b>（财经媒体深度调查、投诉量集中）</span>
+        <span class="k">节点时间</span><span>2026-11-23（媒体调查报道确认投诉集中爆发）</span>
+        <span class="k">首发时间</span><span>2026-11-23（每经首发）</span>
+      </div>
+    </div>
 
-  <div class="item">
-    <div class="head"><span class="idx">08</span><h3>福建省旅游发展集团原总经理钟军被开除党籍：省纪委全会审议通过审查报告</h3><span class="lv l2">二级</span></div>
-    <table class="f">
-      <tr><th>事件概述</th><td>11月21日，中共福建省第十一届纪律检查委员会第七次全体会议审议并通过省纪委关于钟军严重违纪违法问题的审查报告，确认给予钟军开除党籍处分。钟军曾任福建省大数据集团董事长、福建省旅游发展集团总经理，2026年4月被通报接受审查调查，7月被罢免全国人大代表职务。</td></tr>
-      <tr><th>涉事企业/行业</th><td>福建省旅游发展集团有限公司（原总经理钟军）｜文旅/国企</td></tr>
-      <tr><th>舆情分类</th><td>④ 贪腐违法（纪检监察处分）</td></tr>
-      <tr><th>来源平台</th><td>腾讯新闻（观八闽）</td></tr>
-      <tr><th>来源链接</th><td><a href="https://news.qq.com/rain/a/20261122A05PC900" target="_blank">https://news.qq.com/rain/a/20261122A05PC900</a></td></tr>
-      <tr><th>舆情等级</th><td>二级（省级纪委全会节点、国企高管腐败、多家媒体报道）</td></tr>
-      <tr><th>发生时间</th><td><span class="node">节点时间：2026-11-21（省纪委全会确认处分）</span>事件首发：2026-04（被通报接受审查调查）</td></tr>
-    </table>
-  </div>
+    <div class="item">
+      <div class="head"><span class="idx">主榜8</span><span class="title">重庆市市场监管局公开曝光3起涉旅商业贿赂典型案件，最高罚款50万</span><span class="lv lv3">三级</span></div>
+      <div class="fields">
+        <span class="k">事件概述</span><span>11月23日，重庆市市场监管局公开曝光3起涉旅商业贿赂典型案件：某贸易公司按销售额10%向3家旅行社支付返点被罚50万元；某文化公司按50元/人向旅行社支付带客费被罚20万元；某老火锅店按消费金额40%—70%向出租车司机支付返点被罚20万元。今年以来重庆共查办涉旅商业贿赂案件10件。</span>
+        <span class="k">涉事企业</span><span>重庆穆坤达进出口贸易有限公司、重庆渝山集文化艺术有限公司、老味道九宫格老火锅店｜行业：旅游购物/餐饮</span>
+        <span class="k">舆情分类</span><span>④贪腐违法（商业贿赂）</span>
+        <span class="k">来源平台</span><span>重庆日报</span>
+        <span class="k">来源链接</span><span><a href="https://www.cqrb.cn/jingji/zixun/2026-11-23/2828481_pc.html" target="_blank">https://www.cqrb.cn/jingji/zixun/2026-11-23/2828481_pc.html</a></span>
+        <span class="k">舆情等级</span><span><b style="color:var(--blue)">三级</b>（地方监管曝光、涉事主体知名度有限）</span>
+        <span class="k">节点时间</span><span>2026-11-23（监管曝光日）</span>
+        <span class="k">首发时间</span><span>2026-11-23（通报即首发）</span>
+      </div>
+    </div>
 
-  <div class="item">
-    <div class="head"><span class="idx">09</span><h3>利仁科技及董事长等被北京证监局出具警示函：6000万元关联增资未履行审议程序及信披义务</h3><span class="lv l3">三级</span></div>
-    <table class="f">
-      <tr><th>事件概述</th><td>利仁科技11月22日公告，公司及董事长宋老亮、时任董秘李伟近日收到北京证监局警示函：2026年4月公司6000万元增资上海超纤芯创光电事项构成关联交易，未按规定履行审议程序及信息披露义务，且股票异常波动期间澄清公告披露不及时，相关措施记入诚信档案。</td></tr>
-      <tr><th>涉事企业/行业</th><td>北京利仁科技股份有限公司（001259.SZ）｜小家电</td></tr>
-      <tr><th>舆情分类</th><td>④ 贪腐违法（信披违规监管措施）</td></tr>
-      <tr><th>来源平台</th><td>每日经济新闻</td></tr>
-      <tr><th>来源链接</th><td><a href="https://www.mrjjxw.com/articles/2026-11-22/4655169.html" target="_blank">https://www.mrjjxw.com/articles/2026-11-22/4655169.html</a></td></tr>
-      <tr><th>舆情等级</th><td>三级（监管警示函、单一监管措施、影响有限）</td></tr>
-      <tr><th>发生时间</th><td><span class="node">节点时间：2026-11-22（公告披露）</span>事件首发：2026-11-22</td></tr>
-    </table>
-  </div>
+    <div class="item">
+      <div class="head"><span class="idx">主榜9</span><span class="title">湖南通报食品安全典型案例：一企业抽检屡罚不改被吊销食品生产许可证</span><span class="lv lv3">三级</span></div>
+      <div class="fields">
+        <span class="k">事件概述</span><span>11月23日，湖南省市场监管局公布一批食品安全违法典型案例：永州道县某农产品公司"道州灰鹅"菌落总数不合格，且此前已两次因同类问题被罚，本次被没收违法所得并吊销食品生产许可证；另有农家乐使用未经检疫猪肉、餐馆使用过期卤鸭翅、泡爪超范围使用苯甲酸等案例被罚款。</span>
+        <span class="k">涉事企业</span><span>道县某农产品发展有限公司等湖南食品经营主体｜行业：食品生产/餐饮</span>
+        <span class="k">舆情分类</span><span>①质量投诉（食品安全）</span>
+        <span class="k">来源平台</span><span>新湖南（湖南日报旗下）</span>
+        <span class="k">来源链接</span><span><a href="https://www.hunantoday.cn/news/xhn/202611/34328088.html" target="_blank">https://www.hunantoday.cn/news/xhn/202611/34328088.html</a></span>
+        <span class="k">舆情等级</span><span><b style="color:var(--blue)">三级</b>（省级典型案例通报、涉事主体为区域企业）</span>
+        <span class="k">节点时间</span><span>2026-11-23（典型案例通报刊发日）</span>
+        <span class="k">首发时间</span><span>2026-11-23（通报即首发）</span>
+      </div>
+    </div>
+  </section>
 
-  <div class="item">
-    <div class="head"><span class="idx">10</span><h3>湖南通报4起制售假劣肉制品典型案例：道县一企业多次抽检不合格被吊销食品生产许可证</h3><span class="lv l3">三级</span></div>
-    <table class="f">
-      <tr><th>事件概述</th><td>湖南市场监管部门通报4起治理制售假劣肉制品问题典型案例。其中道县某农产品发展有限公司生产的"道州灰鹅"菌落总数不合格，且此前已两次因同类问题受罚，被依法没收违法所得并吊销食品生产许可证。</td></tr>
-      <tr><th>涉事企业/行业</th><td>道县某农产品发展有限公司等4家企业｜食品制造/餐饮</td></tr>
-      <tr><th>舆情分类</th><td>① 质量投诉（食品安全抽检不合格与处罚）</td></tr>
-      <tr><th>来源平台</th><td>腾讯新闻（湖南市场监管）</td></tr>
-      <tr><th>来源链接</th><td><a href="https://news.qq.com/rain/a/20261123A00ECN00" target="_blank">https://news.qq.com/rain/a/20261123A00ECN00</a></td></tr>
-      <tr><th>舆情等级</th><td>三级（省级典型案例通报、区域影响）</td></tr>
-      <tr><th>发生时间</th><td><span class="node">节点时间：2026-11-22（典型案例通报发布）</span>事件首发：2026-04（抽检发现不合格）</td></tr>
-    </table>
-  </div>
+  <!-- ================= 立白专项 ================= -->
+  <section>
+    <h2 class="special">🎯 立白专项（每期必检，独立板块，不占主/辅榜配比）</h2>
+    <div class="empty">
+      <b>本期无新增节点。</b><br>
+      本期已按统一检索式逐线核查：①企业声誉：全网检索"立白/立白科技集团/朝云集团(06606.HK)"负面报道，窗口内无处置节点、无重大负面首发；②家族成员：检索"陈凯旋/陈凯臣 纠纷 诉讼 股权"及陈丹霞、陈泽滨等家族成员动态，无纠纷、诉讼、股权变动类新节点；③品牌与产品投诉：黑猫投诉站内检索"立白/好爸爸/超威/威王/蓝天六必治"，无新增集中/集体投诉；④产品宣传：无不当宣传、广告争议新节点；⑤企业管理：无管理不当舆情；⑥政府查处：监管官网及权威媒体无涉及立白体系的新处罚、约谈、抽检不合格通报。朝云集团(06606.HK)股价正常（11-23收报HK$1.845，+1.10%），无异常波动公告。注：立白大师香氛获"全国高端香氛洗护领导品牌"称号等正面传播不属监测范围。下期继续双轨跟踪。
+    </div>
+  </section>
 
-  <div class="item">
-    <div class="head"><span class="idx">11</span><h3>重庆市市场监管局公布4起旅游市场虚假宣传典型案件：保健食品夸大疗效、银器"养生"话术诱导消费，最高罚款50万元</h3><span class="lv l3">三级</span></div>
-    <table class="f">
-      <tr><th>事件概述</th><td>重庆市市场监管局公开曝光4起旅游市场虚假宣传典型违法案件：渝都有礼土特产超市夸大宣传硒片可治疗肿瘤被罚50万元；彭水苗乡银萃贸易虚构银器功效被罚40万元；沙坪坝前前农副产品经营部雇人假扮顾客诱导消费被罚9万元等。</td></tr>
-      <tr><th>涉事企业/行业</th><td>渝都有礼土特产超市、彭水苗乡银萃贸易有限公司等｜零售/旅游购物</td></tr>
-      <tr><th>舆情分类</th><td>② 广告争议（虚假宣传行政处罚）</td></tr>
-      <tr><th>来源平台</th><td>重庆广电-视界网</td></tr>
-      <tr><th>来源链接</th><td><a href="https://www.cbg.cn/a/4933/20261121/b88293f3580a46c890cf42edf12e7f3a.html" target="_blank">https://www.cbg.cn/a/4933/20261121/b88293f3580a46c890cf42edf12e7f3a.html</a></td></tr>
-      <tr><th>舆情等级</th><td>三级（地方曝光、区域影响）</td></tr>
-      <tr><th>发生时间</th><td><span class="node">节点时间：2026-11-21（典型案例公开曝光）</span>事件首发：2026-05（案发查处）</td></tr>
-    </table>
-  </div>
+  <!-- ================= 辅榜 ================= -->
+  <section>
+    <h2 class="aux">🆕 当日新发（辅榜，3条）</h2>
 
-  <h2 class="section">🎯 立白专项</h2>
-  <p class="note">监测对象：广州立白企业集团/立白科技集团、朝云集团（06606.HK）及旗下立白、好爸爸、蓝天六必治、威王、超威、贝贝健、西兰等品牌，创始人陈凯旋及家族成员（陈凯臣等）。检索范围：企业声誉负面、家族成员舆情、消费者投诉、产品宣传不当、企业管理不当、政府查处。</p>
-  <div class="empty">本期无新增节点。窗口内对立白集团、朝云集团及旗下品牌、家族成员执行了统一检索式（监管/媒体/投诉/辅榜四线+陈凯旋/陈凯臣股权纠纷线），未发现符合条件的处置节点或首发负面，无"旧事件+新节点"记录。</div>
+    <div class="item">
+      <div class="head"><span class="idx">辅榜1</span><span class="title">国潮品牌FPA被曝盗用博主照片AI换装用于商业宣传，官方公开致歉<span class="tag">重点关注A类</span></span><span class="lv lv2">二级</span></div>
+      <div class="fields">
+        <span class="k">事件概述</span><span>小红书博主"孙热烈"发文指淘宝男装头部品牌FPA未经授权使用其照片，经AI"换装"替换为自家产品用于品牌账号商业宣传，引发热议，有用户直言"不想再买这个品牌"。FPA官方在评论区致歉，承认"某部门盲目追求出图效率，擅用博主图进行AI换衣，客服回应肤浅，属管理严重失职"，承诺下架全平台违规AI图、逐一联系受影响博主赔偿、处罚涉事人员并明确图片版权与AI使用规范；截至11月21日黑猫平台涉FPA投诉241条。11月23日新快报A13版、界面新闻等跟进并点出品牌AI营销乱象。</span>
+        <span class="k">涉事企业</span><span>FPA（广州，2019年创立，淘宝男装店铺榜Top1）｜行业：服装/电商</span>
+        <span class="k">舆情分类</span><span>②广告争议（AI营销侵权，重点关注A类）</span>
+        <span class="k">来源平台</span><span>新快报（A13版）</span>
+        <span class="k">来源链接</span><span><a href="https://www.xkb.com.cn/articleDetail/539641" target="_blank">https://www.xkb.com.cn/articleDetail/539641</a></span>
+        <span class="k">舆情等级</span><span><b style="color:var(--orange)">二级</b>（多家媒体报道、品牌公开回应、知名电商品牌）</span>
+        <span class="k">曝光时间</span><span>2026-11-23（新快报/界面新闻等权威媒体首发报道日；博主发文及品牌致歉约在11月21—22日）</span>
+        <span class="k">事件首发</span><span>2026-11-23（权威媒体首发，博主帖文时间无法精确确认，如实标注）</span>
+      </div>
+    </div>
 
-  <h2 class="section">🆕 当日新发（辅榜）</h2>
-  <p class="note">收录口径：窗口内首次曝光的质量/安全事故、广告争议首发、高管被查首发。本期经核查，候选事件（如FPA盗图AI换装、霞湖世家向亚玛芬道歉）首次曝光时间无法精确确认在窗口内，按"宁少收不错收"原则剔除，辅榜本期为0，不以灌水凑数。</p>
-  <div class="empty">本期辅榜 0 条。</div>
+    <div class="item">
+      <div class="head"><span class="idx">辅榜2</span><span class="title">李子园子公司生产超范围使用添加剂果汁被罚25万，两批次抽检不合格</span><span class="lv lv3">三级</span></div>
+      <div class="fields">
+        <span class="k">事件概述</span><span>11月23日信网·信号新闻、中国经济网报道：浙江衢州龙游县市监局11月18日作出处罚（龙市监处罚〔2026〕429号），浙江龙游李子园食品有限公司因生产经营超范围使用食品添加剂的红葡萄复合果汁、未按规定实施生产过程管控，被责令改正、警告、没收违法所得1657.6元并罚款25万元，罚没合计251657.6元；2025年12月与2026年2月两个批次分别经第三方检测判定不合格，现场已无涉案库存。该司为上市公司浙江李子园食品股份有限公司下属生产企业。</span>
+        <span class="k">涉事企业</span><span>浙江龙游李子园食品有限公司（李子园603531子公司）｜行业：食品饮料</span>
+        <span class="k">舆情分类</span><span>①质量投诉</span>
+        <span class="k">来源平台</span><span>中国经济网（信网·信号新闻）</span>
+        <span class="k">来源链接</span><span><a href="https://finance.ce.cn/stock/gsgdbd/202611/t20261123_3303021.shtml" target="_blank">https://finance.ce.cn/stock/gsgdbd/202611/t20261123_3303021.shtml</a></span>
+        <span class="k">舆情等级</span><span><b style="color:var(--blue)">三级</b>（罚款25万元、上市公司子公司、区域媒体披露）</span>
+        <span class="k">曝光时间</span><span>2026-11-23（信网/中国经济网首次公开披露）</span>
+        <span class="k">事件首发</span><span>2026-11-23（首次曝光；行政处罚作出日为2026-11-18）</span>
+      </div>
+    </div>
 
-  <h2 class="section">⏳ 持续跟踪</h2>
-  <p class="note">窗口内无新处置节点、但事件仍在办理或热度未退的重大事件（本区不占收录数）。</p>
-  <div class="track"><b>中交集团合规与反腐风波：</b>11月19日起被暂停全军物资、工程、服务类采购资格；此前11月10日原董事长刘起涛被开除党籍并移送司法，11月13日现任副总经理刘成云官宣被查。事件仍在核查阶段，市场关注后续定性处罚。</div>
-  <div class="track"><b>欢瑞世纪信披违法处罚与风险警示：</b>11月20日公告因年报虚增利润等拟合计被罚800万元；按安排公司股票11月23日开市起停牌一天，11月24日起被实施其他风险警示（"ST欢瑞"）。关注11月24日实施后的市场反应与投资者索赔动向。</div>
+    <div class="item">
+      <div class="head"><span class="idx">辅榜3</span><span class="title">河南御至宝药业保健食品标注虚假生产日期、备案材料造假，被罚11万</span><span class="lv lv3">三级</span></div>
+      <div class="fields">
+        <span class="k">事件概述</span><span>11月23日信网·信号新闻报道：河南新乡获嘉县市监局11月17日作出行政处罚（获市监处罚〔2026〕281号），河南御至宝药业有限公司因保健食品备案材料虚假填报、编造数据，并生产经营标注虚假生产日期的保健食品，被没收御至宝牌蛋白粉112罐（标注生产日期20261101）、罚款11万元。其官网显示合作客户包括科伦药业、修正药业、同仁堂、河南省中医院等。</span>
+        <span class="k">涉事企业</span><span>河南御至宝药业有限公司｜行业：保健食品</span>
+        <span class="k">舆情分类</span><span>①质量投诉</span>
+        <span class="k">来源平台</span><span>信网·信号新闻（腾讯新闻分发）</span>
+        <span class="k">来源链接</span><span><a href="https://news.qq.com/rain/a/20261123A0A3A700" target="_blank">https://news.qq.com/rain/a/20261123A0A3A700</a></span>
+        <span class="k">舆情等级</span><span><b style="color:var(--blue)">三级</b>（罚款11万元、首次公开披露）</span>
+        <span class="k">曝光时间</span><span>2026-11-23（信网首次公开披露）</span>
+        <span class="k">事件首发</span><span>2026-11-23（首次曝光；处罚决定作出日为2026-11-17）</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 持续跟踪 ================= -->
+  <section>
+    <h2 class="track">⏳ 持续跟踪区（窗口内无新节点但仍在办/热度未退，不占收录数，共2条）</h2>
+    <div class="item">
+      <div class="fields">
+        <span class="k">跟踪1</span><span><b>国家药监局18批次化妆品检出禁用原料（2026年第42号通告）</b>——通告于2026-11-20发布（节点在窗口外，不入主榜），涉及馥珮、香约等品牌，含糖皮质激素面膜、检出苯的染发膏、砷超标牙膏等；药监局已要求沪苏浙粤药监部门立案调查并责令停止经营，馥珮客服11月21日回应"内部核查中"，11月22—23日媒体持续跟进，各省立案调查处置仍在办。链接：<a href="https://www.cqn.com.cn/ms/content/2026-11/23/content_9182130.htm" target="_blank">中国质量新闻网报道</a></span>
+        <span class="k">跟踪2</span><span><b>揭阳网约车违规经营大整治行动进行中</b>——11月18日揭阳市交通运输局集中约谈T3出行、如祺出行、飞嘀出行等平台，通报服务质量投诉问题，部署全面整治行动（节点在窗口外），整治仍在办、相关平台合规风险待观察。链接：<a href="https://www.100ec.cn/detail--6666067.html" target="_blank">网经社报道</a></span>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <p><b>合规声明：</b>本报告基于公开渠道信息整理，仅用于内部舆情参考，不构成任何投资、法律或商业决策依据。涉性骚扰/猥亵类内容仅基于官方通报与权威报道作中性陈述，不渲染细节、不传播未经证实信息、不展示受害者可识别信息。所有收录条目均核实来源与时效（48小时双轨窗口），来源链接以发布时为准。数据统计截至 2026-11-23 08:01（GMT+8）。</p>
-    <p>本期收录 11 条：主榜 11 条（100%）、辅榜 0 条；立白专项本期无新增节点。等级分布：一级 3 条｜二级 5 条｜三级 3 条。</p>
-    <p>历史归档：<a href="https://github.com/caruso72/fenxi" target="_blank">github.com/caruso72/fenxi</a></p>
+    <b>合规声明：</b>本报告基于公开渠道信息（监管官网、权威媒体、投诉平台）整理，仅供内部舆情参考。涉性骚扰/猥亵类信息仅基于官方通报与权威报道中性陈述，不渲染细节、不传播未经证实信息、不展示受害者可识别信息、不使用煽动性措辞。所有条目均经时效核验：主榜以处置节点发布/发生时间为基准、辅榜以事件首次曝光时间为基准，均落于监测窗口（2026-11-22 08:00—2026-11-24 08:00 GMT+8）；无法确认精确时效的信息未收录。链接均来自公开检索结果，如遇失效请以来源机构官网为准。报告生成：2026-11-24 08:00。
   </footer>
+
 </div>
 </body>
 </html>
