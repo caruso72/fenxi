@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企业舆情监测报告（2026-11-26）</title>
+<style>
+  :root{
+    --lv1:#c0392b; --lv1-bg:#fdecea;
+    --lv2:#d97706; --lv2-bg:#fef3e2;
+    --lv3:#1d6fa5; --lv3-bg:#e8f1f8;
+    --ink:#1f2430; --muted:#6b7280; --line:#e5e7eb;
+    --head:#0f2a4a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;background:#f3f5f8;color:var(--ink);line-height:1.65;}
+  .wrap{max-width:1080px;margin:0 auto;padding:24px 16px 48px;}
+  header.page{background:linear-gradient(135deg,#0f2a4a 0%,#1d4e79 100%);color:#fff;border-radius:14px;padding:28px 28px 22px;box-shadow:0 4px 14px rgba(15,42,74,.25);}
+  header.page h1{font-size:26px;letter-spacing:1px;}
+  header.page .win{margin-top:10px;font-size:14px;color:#d7e3f2;}
+  header.page .summary{margin-top:12px;display:flex;flex-wrap:wrap;gap:10px;}
+  header.page .summary span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:4px 14px;font-size:13px;}
+  .toolbar{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 20px;}
+  .toolbar a{display:inline-block;padding:9px 18px;border-radius:8px;font-size:14px;text-decoration:none;font-weight:600;}
+  .btn-dl{background:#1d6fa5;color:#fff;}
+  .btn-dl:hover{background:#175a88;}
+  .btn-his{background:#fff;color:#0f2a4a;border:1px solid #c9d4e0;}
+  .btn-his:hover{background:#eef3f8;}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:26px;}
+  .card{background:#fff;border-radius:12px;padding:18px 20px;box-shadow:0 2px 8px rgba(31,36,48,.06);border-top:4px solid #1d6fa5;}
+  .card b{display:block;font-size:30px;color:var(--head);}
+  .card span{font-size:13px;color:var(--muted);}
+  .card.c1{border-color:#c0392b;} .card.c2{border-color:#d97706;} .card.c3{border-color:#1d6fa5;} .card.c4{border-color:#2e8b57;}
+  section{margin-bottom:30px;}
+  section h2{font-size:20px;padding:10px 14px;border-radius:8px;color:#fff;background:var(--head);margin-bottom:14px;}
+  section.aifu h2{background:#7a5c9e;}
+  section.libai h2{background:#b3541e;}
+  section.track h2{background:#4b6b7c;}
+  .item{background:#fff;border-radius:12px;padding:16px 18px;margin-bottom:14px;box-shadow:0 2px 8px rgba(31,36,48,.06);border-left:5px solid #ccc;}
+  .item.lv1{border-left-color:var(--lv1);} .item.lv2{border-left-color:var(--lv2);} .item.lv3{border-left-color:var(--lv3);}
+  .item .t{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:8px;}
+  .item .t .no{font-weight:700;color:var(--muted);font-size:13px;}
+  .item .t h3{font-size:16px;font-weight:700;flex:1;min-width:240px;}
+  .badge{display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:999px;}
+  .badge.b1{color:var(--lv1);background:var(--lv1-bg);border:1px solid var(--lv1);}
+  .badge.b2{color:var(--lv2);background:var(--lv2-bg);border:1px solid var(--lv2);}
+  .badge.b3{color:var(--lv3);background:var(--lv3-bg);border:1px solid var(--lv3);}
+  .badge.cat{color:#475569;background:#f1f5f9;border:1px solid #cbd5e1;font-weight:500;}
+  table.f{width:100%;border-collapse:collapse;font-size:13.5px;}
+  table.f td{padding:4px 8px;vertical-align:top;border-bottom:1px dashed var(--line);}
+  table.f td.k{width:110px;color:var(--muted);white-space:nowrap;font-weight:600;}
+  table.f a{color:#1d6fa5;word-break:break-all;}
+  .times{font-size:12.5px;color:var(--muted);margin-top:8px;}
+  .times b{color:#374151;}
+  .empty{background:#fff;border:1px dashed #cbd5e1;border-radius:12px;padding:22px;text-align:center;color:var(--muted);font-size:14px;}
+  .track-item{background:#fff;border-radius:12px;padding:14px 18px;margin-bottom:12px;box-shadow:0 2px 8px rgba(31,36,48,.06);font-size:14px;border-left:5px solid #4b6b7c;}
+  .track-item b{color:var(--head);}
+  footer{margin-top:34px;background:#fff;border-radius:12px;padding:16px 20px;font-size:12.5px;color:var(--muted);box-shadow:0 2px 8px rgba(31,36,48,.06);}
+  footer b{color:#374151;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="page">
+    <h1>企业舆情监测报告</h1>
+    <div class="win">监测窗口（精确到小时）：2026-11-24 08:00 — 2026-11-26 08:00（北京时间，48小时双轨时效）</div>
+    <div class="summary">
+      <span>📥 收录总数：10 条</span>
+      <span>🔨 主榜（处置节点）：9 条</span>
+      <span>🆕 辅榜（当日新发）：1 条</span>
+      <span>🎯 立白专项：0 条（本期无新增节点）</span>
+      <span>⏳ 持续跟踪：2 条（不占收录数）</span>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <a class="btn-dl" href="qingyu-20261126.html" download>⬇ 下载本页HTML</a>
+    <a class="btn-his" href="https://github.com/caruso72/fenxi" target="_blank" rel="noopener">📚 历史归档</a>
+  </div>
+
+  <div class="cards">
+    <div class="card c1"><b>10</b><span>收录舆情总数（条）</span></div>
+    <div class="card c2"><b>2</b><span>一级舆情数（条）</span></div>
+    <div class="card c3"><b>8</b><span>涉及行业数（个）</span></div>
+    <div class="card c4"><b>9</b><span>处置节点类条数（主榜，占比90%）</span></div>
+  </div>
+
+  <!-- ================= 主榜 ================= -->
+  <section>
+    <h2>🔨 处置节点舆情（主榜）</h2>
+
+    <div class="item lv1">
+      <div class="t"><span class="no">01</span><h3>央视《财经调查》曝光褪黑素违规产业链，佳洪健康回应"正配合有关部门调查"</h3><span class="badge b1">一级</span><span class="badge cat">①质量投诉（含违规宣传）</span></div>
+      <table class="f">
+        <tr><td class="k">事件概述</td><td>央视财经《财经调查》11月22日曝光部分网红褪黑素产品剂量超标、伪造进口身份、面向未成年人违规宣传等问题，涉及佳洪健康、艾维司等代工企业及JAYHOO、EGUOO、vitafusion、Heivy、NATROL等品牌，相关商品已在淘宝、京东下架；11月25日佳洪健康回应称正在配合有关部门调查。其官网显示合作品牌含修正健康集团、哈药及广药白云山系列，多家知名药企被问询核实。</td></tr>
+        <tr><td class="k">涉事企业/行业</td><td>安徽佳洪健康科技股份有限公司、安徽艾维司生物科技有限公司等；保健食品/大健康代工</td></tr>
+        <tr><td class="k">来源平台</td><td>中国经济网（转载央视报道）</td></tr>
+        <tr><td class="k">来源链接</td><td><a href="https://finance.ce.cn/stock/gsgdbd/202611/t20261125_3306372.shtml" target="_blank" rel="noopener">https://finance.ce.cn/stock/gsgdbd/202611/t20261125_3306372.shtml</a></td></tr>
+      </table>
+      <div class="times">节点时间：<b>2026-11-25</b>（企业回应/媒体核实日）｜事件首发时间：<b>2026-11-22</b>（央视播出日）</div>
+    </div>
+
+    <div class="item lv1">
+      <div class="t"><span class="no">02</span><h3>贵州能源集团原党委副书记、副董事长、总经理兰海平被"双开"</h3><span class="badge b1">一级</span><span class="badge cat">④贪腐违法</span></div>
+      <table class="f">
+        <tr><td class="k">事件概述</td><td>11月25日中央纪委国家监委网站通报：经贵州省纪委监委审查调查，兰海平大搞权钱交易、利用职务便利为他人谋取利益并非法收受巨额财物，严重违纪违法并涉嫌受贿犯罪，被开除党籍、开除公职，终止党代会代表资格，涉嫌犯罪问题移送检察机关审查起诉。其今年6月18日被查，从被查到双开约5个月。</td></tr>
+        <tr><td class="k">涉事企业/行业</td><td>贵州能源集团有限公司（贵州省管大型国有全资公司）；能源/国企</td></tr>
+        <tr><td class="k">来源平台</td><td>中央纪委国家监委网站</td></tr>
+        <tr><td class="k">来源链接</td><td><a href="https://www.ccdi.gov.cn/yaowenn/202611/t20261125_524224.html" target="_blank" rel="noopener">https://www.ccdi.gov.cn/yaowenn/202611/t20261125_524224.html</a></td></tr>
+      </table>
+      <div class="times">节点时间：<b>2026-11-25</b>（纪检双开通报日）｜事件首发时间：<b>2026-06-18</b>（接受审查调查通报日）</div>
+    </div>
+
+    <div class="item lv2">
+      <div class="t"><span class="no">03</span><h3>婴童洗护品牌"紫婴坊"生产企业被罚没45.42万元：维肤膏违规添加抗真菌药成分</h3><span class="badge b2">二级</span><span class="badge cat">①质量投诉</span></div>
+      <table class="f">
+        <tr><td class="k">事件概述</td><td>福建省药监局行政处罚决定书（闽药监厦稽办处罚〔2026〕12号）显示，漳州怡嘉化妆品有限公司擅自在化妆品生产场地原址扩建未申请变更，并在备案使用人群为"婴幼儿"的紫婴坊安宁维肤膏生产中未经备案加入局部抗真菌药成分托萘酯（对2岁以下幼儿有效性安全性未确定），被合计罚没约45.42万元。新京报贝壳财经等11月25日报道后，引发对婴童护肤用品安全信任的广泛讨论，品牌客服回应"不清楚"。</td></tr>
+        <tr><td class="k">涉事企业/行业</td><td>漳州怡嘉化妆品有限公司（婴童洗护品牌"紫婴坊"备案人/生产企业）；日化/婴童洗护</td></tr>
+        <tr><td class="k">来源平台</td><td>腾讯新闻（新京报贝壳财经）</td></tr>
+        <tr><td class="k">来源链接</td><td><a href="https://news.qq.com/rain/a/20261125A08AIK00" target="_blank" rel="noopener">https://news.qq.com/rain/a/20261125A08AIK00</a></td></tr>
+      </table>
+      <div class="times">节点时间：<b>2026-11-25</b>（媒体披露处罚决定）｜事件首发时间：<b>2026-08-03</b>（福建省药监局立案调查日）</div>
+    </div>
+
+    <div class="item lv2">
+      <div class="t"><span class="no">04</span><h3>奔驰召回进口及国产汽车超17.9万辆，捷豹路虎同期召回揽胜运动版</h3><span class="badge b2">二级</span><span class="badge cat">①质量投诉</span></div>
+      <table class="f">
+        <tr><td class="k">事件概述</td><td>国家市场监督管理总局最新召回通告显示：梅赛德斯-奔驰（中国）、北京奔驰向市监总局备案召回计划，召回生产日期2018年至2022年的进口A级、B级、CLA、GLA、GLB、GLE、GLS及国产A级、GLA、GLB汽车共约17.94万辆，原因为组合仪表控制单元软件偏差致后雾灯标志可能不符合国标；捷豹路虎（中国）同期召回17辆进口揽胜运动版（后副车架可能存在裂纹，涉行驶安全）。</td></tr>
+        <tr><td class="k">涉事企业/行业</td><td>梅赛德斯-奔驰（中国）、北京奔驰、捷豹路虎（中国）；汽车</td></tr>
+        <tr><td class="k">来源平台</td><td>腾讯新闻</td></tr>
+        <tr><td class="k">来源链接</td><td><a href="https://news.qq.com/rain/a/20261125A099HH00" target="_blank" rel="noopener">https://news.qq.com/rain/a/20261125A099HH00</a></td></tr>
+      </table>
+      <div class="times">节点时间：<b>2026-11-25</b>（媒体披露召回备案，官方通告为"日前"发布，按披露日计）｜事件首发时间：<b>2026-11-25</b></div>
+    </div>
+
+    <div class="item lv2">
+      <div class="t"><span class="no">05</span><h3>本田、丰田在美国召回超160万辆汽车：高田含干燥剂气囊气体发生器存破裂风险</h3><span class="badge b2">二级</span><span class="badge cat">①质量投诉（涉人身安全风险）</span></div>
+      <table class="f">
+        <tr><td class="k">事件概述</td><td>本田、丰田向美国国家公路交通安全管理局（NHTSA）提交新召回文件，涉及高田含干燥剂气囊气体发生器在高温高湿环境下推进剂降解、气囊展开时可能破裂致金属碎片伤人的风险，本田召回约81万辆、丰田约79万辆。本田11月19日认定存在安全缺陷、11月20日发布声明；该缺陷历史相关事故已致28人死亡、400余人受伤（无本次批次的伤亡报告）。</td></tr>
+        <tr><td class="k">涉事企业/行业</td><td>本田（北美）、丰田（北美）；汽车</td></tr>
+        <tr><td class="k">来源平台</td><td>网易（盖世汽车）</td></tr>
+        <tr><td class="k">来源链接</td><td><a href="https://www.163.com/dy/article/LCJ0UHC705278R4J.html" target="_blank" rel="noopener">https://www.163.com/dy/article/LCJ0UHC705278R4J.html</a></td></tr>
+      </table>
+      <div class="times">节点时间：<b>2026-11-25</b>（NHTSA召回文件披露/媒体集中报道日）｜事件首发时间：<b>2026-11-20</b>（本田声明日）</div>
+    </div>
+
+    <div class="item lv2">
+      <div class="t"><span class="no">06</span><h3>江西省金融控股集团副总经理、瑞奇期货董事长吴晓接受审查调查</h3><span class="badge b2">二级</span><span class="badge cat">④贪腐违法</span></div>
+      <table class="f">
+        <tr><td class="k">事件概述</td><td>11月25日江西省纪委监委发布通报：江西省金融控股集团有限公司党委委员、副总经理，江西瑞奇期货有限公司董事长吴晓涉嫌严重违纪违法，主动向组织交代问题，目前正接受江西省纪委监委纪律审查和监察调查。</td></tr>
+        <tr><td class="k">涉事企业/行业</td><td>江西省金融控股集团有限公司、江西瑞奇期货有限公司；金融/国企</td></tr>
+        <tr><td class="k">来源平台</td><td>江西纪检监察网（江西省纪委监委）</td></tr>
+        <tr><td class="k">来源链接</td><td><a href="http://jxdi.gov.cn/jlsc/202611/t20261125_107957.htm" target="_blank" rel="noopener">http://jxdi.gov.cn/jlsc/202611/t20261125_107957.htm</a></td></tr>
+      </table>
+      <div class="times">节点时间：<b>2026-11-25</b>（纪检通报日）｜事件首发时间：<b>2026-11-25</b></div>
+    </div>
+
+    <div class="item lv2">
+      <div class="t"><span class="no">07</span><h3>辽宁、沈阳、杭州三地市场监管部门通报多批次食品用洗涤剂（洗洁精）抽检不合格</h3><span class="badge b2">二级</span><span class="badge cat">①质量投诉</span></div>
+      <table class="f">
+        <tr><td class="k">事件概述</td><td>辽宁省、沈阳市、杭州市市场监管部门公布产品质量监督抽查情况，多批次食品用洗涤剂不合格：辽宁爱洁洗涤"APG洗洁精"、沈阳市天龙化妆品"小苏打果蔬餐具净"、广州大商生物科技"活力柠檬清新去油洗洁精"等批次总有效物含量不合格，杭州另有1批次菌落总数不合格，涉及流通领域及电商平台销售渠道。</td></tr>
+        <tr><td class="k">涉事企业/行业</td><td>辽宁爱洁洗涤用品制造有限公司、沈阳市天龙化妆品有限公司、广州大商生物科技有限公司等；日化/洗涤用品</td></tr>
+        <tr><td class="k">来源平台</td><td>新浪财经</td></tr>
+        <tr><td class="k">来源链接</td><td><a href="https://finance.sina.cn/2026-11-24/detail-inizutpk1952825.d.html" target="_blank" rel="noopener">https://finance.sina.cn/2026-11-24/detail-inizutpk1952825.d.html</a></td></tr>
+      </table>
+      <div class="times">节点时间：<b>2026-11-24</b>（媒体披露三地抽检通报结果）｜事件首发时间：<b>2026-11-24</b></div>
+    </div>
+
+    <div class="item lv2">
+      <div class="t"><span class="no">08</span><h3>山西省通信管理局通报24款APP侵害用户权益，山西证券"汇通启富"等在列</h3><span class="badge b2">二级</span><span class="badge cat">⑤社会公共安全（个人信息保护）</span></div>
+      <table class="f">
+        <tr><td class="k">事件概述</td><td>山西省通信管理局11月25日在官网发布2026年第五批侵害用户权益行为APP通报（文件落款11月23日），24款APP存在违规收集个人信息、强制频繁过度索取权限、频繁自启动等问题，含山西证券"汇通启富"、山西地方电力"网上地电"等，要求12月3日前完成整改，拒不整改将依法处置。</td></tr>
+        <tr><td class="k">涉事企业/行业</td><td>山西证券股份有限公司、山西地方电力有限公司、大同中天弘宇网络科技等24款APP开发运营方；互联网/金融</td></tr>
+        <tr><td class="k">来源平台</td><td>山西省通信管理局官网</td></tr>
+        <tr><td class="k">来源链接</td><td><a href="https://sxca.miit.gov.cn/zwgk/dxhhlwgl/art/2026/art_b0b6c2faacf1452ab0efc604d18b364a.html" target="_blank" rel="noopener">https://sxca.miit.gov.cn/zwgk/dxhhlwgl/art/2026/art_b0b6c2faacf1452ab0efc604d18b364a.html</a></td></tr>
+      </table>
+      <div class="times">节点时间：<b>2026-11-25</b>（官网公示发布日）｜事件首发时间：<b>2026-11-25</b></div>
+    </div>
+
+    <div class="item lv3">
+      <div class="t"><span class="no">09</span><h3>中消协联合发布口腔、生殖健康医疗消费提示：警惕诱导消费和过度医疗</h3><span class="badge b3">三级</span><span class="badge cat">①质量投诉（消费纠纷警示）</span></div>
+      <table class="f">
+        <tr><td class="k">事件概述</td><td>中国消费者协会、中国市场监督管理学会结合近期舆情与投诉热点发布消费提示：口腔、生殖健康类医疗消费纠纷多发，存在夸大病情、低价引流、项目层层加码、过度医疗及治疗效果、履约退费争议等问题，并公布儿童正畸资质不足致严重咬合紊乱、门诊关停转诊退费难等典型案例。</td></tr>
+        <tr><td class="k">涉事企业/行业</td><td>各口腔/生殖健康民营医疗机构（涉广州、珠海、贵阳等地门诊部）；医疗健康</td></tr>
+        <tr><td class="k">来源平台</td><td>中国青年网（央视网消息）</td></tr>
+        <tr><td class="k">来源链接</td><td><a href="https://news.youth.cn/sh/202611/t20261124_16981502.htm" target="_blank" rel="noopener">https://news.youth.cn/sh/202611/t20261124_16981502.htm</a></td></tr>
+      </table>
+      <div class="times">节点时间：<b>2026-11-24</b>（消协消费提示发布日）｜事件首发时间：<b>2026-11-24</b></div>
+    </div>
+  </section>
+
+  <!-- ================= 立白专项 ================= -->
+  <section class="libai">
+    <h2>🎯 立白专项（每期必检，不占主/辅榜配比）</h2>
+    <div class="empty">
+      本期无新增节点。<br><br>
+      监测范围：广州立白企业集团/立白科技集团、朝云集团（港股06601.HK）及旗下品牌（立白、好爸爸、蓝天六必治、威王、超威、贝贝健、西兰），创始人陈凯旋及家族成员（陈凯臣等）。<br>
+      本期已执行：监管处罚线、央媒点名线、黑猫投诉站内检索、企业声誉负面线、家族成员纠纷/诉讼/股权线（陈凯旋、陈凯臣）及朝云集团港股公告/股价监测。<br>
+      结果：窗口内（2026-11-24 08:00 — 2026-11-26 08:00）未发现涉上述对象的新增处置节点或负面首发；朝云集团股价平稳（11-25收1.885港元，11-26盘中涨约2.4%），无异常波动舆情。
+    </div>
+  </section>
+
+  <!-- ================= 辅榜 ================= -->
+  <section class="aifu">
+    <h2>🆕 当日新发（辅榜）</h2>
+
+    <div class="item lv2">
+      <div class="t"><span class="no">10</span><h3>王玉雯官宣代言皮草品牌付智恩引抵制，话题登微博文娱热搜第一，双方深夜回应</h3><span class="badge b2">二级</span><span class="badge cat">②广告争议（代言营销争议）</span></div>
+      <table class="f">
+        <tr><td class="k">事件概述</td><td>11月25日艺人王玉雯官宣成为海宁皮草品牌付智恩（FIRELADYFUR）代言人，因公众人物示范效应与其"爱宠"公众印象冲突，"网友抵制王玉雯代言皮草"登上微博文娱热搜第一。25日晚王玉雯工作室与品牌先后声明：出镜产品以皮衣、派克服、美利奴羊毛外套为主，并非主推皮草品类；品牌称在售毛皮产品手续齐全、抵制非法毛皮交易。截至发稿双方未宣布终止合作，舆论仍存分歧。</td></tr>
+        <tr><td class="k">涉事企业/行业</td><td>付智恩（海宁皮草女装品牌）；服装/时尚</td></tr>
+        <tr><td class="k">来源平台</td><td>新浪娱乐</td></tr>
+        <tr><td class="k">来源链接</td><td><a href="https://ent.sina.cn/2026-11-26/detail-inizyqvt9305672.d.html" target="_blank" rel="noopener">https://ent.sina.cn/2026-11-26/detail-inizyqvt9305672.d.html</a></td></tr>
+      </table>
+      <div class="times">事件发生时间（首次曝光）：<b>2026-11-25</b>（官宣及热搜首发日）</div>
+    </div>
+  </section>
+
+  <!-- ================= 持续跟踪 ================= -->
+  <section class="track">
+    <h2>⏳ 持续跟踪区（窗口内无新节点、仍在办/热度未退，不占收录数）</h2>
+    <div class="track-item">
+      <b>1. babysheep（宝贝羊）安睡裤AI广告贬低女性生理现象，广告主被罚45万元</b>——泉州市丰泽区市场监管局认定泉州市丰瑞卫生用品有限公司发布的"谁来月经啊，我都闻到味了"AI短视频广告违背社会良好风尚，依据《广告法》处45万元罚款（处罚决定作出于2026-11-13，媒体集中披露于11-23，均在窗口外）。11-25仍有媒体跟进解读（腾讯新闻 <a href="https://news.qq.com/rain/a/20261125A0EL1B00" target="_blank" rel="noopener">报道链接</a>），事件热度未退、同类AI广告导向问题仍在监管关注中，列入跟踪。
+    </div>
+    <div class="track-item">
+      <b>2. 国家药监局通告18批次化妆品不符合规定、检出禁用原料</b>——涉馥珮水嫩璀璨精华水等，含牙膏砷含量超标、洗发水含禁用原料等情形，通告发布于2026-11-19（窗口外），各省（市）药监部门对涉事注册人、备案人、受托生产企业的立案调查与追根溯源仍在进行中，11-25仍有媒体跟进提示消费者停用（网易/齐鲁壹点 <a href="https://dy.163.com/article/LCJG53S60530WJIN.html" target="_blank" rel="noopener">报道链接</a>），列入跟踪。
+    </div>
+  </section>
+
+  <footer>
+    <b>合规声明：</b>本报告基于公开渠道信息整理，仅供内部舆情监测参考。涉性骚扰/猥亵等敏感类舆情仅基于官方通报与权威报道中性陈述，不渲染细节、不传播未经证实信息、不展示受害者可识别信息、不使用煽动性措辞。所有条目均执行48小时双轨时效核验（主榜以处置节点发布/发生时间为基准，辅榜以首次曝光时间为基准），无法确认精确时间的条目已剔除。各条目等级依据传播广度、监管性质、品牌影响综合评定，链接均来自公开网络，点击可溯源；内容版权归原作者及首发媒体所有。
+    <br><br>报告生成时间：2026-11-26 08:00（北京时间）｜在线版：<a href="https://caruso72.github.io/fenxi/" target="_blank" rel="noopener" style="color:#1d6fa5;">https://caruso72.github.io/fenxi/</a>｜历史归档：<a href="https://github.com/caruso72/fenxi" target="_blank" rel="noopener" style="color:#1d6fa5;">github.com/caruso72/fenxi</a>
+  </footer>
+
+</div>
+</body>
+</html>
